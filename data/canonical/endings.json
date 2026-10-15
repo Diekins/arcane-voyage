@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cycle",
+    "choiceId": "cycle",
+    "title": "Final do Ciclo",
+    "echo": "veil",
+    "consequence": "Você aceita a sentença e deixa a Sombra selar o mundo: nada mais se perde, mas o ciclo recomeça e você torna a esquecer. Heroico e triste — o mundo sobrevive, preservado, à espera do próximo Errante."
+  },
+  {
+    "id": "rupture",
+    "choiceId": "rupture",
+    "title": "Final da Ruptura",
+    "echo": "liberation",
+    "consequence": "Você quebra o Arquivo Vazio à força. A Sombra recua e a perda volta ao mundo — junto com a liberdade de mudar. Libertador e instável: muitas memórias se vão para sempre, mas o futuro deixa de ser uma cópia do passado."
+  },
+  {
+    "id": "preservation",
+    "choiceId": "preservation",
+    "title": "Final da Preservação",
+    "echo": "preservation",
+    "consequence": "Você ensina a Sombra a guardar sem congelar: preservar com compaixão, deixando o mundo ainda doer e crescer. Belo e frágil — a memória vive sem aprisionar, e a perda vira parte do que se lembra."
+  },
+  {
+    "id": "new_name",
+    "choiceId": "new_name",
+    "title": "Final do Nome Novo",
+    "echo": "new_name",
+    "consequence": "Você recusa o nome antigo e a oferta da Sombra, e escreve um nome que nunca existiu. Não volta a ser quem foi: assume quem escolhe ser. Canônico e esperançoso — o Errante deixa de ser uma sentença e vira uma autoria."
+  },
+  {
+    "id": "last_trail",
+    "choiceId": "last_trail",
+    "title": "Final da Última Trilha",
+    "echo": "flow",
+    "consequence": "Você usa a Chave não para preservar nem apagar, mas para abrir uma trilha além das respostas conhecidas — e deixa as memórias presas seguirem adiante. Difícil e verdadeiro: ninguém sabe aonde a Trilha leva, e é justamente por isso que vale cruzá-la."
+  }
+]

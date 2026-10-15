@@ -1,0 +1,753 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "generated_from": "tools/map-editor/maps/_build_khet_sar_city.cjs",
+  "round_trip_of": "editor-authored",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "khet_sar_city",
+    "display_name": "Cidade de Khet-Sar",
+    "client_side": true,
+    "size": [
+      1700,
+      1200
+    ],
+    "spawn": [
+      850,
+      940
+    ],
+    "ground": {
+      "base_color": "#d8b87a",
+      "path_color_rgba": [
+        0.8,
+        0.66,
+        0.42,
+        0.35
+      ],
+      "path_band": {
+        "axis": "vertical",
+        "center_x": 850,
+        "width": 260
+      },
+      "tiles": {
+        "tile_size": 96,
+        "base_key": "tilesets/desert/ground/desert_sand_base_96.png",
+        "layers": [
+          {
+            "key": "tilesets/desert/ground/desert_hardpack_road_96.png",
+            "cells": [
+              "8,3",
+              "8,4",
+              "8,5",
+              "8,6",
+              "8,7",
+              "8,8",
+              "8,9",
+              "8,10",
+              "8,11",
+              "9,3",
+              "9,4",
+              "9,5",
+              "9,6",
+              "9,7",
+              "9,8",
+              "9,9",
+              "9,10",
+              "9,11"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_n_96.png",
+            "cells": [
+              "8,2",
+              "9,2"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_s_96.png",
+            "cells": [
+              "8,12",
+              "9,12"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_plaza_adobe_96.png",
+            "cells": [
+              "7,1",
+              "7,2",
+              "8,1",
+              "8,2",
+              "9,1",
+              "9,2",
+              "7,5",
+              "7,6",
+              "8,5",
+              "8,6",
+              "9,5",
+              "9,6",
+              "12,5",
+              "12,6",
+              "13,5",
+              "13,6"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_1_96.png",
+            "cells": [
+              "2,3",
+              "4,8",
+              "14,9",
+              "3,11",
+              "15,4",
+              "1,7",
+              "16,8",
+              "5,2"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_2_96.png",
+            "cells": [
+              "12,10",
+              "2,10",
+              "15,11",
+              "6,5",
+              "13,2",
+              "3,5",
+              "16,3",
+              "11,7"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_pebbles_96.png",
+            "cells": [
+              "1,11",
+              "17,6",
+              "0,4",
+              "11,4",
+              "6,11",
+              "14,7"
+            ]
+          }
+        ]
+      }
+    },
+    "access": null,
+    "portals": [
+      {
+        "id": "ksc_to_caravan_camp",
+        "label": "Portão → Acampamento de Caravana",
+        "position": [
+          850,
+          1138
+        ],
+        "target_region": "khet_caravan_camp",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": false,
+        "transports": true
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "ksc_hall_door",
+        "label": "Salão das Caravanas (em breve)",
+        "position": [
+          850,
+          338
+        ],
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "interior do salão — futuro"
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "ksc_merchant",
+        "name": "Yalla, mercadora",
+        "position": [
+          1260,
+          656
+        ],
+        "sprite_key": "npcs/desert/desert_merchant",
+        "service": "merchant",
+        "wander": false,
+        "runtime_only_fields": [],
+        "notes": []
+      },
+      {
+        "id": "ksc_guard",
+        "name": "Guarda de Khet-Sar",
+        "position": [
+          1000,
+          950
+        ],
+        "sprite_key": "npcs/desert/desert_guard",
+        "service": null,
+        "wander": false,
+        "runtime_only_fields": [],
+        "notes": []
+      }
+    ],
+    "services": [],
+    "mobs": [],
+    "chests": [],
+    "props": [
+      {
+        "type": "sprite",
+        "id": "ksc_well_clay_1",
+        "asset_key": "tilesets/khet_sar_city/well_clay.png",
+        "position": [
+          850,
+          580
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_hall_2",
+        "asset_key": "tilesets/khet_sar_city/adobe_hall.png",
+        "position": [
+          850,
+          240
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_house_small_3",
+        "asset_key": "tilesets/khet_sar_city/adobe_house_small.png",
+        "position": [
+          440,
+          470
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_house_small_4",
+        "asset_key": "tilesets/khet_sar_city/adobe_house_small.png",
+        "position": [
+          440,
+          790
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_house_small_5",
+        "asset_key": "tilesets/khet_sar_city/adobe_house_small.png",
+        "position": [
+          1250,
+          320
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_house_small_6",
+        "asset_key": "tilesets/khet_sar_city/adobe_house_small.png",
+        "position": [
+          1270,
+          880
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_market_stall_7",
+        "asset_key": "tilesets/khet_sar_city/market_stall.png",
+        "position": [
+          1260,
+          560
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_market_canopy_red_8",
+        "asset_key": "tilesets/khet_sar_city/market_canopy_red.png",
+        "position": [
+          1260,
+          500
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_9",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          248,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_10",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          344,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_11",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          440,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_12",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          536,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_13",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          632,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_14",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          1064,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_15",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          1160,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_16",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          1256,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_17",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          1352,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_wall_seamless_96_18",
+        "asset_key": "tilesets/khet_sar_city/adobe_wall_seamless_96.png",
+        "position": [
+          1448,
+          90
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_corner_wall_19",
+        "asset_key": "tilesets/khet_sar_city/adobe_corner_wall.png",
+        "position": [
+          200,
+          72
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_corner_wall_20",
+        "asset_key": "tilesets/khet_sar_city/adobe_corner_wall.png",
+        "position": [
+          680,
+          72
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_corner_wall_21",
+        "asset_key": "tilesets/khet_sar_city/adobe_corner_wall.png",
+        "position": [
+          1016,
+          72
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_adobe_corner_wall_22",
+        "asset_key": "tilesets/khet_sar_city/adobe_corner_wall.png",
+        "position": [
+          1496,
+          72
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_arch_gate_wide_23",
+        "asset_key": "tilesets/khet_sar_city/arch_gate_wide.png",
+        "position": [
+          850,
+          1085
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_clay_pot_cluster_24",
+        "asset_key": "tilesets/khet_sar_city/props/clay_pot_cluster.png",
+        "position": [
+          372,
+          540
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_clay_pot_cluster_25",
+        "asset_key": "tilesets/khet_sar_city/props/clay_pot_cluster.png",
+        "position": [
+          1352,
+          360
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_clay_pot_cluster_26",
+        "asset_key": "tilesets/khet_sar_city/props/clay_pot_cluster.png",
+        "position": [
+          560,
+          770
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_small_crate_sacks_27",
+        "asset_key": "tilesets/khet_sar_city/props/small_crate_sacks.png",
+        "position": [
+          1120,
+          640
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "sprite",
+        "id": "ksc_small_crate_sacks_28",
+        "asset_key": "tilesets/khet_sar_city/props/small_crate_sacks.png",
+        "position": [
+          1095,
+          1015
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      }
+    ],
+    "scatter": null,
+    "blockers": [
+      {
+        "from": "well_clay",
+        "rect": [
+          820,
+          612,
+          60,
+          42
+        ]
+      },
+      {
+        "from": "adobe_hall",
+        "rect": [
+          742,
+          312,
+          216,
+          42
+        ]
+      },
+      {
+        "from": "adobe_house_small",
+        "rect": [
+          380,
+          502,
+          120,
+          34
+        ]
+      },
+      {
+        "from": "adobe_house_small",
+        "rect": [
+          380,
+          822,
+          120,
+          34
+        ]
+      },
+      {
+        "from": "adobe_house_small",
+        "rect": [
+          1190,
+          352,
+          120,
+          34
+        ]
+      },
+      {
+        "from": "adobe_house_small",
+        "rect": [
+          1210,
+          912,
+          120,
+          34
+        ]
+      },
+      {
+        "from": "market_stall",
+        "rect": [
+          1200,
+          592,
+          120,
+          40
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          200,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          296,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          392,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          488,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          584,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          1016,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          1112,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          1208,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          1304,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "wall96",
+        "rect": [
+          1400,
+          79,
+          96,
+          26
+        ]
+      },
+      {
+        "from": "corner_pillar",
+        "rect": [
+          170,
+          92,
+          60,
+          30
+        ]
+      },
+      {
+        "from": "corner_pillar",
+        "rect": [
+          650,
+          92,
+          60,
+          30
+        ]
+      },
+      {
+        "from": "corner_pillar",
+        "rect": [
+          986,
+          92,
+          60,
+          30
+        ]
+      },
+      {
+        "from": "corner_pillar",
+        "rect": [
+          1466,
+          92,
+          60,
+          30
+        ]
+      },
+      {
+        "from": "arch_gate_pillar_L",
+        "rect": [
+          690,
+          1000,
+          92,
+          168
+        ]
+      },
+      {
+        "from": "arch_gate_pillar_R",
+        "rect": [
+          918,
+          1000,
+          92,
+          168
+        ]
+      },
+      {
+        "from": "crate_sacks",
+        "rect": [
+          1090,
+          662,
+          60,
+          24
+        ]
+      },
+      {
+        "from": "crate_sacks",
+        "rect": [
+          1065,
+          1037,
+          60,
+          24
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "NPC merchant abre loja compartilhada (sem item novo)",
+      "portão = saída p/ khet_caravan_camp (MapLoader liga khet_city_gate quando aprovado)"
+    ],
+    "notes": [
+      "Layout MVP refinado (Lote 2 essencial): portão LARGO (vão ~136px), muro seamless passo 96 + pilares de canto base-alinhados, toldo/vasos/caixotes; avenida central livre"
+    ]
+  }
+}

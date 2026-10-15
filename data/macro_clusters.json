@@ -1,0 +1,30 @@
+{
+	"starter": {
+		"graduated": true,
+		"world_pos": [0, 0],
+		"members": [
+			{ "region": "starter_village", "offset": [0, 0] },
+			{ "region": "plains", "offset": [2200, 0] },
+			{ "region": "cave", "offset": [4600, 0] }
+		]
+	},
+	"khet": {
+		"graduated": false,
+		"world_pos": [7000, 0],
+		"members": [
+			{ "region": "khet_dune_overlook", "offset": [0, 0] },
+			{ "region": "khet_waystation", "offset": [1000, 0] },
+			{ "region": "khet_salt_scrub", "offset": [2000, 0] }
+		]
+	},
+	"forest": {
+		"graduated": true,
+		"world_pos": [0, -3800],
+		"_comment": "coluna que ENCOSTA ao norte da Vila (ashen.bottom = village.top = y0). ashen=entrada(sul), nest=fim(norte). Trilha: Vila→Bosque(ashen)→Coracao(deep)→Ninho(nest).",
+		"members": [
+			{ "region": "ashen_grove", "offset": [0, 2500] },
+			{ "region": "deep_grove", "offset": [200, 1200] },
+			{ "region": "ancient_root_nest", "offset": [250, 0] }
+		]
+	}
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "manto-do-errante",
+    "name": "Manto do Errante",
+    "itemType": "Cloth",
+    "classRestriction": null,
+    "iconKey": "Shield",
+    "lore": "Tecido com fios do vento parado do norte. Símbolo do Despertar.",
+    "inSet": true
+  },
+  {
+    "id": "botas-do-errante",
+    "name": "Botas do Errante",
+    "itemType": "Leather",
+    "classRestriction": null,
+    "iconKey": "Sword",
+    "lore": "Solas que ecoam mil canções esquecidas sob a pedra.",
+    "inSet": true
+  },
+  {
+    "id": "lamina-do-errante",
+    "name": "Lâmina do Errante",
+    "itemType": "Sword",
+    "classRestriction": null,
+    "iconKey": "Sword",
+    "lore": "Lâmina fina e sem reflexo — não mostra o rosto de quem a segura. Junto ao fio, nomes riscados surgem como arranhões. Corta os selos da Sombra e liberta memórias presas, mas a dor vem junto.",
+    "inSet": true
+  },
+  {
+    "id": "anel-do-errante",
+    "name": "Anel do Errante",
+    "itemType": "Cloth",
+    "classRestriction": null,
+    "iconKey": "CircleDot",
+    "lore": "Anel simples, partido em três linhas internas — ouro, sombra violeta e azul profundo —, uma por filosofia de Ordem. Firma alianças profundas e deixa ouvir ecos de promessas antigas; em troca, todo vínculo passa a cobrar coerência.",
+    "inSet": true
+  },
+  {
+    "id": "coroa-do-errante",
+    "name": "Coroa do Errante",
+    "itemType": "Plate",
+    "classRestriction": null,
+    "iconKey": "Crown",
+    "lore": "Forjada na hora devorada. Brilha apenas para quem cruzou o Nexo.",
+    "inSet": true
+  },
+  {
+    "id": "chave-da-ultima-trilha",
+    "name": "Chave da Última Trilha",
+    "itemType": null,
+    "classRestriction": null,
+    "iconKey": "Key",
+    "lore": "Chave da Última Trilha — feita de ausência. Abre o fim, mas não escolhe o fim. Não é peça do Set Errante.",
+    "inSet": false
+  }
+]

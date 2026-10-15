@@ -1,0 +1,494 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "old_road",
+    "display_name": "Ruínas da Estrada Velha",
+    "client_side": true,
+    "size": [
+      2200,
+      1300
+    ],
+    "spawn": [
+      320,
+      650
+    ],
+    "ground": {
+      "base_color": "#4a4636",
+      "path_color_rgba": [
+        0.55,
+        0.5,
+        0.4,
+        0.4
+      ],
+      "notes": [
+        "tileset real (ground_large) — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "starter_village",
+      "from_exit": "village_to_east"
+    },
+    "portals": [
+      {
+        "id": "east_to_village",
+        "label": "Trilha → Vila dos Novatos",
+        "position": [
+          220,
+          650
+        ],
+        "target_region": "starter_village",
+        "target_spawn": [
+          1880,
+          800
+        ],
+        "gate_flag": null,
+        "draw_door": true
+      },
+      {
+        "id": "old_road_to_coast",
+        "label": "Rota Antiga ao Mar → Costa do Sal-Vento",
+        "position": [
+          2030,
+          650
+        ],
+        "target_region": "saltwind_shore",
+        "target_spawn": [
+          300,
+          650
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "ruin_raider",
+        "name": "Salteador das Ruínas",
+        "visual": "road_bandit",
+        "hp": 70,
+        "aggro": 400,
+        "respawn": 12,
+        "id": "old_road_ruin_raider_1",
+        "position": [
+          1100,
+          500
+        ]
+      },
+      {
+        "mob_id": "ruin_raider",
+        "name": "Salteador das Ruínas",
+        "visual": "road_bandit",
+        "hp": 70,
+        "aggro": 400,
+        "respawn": 12,
+        "id": "old_road_ruin_raider_2",
+        "position": [
+          1500,
+          820
+        ]
+      },
+      {
+        "mob_id": "ruin_raider",
+        "name": "Salteador das Ruínas",
+        "visual": "road_bandit",
+        "hp": 70,
+        "aggro": 400,
+        "respawn": 12,
+        "id": "old_road_ruin_raider_3",
+        "position": [
+          1750,
+          560
+        ]
+      },
+      {
+        "mob_id": "feral_hound",
+        "name": "Cão Selvagem",
+        "visual": "young_wolf",
+        "hp": 40,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "old_road_feral_hound_1",
+        "position": [
+          800,
+          900
+        ]
+      },
+      {
+        "mob_id": "feral_hound",
+        "name": "Cão Selvagem",
+        "visual": "young_wolf",
+        "hp": 40,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "old_road_feral_hound_2",
+        "position": [
+          1000,
+          1050
+        ]
+      },
+      {
+        "mob_id": "feral_hound",
+        "name": "Cão Selvagem",
+        "visual": "young_wolf",
+        "hp": 40,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "old_road_feral_hound_3",
+        "position": [
+          1250,
+          720
+        ]
+      },
+      {
+        "mob_id": "fallen_sentry",
+        "name": "Sentinela Tombada",
+        "visual": "fallen_sentry",
+        "hp": 130,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "old_road_fallen_sentry_1",
+        "position": [
+          1850,
+          650
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "road_milestone_cache",
+        "position": [
+          1600,
+          300
+        ],
+        "loot": {
+          "gold": 35,
+          "materials": {
+            "Pedra Rúnica": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      },
+      {
+        "id": "road_toll_strongbox",
+        "position": [
+          1950,
+          1000
+        ],
+        "loot": {
+          "gold": 50,
+          "materials": {
+            "Bolsa de Moedas": 1,
+            "Pedra Rúnica": 1
+          }
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "old_road_column_1",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          220.0,
+          195.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_2",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          660.0,
+          130.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_3",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1210.0,
+          208.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_4",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1716.0,
+          156.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_5",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1980.0,
+          390.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_6",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          264.0,
+          1105.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_7",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          880.0,
+          1170.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_8",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1540.0,
+          1105.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_column_9",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1936.0,
+          1066.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_rock_10",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          550.0,
+          585.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_rock_11",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1320.0,
+          780.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_rock_12",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1804.0,
+          520.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "old_road_rock_13",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          990.0,
+          936.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      }
+    ],
+    "blockers": [
+      {
+        "from": "old_road_column_1",
+        "rect": [
+          208.0,
+          197.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_2",
+        "rect": [
+          648.0,
+          132.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_3",
+        "rect": [
+          1198.0,
+          210.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_4",
+        "rect": [
+          1704.0,
+          158.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_5",
+        "rect": [
+          1968.0,
+          392.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_6",
+        "rect": [
+          252.0,
+          1107.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_7",
+        "rect": [
+          868.0,
+          1172.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_8",
+        "rect": [
+          1528.0,
+          1107.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_column_9",
+        "rect": [
+          1924.0,
+          1068.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "old_road_rock_10",
+        "rect": [
+          526.0,
+          573.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "old_road_rock_11",
+        "rect": [
+          1296.0,
+          768.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "old_road_rock_12",
+        "rect": [
+          1780.0,
+          508.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "old_road_rock_13",
+        "rect": [
+          966.0,
+          924.0,
+          48.0,
+          24
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "elite Sentinela Tombada (respawn 18s)",
+      "props/blockers = _scatter_ruins_decor (não extraídos)",
+      "leste leva ao arco litoral/deserto (Costa)"
+    ],
+    "notes": [
+      "região de hunt leste; ponte p/ o arco do deserto"
+    ]
+  }
+}

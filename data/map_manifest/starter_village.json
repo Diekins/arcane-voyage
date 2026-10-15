@@ -1,0 +1,512 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "starter_village",
+    "display_name": "Vila dos Novatos",
+    "client_side": true,
+    "size": [
+      2200,
+      1600
+    ],
+    "spawn": [
+      1100,
+      950
+    ],
+    "ground": {
+      "base_color": "#3c6b34",
+      "path_color_rgba": [
+        0.55,
+        0.5,
+        0.4,
+        0.4
+      ],
+      "notes": [
+        "chão PINTADO (plaza.png/grama da Planície) — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": null,
+      "notes": [
+        "HUB central do jogo (4 saídas cardeais)"
+      ]
+    },
+    "portals": [
+      {
+        "id": "village_gate",
+        "label": "Portão → Planície dos Novatos",
+        "position": [
+          1100,
+          1450
+        ],
+        "target_region": "plains",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": false
+      },
+      {
+        "id": "village_to_swamp",
+        "label": "Trilha Oeste → Pântano de Ferro",
+        "position": [
+          170,
+          800
+        ],
+        "target_region": "swamp",
+        "target_spawn": null,
+        "gate_flag": "golem_defeated_or_lvl8",
+        "draw_door": true,
+        "notes": [
+          "GATED no runtime: Golem de Cristal derrotado OU nível>=8"
+        ]
+      },
+      {
+        "id": "village_to_east",
+        "label": "Estrada Leste → Ruínas da Estrada Velha",
+        "position": [
+          2030,
+          800
+        ],
+        "target_region": "old_road",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": true
+      },
+      {
+        "id": "village_to_north",
+        "label": "Trilha Norte → Bosque de Cinza",
+        "position": [
+          1100,
+          150
+        ],
+        "target_region": "ashen_grove",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": true
+      }
+    ],
+    "future_exits": [],
+    "npcs": [
+      {
+        "id": "elder_maelis",
+        "name": "Anciã Maelis",
+        "position": [
+          1100,
+          1080
+        ],
+        "sprite_key": "npcs/village/elder",
+        "service": null,
+        "wander": true,
+        "notes": [
+          "guia do tutorial (fala dinâmica no runtime)"
+        ]
+      },
+      {
+        "id": "guard_tomas",
+        "name": "Guarda Tomas",
+        "position": [
+          1300,
+          1180
+        ],
+        "sprite_key": "npcs/village/guard",
+        "service": null,
+        "wander": true
+      },
+      {
+        "id": "farmer_bran",
+        "name": "Fazendeiro Bran",
+        "position": [
+          560,
+          1180
+        ],
+        "sprite_key": "npcs/village/farmer",
+        "service": null,
+        "wander": true
+      },
+      {
+        "id": "merchant_sila",
+        "name": "Mercadora Sila",
+        "position": [
+          1560,
+          1100
+        ],
+        "sprite_key": "npcs/village/merchant",
+        "service": "merchant",
+        "wander": false
+      },
+      {
+        "id": "blacksmith_dorn",
+        "name": "Ferreiro Dorn",
+        "position": [
+          1496,
+          690
+        ],
+        "sprite_key": "npcs/village/blacksmith",
+        "service": "blacksmith",
+        "wander": false,
+        "z_off": 24
+      }
+    ],
+    "services": [
+      {
+        "id": "village_healer",
+        "kind": "healer",
+        "position": [
+          352,
+          1280
+        ],
+        "label": "[E] descansar (curar)"
+      },
+      {
+        "id": "village_board",
+        "kind": "quest_board",
+        "position": [
+          660,
+          576
+        ],
+        "label": "[E] ler o mural",
+        "runtime_only_fields": [
+          "mural de bounties/side-quests (runtime)"
+        ]
+      },
+      {
+        "id": "village_shrine",
+        "kind": "shrine",
+        "position": [
+          1386,
+          992
+        ],
+        "label": "[E] tocar o santuário"
+      },
+      {
+        "id": "village_stash",
+        "kind": "stash",
+        "position": [
+          1276,
+          1248
+        ],
+        "label": "[E] abrir o Baú do Errante",
+        "runtime_only_fields": [
+          "depósito permanente do jogador (player_stash)"
+        ]
+      }
+    ],
+    "mobs": [],
+    "chests": [],
+    "props": [
+      {
+        "id": "starter_village_guild_hall_1",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/guild_hall.png",
+        "position": [
+          352.0,
+          320.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_tavern_2",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/tavern.png",
+        "position": [
+          660.0,
+          256.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_house_red_3",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/house_red.png",
+        "position": [
+          1848.0,
+          320.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_healer_4",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/healer.png",
+        "position": [
+          352.0,
+          1280.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_bank_5",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/bank.png",
+        "position": [
+          1848.0,
+          1280.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_fountain_6",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/fountain.png",
+        "position": [
+          814.0,
+          608.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_spawn_shrine_7",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/spawn_shrine.png",
+        "position": [
+          1386.0,
+          992.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_quest_board_8",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/quest_board.png",
+        "position": [
+          660.0,
+          576.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_hearth_9",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/props/hearth.png",
+        "position": [
+          1496.0,
+          608.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_market_10",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/props/market.png",
+        "position": [
+          1584.0,
+          1184.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_cart_11",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/props/cart.png",
+        "position": [
+          1540.0,
+          1248.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_barrels_12",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/props/barrels.png",
+        "position": [
+          572.0,
+          992.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_fence_13",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/props/fence.png",
+        "position": [
+          572.0,
+          1408.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_scarecrow_14",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/props/scarecrow.png",
+        "position": [
+          660.0,
+          1440.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_signpost_15",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/signpost.png",
+        "position": [
+          880.0,
+          960.0
+        ],
+        "z_hint": "ysort"
+      },
+      {
+        "id": "starter_village_gate_16",
+        "type": "sprite",
+        "asset_key": "tilesets/starter_village/gate.png",
+        "position": [
+          1100.0,
+          1450.0
+        ],
+        "z_hint": "ysort"
+      }
+    ],
+    "blockers": [
+      {
+        "from": "starter_village_guild_hall_1",
+        "rect": [
+          222.0,
+          314.0,
+          260,
+          60
+        ]
+      },
+      {
+        "from": "starter_village_tavern_2",
+        "rect": [
+          560.0,
+          250.0,
+          200,
+          56
+        ]
+      },
+      {
+        "from": "starter_village_house_red_3",
+        "rect": [
+          1758.0,
+          314.0,
+          180,
+          50
+        ]
+      },
+      {
+        "from": "starter_village_healer_4",
+        "rect": [
+          247.0,
+          1274.0,
+          210,
+          48
+        ]
+      },
+      {
+        "from": "starter_village_bank_5",
+        "rect": [
+          1756.0,
+          1274.0,
+          184,
+          44
+        ]
+      },
+      {
+        "from": "starter_village_fountain_6",
+        "rect": [
+          754.0,
+          590.0,
+          120,
+          70
+        ]
+      },
+      {
+        "from": "starter_village_spawn_shrine_7",
+        "rect": [
+          1338.0,
+          982.0,
+          96,
+          56
+        ]
+      },
+      {
+        "from": "starter_village_quest_board_8",
+        "rect": [
+          590.0,
+          572.0,
+          140,
+          36
+        ]
+      },
+      {
+        "from": "starter_village_hearth_9",
+        "rect": [
+          1448.0,
+          604.0,
+          96,
+          50
+        ]
+      },
+      {
+        "from": "starter_village_cart_11",
+        "rect": [
+          1482.0,
+          1244.0,
+          116,
+          40
+        ]
+      },
+      {
+        "from": "starter_village_barrels_12",
+        "rect": [
+          528.0,
+          988.0,
+          88,
+          44
+        ]
+      },
+      {
+        "from": "starter_village_fence_13",
+        "rect": [
+          502.0,
+          1404.0,
+          140,
+          26
+        ]
+      },
+      {
+        "from": "starter_village_gate_16",
+        "rect": [
+          948.0,
+          1416.0,
+          92,
+          78
+        ]
+      },
+      {
+        "from": "starter_village_gate_16",
+        "rect": [
+          1160.0,
+          1416.0,
+          92,
+          78
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "HUB seguro (sem boss/mob)",
+      "tutorial/onboarding (Anciã Maelis)",
+      "side-quests/bounties no mural",
+      "loja (Sila)/forja (Dorn) compartilhadas",
+      "Baú do Errante (stash) + santuário de surgimento",
+      "props/blockers = _scatter_village_props + tileset pintado (não extraídos neste passo)"
+    ],
+    "notes": [
+      "região client-side; HUB central; 4 saídas cardeais (sul Planície/oeste Pântano/leste Ruínas/norte Bosque)"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "doc": "GODOT-MAP-EDITOR-OVERRIDE-STATUS-1 — status canônico dos legacy overrides p/ o Map Editor ler dinamicamente. Mantido em sincronia com LEGACY_OVERRIDE_ENABLED/LEGACY_OVERRIDES em godot/scripts/Main.gd. 'enabled' espelha LEGACY_OVERRIDE_ENABLED; 'status': pilot=validado/infra pronta, recommended=próximo piloto sugerido, avoid=não recomendado agora.",
+  "regions": [
+    {
+      "id": "old_road",
+      "enabled": false,
+      "status": "pilot",
+      "dest": "godot/data/map_editor_overrides/old_road.json",
+      "note": "Piloto validado em F5; desligado por padrão para preservar o tileset original. Reativar = LEGACY_OVERRIDE_ENABLED['old_road']=true."
+    },
+    {
+      "id": "plains",
+      "enabled": false,
+      "status": "pilot",
+      "dest": "godot/data/map_editor_overrides/plains.json",
+      "note": "Piloto validado em F5; desligado por padrão para preservar o tileset original (visual procedural é downgrade). Runtime-only Lobo Alfa + Aldric preservado via _legacy_runtime_extras. Reativar = LEGACY_OVERRIDE_ENABLED['plains']=true."
+    },
+    {
+      "id": "starter_village",
+      "enabled": false,
+      "status": "avoid",
+      "dest": "godot/data/map_editor_overrides/starter_village.json",
+      "note": "Evitar por enquanto; região com tutorial, serviços e lógica densa."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 2,
+  "_doc": [
+    "PORTAO DE PRONTIDAO de animacao de combate. IMPORTADO do handoff RECONCILIADO do Codex.",
+    "*** 'arquivo existe' NAO e 'arquivo pronto'. Nada entra em runtime sem ready=true aqui. ***",
+    "*** 'materialized' NAO e 'ready'. Ter o PNG no projeto so torna a ativacao um campo de JSON. ***",
+    "Cada entrada traz `evidence` com a linha do handoff que a sustenta."
+  ],
+  "source": {
+    "authority": "arcane_visual_production_mega_pack_01/audit/COMBAT_ANIMATION_RECONCILIATION_HANDOFF.json",
+    "handoff_status": "RECONCILED",
+    "read_at": "2026-09-05T18:52",
+    "handoff_written_at": "2026-09-05T18:26",
+    "player_ready_for_runtime_integration": [],
+    "mob_ready_for_runtime_integration": [],
+    "player_contract": "256x64 class strips, 4x64x64 RGBA"
+  },
+  "_wave_2_change": [
+    "A RECONCILIACAO REVOGOU O MELEE. Na Onda 1 o dado de 17:45 trazia class_status.MELEE =",
+    "PRODUCTION_READY_STAGING e o MELEE foi ativado. O handoff de 18:26 (que os DOIS manifestos",
+    "nomeiam como autoridade via campo `reconciliation_handoff`) marca MELEE = ANIMATION_NEEDS_REWORK,",
+    "blocker 'legacy BASE alpha audit failed', e ready_for_runtime_integration = [] (vazio).",
+    "O manifesto do mega pack ainda carrega class_status.MELEE = PRODUCTION_READY_STAGING, mas no MESMO",
+    "arquivo diz production_ready_count=0, alpha_fail_count=20, status=ANIMATION_NEEDS_REWORK e aponta o",
+    "handoff como autoridade. E o pack 01 diz alpha_audit = FAIL_PENDING_CLEAN_ALPHA_EXTRACTION.",
+    "=> class_status e RESIDUO. O handoff vence. MELEE volta ao fallback procedural: ZERO codigo mudou.",
+    "Isto CONFIRMA a medicao da Onda 1: as 20 strips BASE tem alfa BINARIO (0% de alfa parcial), que e",
+    "exatamente o 'legacy BASE alpha audit failed' / alpha_fail_count=20 do handoff."
+  ],
+
+  "actions": ["ATTACK_BASIC", "ATTACK_HEAVY", "HIT", "DEATH"],
+  "directions": ["BASE", "SIDE", "UP"],
+  "player_dir": "res://assets/actors/combat/player",
+  "mob_dir": "res://assets/actors/combat/mobs",
+
+  "policy": {
+    "_doc": "Travas de PRODUTO, nao de arte. Valem mesmo que o Codex marque tudo pronto.",
+    "player_death_real_animation_enabled": false,
+    "player_death_reason": "'abatido' e estado RECUPERAVEL ([R] levanta). Trocar por strip que emite death_finished mexeria no ciclo de vida do jogador. So revisitar quando a arquitetura de downed/death for desenhada de proposito.",
+    "player_heavy_real_animation_enabled": false,
+    "player_heavy_reason": "Nao existe evento autoritativo de ataque PESADO no gameplay. Registrar a arte e ok; TOCAR seria inventar gameplay para exibir arte.",
+    "transient_priority": {"LOCOMOTION": 0, "ATTACK": 1, "HIT": 2, "DOWNED_DEATH": 3},
+    "hit_interrupts_attack": true,
+    "hit_interrupt_reason": "Regra minima coerente: dano recebido INTERROMPE e SUBSTITUI o golpe em andamento (HIT > ATTACK). O contrario -- ataque cancelar o flinch -- esconderia o dano do jogador. Nada de fila: fila cria ator congelado esperando vez."
+  },
+
+  "player": {
+    "MELEE": {
+      "ready": false,
+      "status": "ANIMATION_NEEDS_REWORK",
+      "blockers": ["legacy BASE alpha audit failed"],
+      "evidence": "handoff.player_census.class_status.MELEE == ANIMATION_NEEDS_REWORK; ready_for_runtime_integration vazio",
+      "materialized": true,
+      "materialized_note": "as 12 strips seguem no projeto desde a Onda 1; sem ready=true elas NAO sao usadas. Reativar = trocar este campo.",
+      "actions": {
+        "ATTACK_BASIC": {"BASE": true, "SIDE": true, "UP": true, "contact_frame": 3},
+        "ATTACK_HEAVY": {"BASE": true, "SIDE": true, "UP": true, "contact_frame": 3},
+        "HIT":          {"BASE": true, "SIDE": true, "UP": true, "contact_frame": 1},
+        "DEATH":        {"BASE": true, "SIDE": true, "UP": true, "contact_frame": 0}
+      }
+    },
+    "RANGED":  {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["legacy BASE alpha audit failed"], "evidence": "handoff.player_census.class_status.RANGED", "materialized": false},
+    "MAGIC":   {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["legacy BASE alpha audit failed", "embedded cast/hit FX in directional strips"], "evidence": "handoff.player_census.class_status.MAGIC", "materialized": false},
+    "REACH":   {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["legacy BASE alpha audit failed", "SIDE contains gore and requires replacement"], "evidence": "handoff.player_census.class_status.REACH", "materialized": false},
+    "SUPPORT": {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["legacy BASE alpha audit failed", "identity consistency not verified"], "evidence": "handoff.player_census.class_status.SUPPORT", "materialized": false}
+  },
+
+  "mobs": {
+    "ash_wolf": {
+      "ready": false,
+      "status": "ANIMATION_NEEDS_REWORK",
+      "blockers": ["BASE-only directionality not confirmed"],
+      "evidence": "handoff.mob_census.status_by_id.ash_wolf; mob_ready_for_runtime_integration vazio",
+      "materialized": true,
+      "materialized_note": "3 strips copiadas nesta onda com o PORTAO FECHADO: quando o Codex confirmar a direcionalidade, ativar e trocar ready para true. Nenhuma linha de codigo.",
+      "actions": {
+        "ATTACK_BASIC": {"BASE": true},
+        "HIT":          {"BASE": true},
+        "DEATH":        {"BASE": true}
+      }
+    },
+    "crystal_bat":        {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["BASE-only directionality not confirmed"], "evidence": "handoff.mob_census.status_by_id.crystal_bat", "materialized": false},
+    "grove_spider":       {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["BASE-only directionality not confirmed"], "evidence": "handoff.mob_census.status_by_id.grove_spider", "materialized": false},
+    "root_spider":        {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["matte/background contamination"], "evidence": "handoff.mob_census.status_by_id.root_spider", "materialized": false},
+    "dune_skitter":       {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["fringe/matte contamination"], "evidence": "handoff.mob_census.status_by_id.dune_skitter", "materialized": false},
+    "salt_husk":          {"ready": false, "status": "ANIMATION_NEEDS_REWORK", "blockers": ["matte/background contamination"], "evidence": "handoff.mob_census.status_by_id.salt_husk", "materialized": false},
+    "tide_warden":        {"ready": false, "status": "BLOCKED", "blockers": ["combat strips not produced"], "evidence": "handoff.mob_census.status_by_id.tide_warden", "materialized": false},
+    "shadow_sprout":      {"ready": false, "status": "BLOCKED", "blockers": ["combat strips not produced"], "evidence": "handoff.mob_census.status_by_id.shadow_sprout", "materialized": false},
+    "sap_eye":            {"ready": false, "status": "BLOCKED", "blockers": ["combat strips not produced"], "evidence": "handoff.mob_census.status_by_id.sap_eye", "materialized": false},
+    "hungry_root":        {"ready": false, "status": "BLOCKED", "blockers": ["combat strips not produced"], "evidence": "handoff.mob_census.status_by_id.hungry_root", "materialized": false},
+    "musgo_voraz":        {"ready": false, "status": "BLOCKED", "blockers": ["combat strips not produced"], "evidence": "handoff.mob_census.status_by_id.musgo_voraz", "materialized": false},
+    "ancient_root_heart": {"ready": false, "status": "BLOCKED", "blockers": ["elite runtime contract not resolved"], "evidence": "handoff.mob_census.status_by_id.ancient_root_heart", "materialized": false}
+  }
+}

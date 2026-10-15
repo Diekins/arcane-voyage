@@ -1,0 +1,174 @@
+[
+  {
+    "id": "act-1",
+    "number": "I",
+    "title": "O Despertar",
+    "subtitle": "O Errante encontra sua voz no Bosque dos Murmúrios.",
+    "iconKey": "Trees",
+    "textClass": "text-emerald-300",
+    "chapters": [
+      {
+        "id": "ch1",
+        "number": "I.1",
+        "title": "O Despertar do Errante",
+        "blurb": "Caçar o Lobo Alfa nas Planícies dos Novatos.",
+        "questId": "ch1-awakening",
+        "narrativeReward": {
+          "kind": "set_piece",
+          "ref": "Manto do Errante",
+          "label": "Set Errante (1/5) — peça narrativa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-2",
+    "number": "II",
+    "title": "Sob a Montanha",
+    "subtitle": "Cavernas e cinzas guardam segredos esquecidos.",
+    "iconKey": "Mountain",
+    "textClass": "text-cave",
+    "chapters": [
+      {
+        "id": "ch2",
+        "number": "II.1",
+        "title": "O Coração de Cristal",
+        "blurb": "Quebrar o Golem de Cristal nas Cavernas Esquecidas.",
+        "questId": "ch2-crystal-heart",
+        "narrativeReward": {
+          "kind": "set_piece",
+          "ref": "Botas do Errante",
+          "label": "Set Errante (2/5) — peça narrativa"
+        }
+      },
+      {
+        "id": "ch3",
+        "number": "II.2",
+        "title": "O Pacto Magmático",
+        "blurb": "Enfrentar o Drago Magmático na Caldeira Flamejante.",
+        "questId": "ch3-magma-pact",
+        "narrativeReward": {
+          "kind": "title",
+          "ref": "pacto_magmatico",
+          "label": "Título: Selado pela Fagulha"
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-3",
+    "number": "III",
+    "title": "A Hora Devorada",
+    "subtitle": "Atravessar o Nexo e desafiar o Trono.",
+    "iconKey": "Hourglass",
+    "textClass": "text-rift",
+    "chapters": [
+      {
+        "id": "ch4",
+        "number": "III.1",
+        "title": "A Hora Devorada",
+        "blurb": "Vencer o Devorador do Tempo na Fenda Temporal.",
+        "questId": "ch4-time-eater",
+        "narrativeReward": null
+      },
+      {
+        "id": "ch5",
+        "number": "III.2",
+        "title": "O Trono que Espera",
+        "blurb": "Reunir o tributo final aos Ancestrais.",
+        "questId": "ch5-throne",
+        "narrativeReward": {
+          "kind": "title",
+          "ref": "trono_lendario",
+          "label": "Título: Coroado pelos Ancestrais"
+        }
+      },
+      {
+        "id": "ch6",
+        "number": "III.3",
+        "title": "O Arquivista Sem Rosto",
+        "blurb": "Romper os selos de Aethelgard e libertar os nomes presos no Arquivo.",
+        "questId": "ch6-archivist",
+        "narrativeReward": {
+          "kind": "set_piece",
+          "ref": "Lâmina do Errante",
+          "label": "Set Errante (3/5) — peça narrativa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-4",
+    "number": "IV",
+    "title": "As Ordens Partidas",
+    "subtitle": "Três Ordens, um juramento — e a promessa que volta para ser respondida.",
+    "iconKey": "CircleDot",
+    "textClass": "text-amber-300",
+    "chapters": [
+      {
+        "id": "ch7",
+        "number": "IV.1",
+        "title": "O Juramento Partido",
+        "blurb": "Encarar e responder ao Juramento Partido no Círculo dos Campeões.",
+        "questId": "ch7-broken-oath",
+        "narrativeReward": {
+          "kind": "set_piece",
+          "ref": "Anel do Errante",
+          "label": "Set Errante (4/5) — peça narrativa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-5",
+    "number": "V",
+    "title": "O Julgamento dos Deuses",
+    "subtitle": "O Panteão silencia — e o Primeiro Nome cobra quem o Errante escolhe ser.",
+    "iconKey": "Crown",
+    "textClass": "text-amber-300",
+    "chapters": [
+      {
+        "id": "ch8",
+        "number": "V.1",
+        "title": "O Santo Sem Memória",
+        "blurb": "Encarar o Santo Sem Memória no Panteão Silencioso e responder ao Primeiro Nome.",
+        "questId": "ch8-nameless-saint",
+        "narrativeReward": {
+          "kind": "set_piece",
+          "ref": "Coroa do Errante",
+          "label": "Set Errante (5/5) — peça narrativa"
+        }
+      }
+    ]
+  },
+  {
+    "id": "act-final",
+    "number": "VI",
+    "title": "A Última Trilha",
+    "subtitle": "A Chave abre o fim — mas não escolhe o fim.",
+    "iconKey": "DoorOpen",
+    "textClass": "text-rift",
+    "chapters": [
+      {
+        "id": "ch9",
+        "number": "VI.1",
+        "title": "A Última Trilha",
+        "blurb": "Passar o Guardião do Limiar e despertar a Chave da Última Trilha.",
+        "questId": "ch9-last-trail",
+        "narrativeReward": {
+          "kind": "key_item",
+          "ref": "Chave da Última Trilha",
+          "label": "Chave da Última Trilha — item narrativo (FORA do Set)"
+        }
+      },
+      {
+        "id": "ch10",
+        "number": "VI.2",
+        "title": "A Última Escolha",
+        "blurb": "Alcançar a Sombra Entre Mundos no Arquivo Vazio e escolher como a Trilha termina.",
+        "questId": "ch10-true-name",
+        "narrativeReward": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "ch1-awakening",
+    "kind": "campaign",
+    "chapter": 1,
+    "title": "I — O Despertar do Errante",
+    "brief": "As Planícies dos Novatos sussurram o nome de um lobo cuja sombra é maior que sua matilha. Prove-se um caçador.",
+    "epilogue": "O Lobo Alfa caiu. Em seu último uivo, o vento do norte parou — e por um instante, todos os espíritos do bosque ouviram seu nome. O Errante deixou de ser apenas um nome.",
+    "requires": {
+      "level": 1,
+      "nexo": null,
+      "prerequisite": null,
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 5,
+      "monsterName": "Lobo Alfa",
+      "monsterId": "wolf-alpha",
+      "label": "Almas de Lobo"
+    },
+    "rewards": {
+      "xp": 200,
+      "gold": 300,
+      "aether": 5,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "+5 Éter de iniciação"
+    },
+    "sealColor": "emerald"
+  },
+  {
+    "id": "ch2-crystal-heart",
+    "kind": "campaign",
+    "chapter": 2,
+    "title": "II — O Coração de Cristal",
+    "brief": "Nas Cavernas Esquecidas, um Golem de Cristal protege uma memória soterrada. Quebre seu peito — e ouça a canção.",
+    "epilogue": "Ao desfazer o último cristal, mil canções esquecidas se ergueram do pó. Você guarda agora um eco da civilização que dormia sob a montanha.",
+    "requires": {
+      "level": 10,
+      "nexo": null,
+      "prerequisite": "ch1-awakening",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 3,
+      "monsterName": "Golem de Cristal",
+      "monsterId": "crystal-golem",
+      "label": "Golems destroçados"
+    },
+    "rewards": {
+      "xp": 800,
+      "gold": 1200,
+      "aether": 12,
+      "fragments": 10,
+      "itemName": null,
+      "bonusText": "+10 Fragmentos Arcanos"
+    },
+    "sealColor": "void"
+  },
+  {
+    "id": "ch3-magma-pact",
+    "kind": "campaign",
+    "chapter": 3,
+    "title": "III — O Pacto Magmático",
+    "brief": "Solari acende a Caldeira. O Drago Magmático testa quem ousa caminhar sobre as cinzas dos deuses.",
+    "epilogue": "O Drago caiu de joelhos sobre a lava endurecida. Solari, satisfeita, marcou seu ombro com uma fagulha eterna — visível apenas aos dignos.",
+    "requires": {
+      "level": 20,
+      "nexo": null,
+      "prerequisite": "ch2-crystal-heart",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 2,
+      "monsterName": "Drago Magmático",
+      "monsterId": "magma-dragon",
+      "label": "Dragos abatidos"
+    },
+    "rewards": {
+      "xp": 2000,
+      "gold": 3000,
+      "aether": 25,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "Marca da Fagulha — +25 Éter"
+    },
+    "sealColor": "blood"
+  },
+  {
+    "id": "ch4-time-eater",
+    "kind": "campaign",
+    "chapter": 4,
+    "title": "IV — A Hora Devorada",
+    "brief": "A Fenda Temporal pulsa. Apenas heróis que cruzaram o Nexo podem encarar quem devora versões.",
+    "epilogue": "Você venceu o Devorador do Tempo — e por um instante viveu mil vidas em paz. Cada uma esquecida, cada uma sua.",
+    "requires": {
+      "level": null,
+      "nexo": 1,
+      "prerequisite": "ch3-magma-pact",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 1,
+      "monsterName": "Devorador do Tempo",
+      "monsterId": "time-devourer",
+      "label": "Devorador derrotado"
+    },
+    "rewards": {
+      "xp": 5000,
+      "gold": 8000,
+      "aether": 60,
+      "fragments": null,
+      "itemName": "Eco do Tempo",
+      "bonusText": "Item lendário · Eco do Tempo"
+    },
+    "sealColor": "void"
+  },
+  {
+    "id": "ch5-throne",
+    "kind": "campaign",
+    "chapter": 5,
+    "title": "V — O Trono que Espera",
+    "brief": "Aethelgard se fundiu ao Trono. Reúna 50.000 de ouro como tributo aos Ancestrais antes do confronto final.",
+    "epilogue": "O Trono do Vazio aceitou seu tributo. As barreiras se abrem — Aethelgard ouvirá seu nome quando você cruzar o portão.",
+    "requires": {
+      "level": null,
+      "nexo": 2,
+      "prerequisite": "ch4-time-eater",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "earn_gold",
+      "target": 50000,
+      "monsterName": null,
+      "monsterId": null,
+      "label": "Tributo em ouro"
+    },
+    "rewards": {
+      "xp": 12000,
+      "gold": 0,
+      "aether": 120,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "+120 Éter Ancestral"
+    },
+    "sealColor": "gold"
+  },
+  {
+    "id": "ch6-archivist",
+    "kind": "campaign",
+    "chapter": 6,
+    "title": "VI — O Arquivista Sem Rosto",
+    "brief": "Os portões de Aethelgard se abrem. O Arquivista catalogou todos os nomes do mundo, menos o próprio. Rompa seus selos e liberte o que ele prendeu para nunca esquecer.",
+    "epilogue": "O último selo cedeu. O Arquivista não caiu morto — caiu lembrado, e por um instante recordou que também teve um nome. Da sua mão sem reflexo, você ergue a Lâmina do Errante: o fio que corta registros e liberta memórias presas.",
+    "requires": {
+      "level": 24,
+      "nexo": null,
+      "prerequisite": "ch5-throne",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 1,
+      "monsterName": "Arquivista Sem Rosto",
+      "monsterId": "faceless-archivist",
+      "label": "Arquivista derrotado"
+    },
+    "rewards": {
+      "xp": 9000,
+      "gold": 6000,
+      "aether": 80,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "Lâmina do Errante — 4ª peça do Set"
+    },
+    "sealColor": "void"
+  },
+  {
+    "id": "ch7-broken-oath",
+    "kind": "campaign",
+    "chapter": 7,
+    "title": "VII — O Juramento Partido",
+    "brief": "No Círculo dos Campeões, o pacto que as três Ordens partiram em quatro respostas ganha forma e exige a sua. Não basta vencê-lo — é preciso respondê-lo: Revelar, Selar, Dissolver ou Refazer.",
+    "epilogue": "O Juramento parou de sangrar pelas bordas. Da promessa respondida restou um anel partido em três linhas — ouro, violeta e azul —, que ainda aperta quando a mão fecha: o Anel do Errante, vínculo que sobrevive ao pacto quebrado.",
+    "requires": {
+      "level": 30,
+      "nexo": null,
+      "prerequisite": "ch6-archivist",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 1,
+      "monsterName": "O Juramento Partido",
+      "monsterId": "broken-oath",
+      "label": "Juramento respondido"
+    },
+    "rewards": {
+      "xp": 11000,
+      "gold": 7000,
+      "aether": 90,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "Anel do Errante — 4ª peça do Set"
+    },
+    "sealColor": "void"
+  },
+  {
+    "id": "ch8-nameless-saint",
+    "kind": "campaign",
+    "chapter": 8,
+    "title": "VIII — O Santo Sem Memória",
+    "brief": "No Panteão Silencioso, o Santo Sem Memória — Nymara esvaziada do Primeiro Nome — espera o Errante. Não para coroá-lo: para sentenciá-lo. Encare a prova e responda ao que um nome pesa.",
+    "epilogue": "Os seis altares mudos acenderam de uma vez. O Santo não caiu derrotado — caiu RESPONDIDO, e da sentença restou um arco quebrado de letras flutuando acima de você: a Coroa do Errante. Não é poder; é a obrigação de atender quando alguém, um dia, chamar o seu nome.",
+    "requires": {
+      "level": 39,
+      "nexo": null,
+      "prerequisite": "ch7-broken-oath",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 1,
+      "monsterName": "O Santo Sem Memória",
+      "monsterId": "nameless-saint",
+      "label": "Santo respondido"
+    },
+    "rewards": {
+      "xp": 14000,
+      "gold": 9000,
+      "aether": 110,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "Coroa do Errante — 5ª e última peça do Set"
+    },
+    "sealColor": "gold"
+  },
+  {
+    "id": "ch9-last-trail",
+    "kind": "campaign",
+    "chapter": 9,
+    "title": "IX — A Última Trilha",
+    "brief": "No limiar entre o mundo vivo e o Arquivo Vazio, o Guardião do Limiar só cede a quem reuniu os cinco ecos do próprio nome. Passe a porta sem nome e desperte a Chave da Última Trilha.",
+    "epilogue": "O Guardião se desfez como uma porta que enfim reconhece quem bate. Na sua mão, feita de ausência, repousa a Chave da Última Trilha — ela abre o fim, mas não escolhe o fim. Do outro lado, a Sombra espera, paciente. O Nome ainda não foi dito.",
+    "requires": {
+      "level": 42,
+      "nexo": null,
+      "prerequisite": "ch8-nameless-saint",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 1,
+      "monsterName": "O Guardião do Limiar",
+      "monsterId": "threshold-guardian",
+      "label": "Limiar atravessado"
+    },
+    "rewards": {
+      "xp": 18000,
+      "gold": 12000,
+      "aether": 140,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "Chave da Última Trilha — abre o fim (fora do Set Errante)"
+    },
+    "sealColor": "void"
+  },
+  {
+    "id": "ch10-true-name",
+    "kind": "campaign",
+    "chapter": 10,
+    "title": "X — A Última Escolha",
+    "brief": "Com a Chave em mãos, atravesse o limiar até o Arquivo Vazio — o coração da Sombra Entre Mundos. Ela não quer te matar: quer te completar. Alcance-a e escolha como a Última Trilha termina.",
+    "epilogue": "A Sombra não caiu — foi respondida. O que você decidiu diante dela passou a ser verdade do mundo, e o Nome Verdadeiro deixou de ser uma pergunta sem dono. A campanha do Errante se encerra aqui: não no fim da perda, mas na escolha de o que fazer com ela.",
+    "requires": {
+      "level": 43,
+      "nexo": null,
+      "prerequisite": "ch9-last-trail",
+      "itemName": null
+    },
+    "objective": {
+      "kind": "kill_monster",
+      "target": 1,
+      "monsterName": "A Sombra Entre Mundos",
+      "monsterId": "shadow-between-worlds",
+      "label": "Sombra alcançada"
+    },
+    "rewards": {
+      "xp": 25000,
+      "gold": 15000,
+      "aether": 200,
+      "fragments": null,
+      "itemName": null,
+      "bonusText": "Fim da campanha — a escolha é a recompensa"
+    },
+    "sealColor": "void"
+  }
+]

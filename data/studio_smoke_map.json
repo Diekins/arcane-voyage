@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio (STUDIO-TO-GODOT-SMOKE-1)",
+  "map": { "id": "smoke_clearing", "width": 1600, "height": 1100, "spawn": { "x": 300, "y": 560 }, "groundColor": "#3c6b34" },
+  "objects": [
+    { "id": "grass_1", "layer": "ground", "asset": "tilesets/plains/grass.png", "x": 0, "y": 0, "scale": 1, "z": -20, "ysort": false, "baseOffset": 0, "tile": true, "w": 1600, "h": 1100 },
+    { "id": "tree_1",  "layer": "props",  "asset": "tilesets/plains/props/tree.png", "x": 420, "y": 300, "scale": 1, "z": 0, "ysort": true, "baseOffset": 36 },
+    { "id": "rock_1",  "layer": "props",  "asset": "tilesets/plains/props/rock.png", "x": 1100, "y": 720, "scale": 1, "z": 0, "ysort": true, "baseOffset": 12 },
+    { "id": "bush_1",  "layer": "props",  "asset": "tilesets/plains/props/bush.png", "x": 760, "y": 880, "scale": 1, "z": -14, "ysort": false, "baseOffset": 0 },
+    { "id": "ghost_1", "layer": "props",  "asset": "tilesets/plains/props/ghost_prop.png", "x": 980, "y": 360, "scale": 1, "z": 0, "ysort": true, "baseOffset": 0 }
+  ],
+  "blockers": [
+    { "id": "blk_rock_1", "x": 1066, "y": 712, "w": 68, "h": 48 }
+  ],
+  "portals": [
+    { "id": "portal_cave", "x": 1480, "y": 560, "target": "cave", "title": "Entrada da Caverna", "asset": "tilesets/plains/props/cave.png" }
+  ],
+  "markers": [
+    { "id": "npc_elder", "kind": "npc", "x": 500, "y": 560, "npcId": "elder", "facing": "down" },
+    { "id": "svc_board", "kind": "service", "x": 620, "y": 480, "serviceId": "quest_board", "serviceKind": "quest_board" },
+    { "id": "spawn_wolf", "kind": "mob", "x": 1180, "y": 880, "mobId": "alpha_wolf", "count": 1, "radius": 180, "respawnSeconds": 6 }
+  ],
+  "mobs": [
+    { "mobId": "alpha_wolf", "name": "Lobo Alfa", "asset": "actors/bosses/alpha_wolf.png", "role": "boss", "level": 5, "hp": 600, "damageMin": 16, "damageMax": 24, "speed": 120, "aggroRange": 320, "attackRange": 135, "respawnSeconds": 6, "xpReward": 200, "goldMin": 50, "goldMax": 90, "lootTableId": "", "notes": "" }
+  ],
+  "loot": { "items": [], "tables": [] },
+  "npcs": [
+    { "npcId": "elder", "name": "Anciã Maelis", "asset": "actors/npcs/village/elder.png", "portrait": "", "role": "mentor", "defaultDialogue": ["Bem-vindo, Errante."], "tags": ["smoke"], "notes": "" }
+  ],
+  "services": [
+    { "serviceId": "quest_board", "serviceKind": "quest_board", "name": "Mural de Missões", "prompt": "[E] ler o mural", "dialogue": [], "config": "", "notes": "" }
+  ],
+  "assetBank": [
+    { "assetId": "boss_alpha_wolf", "name": "Lobo Alfa", "path": "actors/bosses/alpha_wolf.png", "type": "actor", "category": "boss", "status": "plugged", "tags": [], "frameW": 96, "frameH": 96, "frames": 6, "rows": 1, "directionMode": "side", "rowOrder": ["move"], "canFlip": true, "sideFacesLeft": true, "ysort": true, "baseOffset": 0, "defaultScale": 1, "collisionPreset": "feet", "notes": "lateral provisório — ideal 4dir" }
+  ],
+  "quests": []
+}

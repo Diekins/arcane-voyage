@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Arcane Voyage — Godot Client (Slice)"
+config/description="Vertical slice do Ato 1, dados carregados de res://data/canonical/*.json (EXPORT-1)."
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.6")
+; A14 §26/§50 — botão VOLTAR do Android NÃO encerra o app (UIBackStack fecha painel/modal antes).
+config/quit_on_go_back=false
+
+[autoload]
+
+DataLoader="*res://scripts/DataLoader.gd"
+GameState="*res://scripts/GameState.gd"
+TriggerDispatcher="*res://scripts/TriggerDispatcher.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+; A14 P0-A (§3.3) — 1280×720 vira o retângulo MÍNIMO garantido; o espaço extra sobra no eixo largo (sem tarja preta no celular).
+window/stretch/aspect="expand"
+; A14 §6 — landscape oficial (aceita landscape-left E landscape-right); portrait gameplay NÃO suportado.
+window/handheld/orientation="sensor_landscape"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+; A14 P0-B (§3.4) — Android roda o MESMO renderizador do PC (GLES3/Compatibility), não Vulkan Mobile: alcance a aparelho fraco, sem divergência silenciosa.
+renderer/rendering_method.mobile="gl_compatibility"

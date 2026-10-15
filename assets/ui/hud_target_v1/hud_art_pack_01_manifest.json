@@ -1,0 +1,2269 @@
+{
+  "pack_id": "HUD_ART_PACK_01",
+  "source_staging": "outputs/hud_art_pack_01",
+  "destination": "godot/assets/ui/hud_target_v1",
+  "contract": "godot/docs/CODEX_HUD_ART_PACK_01_CONTRACT.md",
+  "entries": [
+    {
+      "file": "action_bar/action_bar_bg.png",
+      "size": {
+        "w": 900,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/action_slot_empty.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/action_slot_filled.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/skill_slot_active.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/skill_slot_cooldown_overlay.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/skill_slot_hover.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/skill_slot_locked.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "action_bar/skill_slot_normal.png",
+      "size": {
+        "w": 92,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/badge_dot.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/boss.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/complete.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/elite.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/locked.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/new.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/normal.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/veteran.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "badges/warning.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/action_bar_center.png",
+      "size": {
+        "w": 900,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/action_bar_left.png",
+      "size": {
+        "w": 80,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/action_bar_right.png",
+      "size": {
+        "w": 80,
+        "h": 92
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/auto_off.png",
+      "size": {
+        "w": 160,
+        "h": 64
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/auto_on.png",
+      "size": {
+        "w": 160,
+        "h": 64
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/exit_hover.png",
+      "size": {
+        "w": 160,
+        "h": 64
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/exit_normal.png",
+      "size": {
+        "w": 160,
+        "h": 64
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/exit_pressed.png",
+      "size": {
+        "w": 160,
+        "h": 64
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/hud_top_frame_cap_left.png",
+      "size": {
+        "w": 36,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/hud_top_frame_cap_right.png",
+      "size": {
+        "w": 36,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/hud_top_frame_center.png",
+      "size": {
+        "w": 900,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/hud_top_frame_divider.png",
+      "size": {
+        "w": 12,
+        "h": 72
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/hud_top_frame_left.png",
+      "size": {
+        "w": 180,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/hud_top_frame_right.png",
+      "size": {
+        "w": 260,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/key_hint_frame.png",
+      "size": {
+        "w": 72,
+        "h": 72
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/keyboard_hint_frame.png",
+      "size": {
+        "w": 72,
+        "h": 72
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/minimap_frame.png",
+      "size": {
+        "w": 260,
+        "h": 260
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/objective_panel_frame.png",
+      "size": {
+        "w": 420,
+        "h": 150
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/player_medallion.png",
+      "size": {
+        "w": 180,
+        "h": 180
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/player_medallion_frame.png",
+      "size": {
+        "w": 180,
+        "h": 180
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/top_divider.png",
+      "size": {
+        "w": 12,
+        "h": 72
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/top_frame_cap_left.png",
+      "size": {
+        "w": 36,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/top_frame_cap_right.png",
+      "size": {
+        "w": 36,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/top_frame_center.png",
+      "size": {
+        "w": 900,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/top_frame_left.png",
+      "size": {
+        "w": 180,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "frames/top_frame_right.png",
+      "size": {
+        "w": 260,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/apex.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/auto.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/available.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/boss.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/complete.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/elite.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/exp.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/fragments.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/gold.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/hp.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_apex.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_elite.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_exp.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_fragments.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_gold.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_hp.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_items.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_kills.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_level.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_objective.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_power.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/icon_region.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/items.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/kills.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/level.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/locked.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/normal.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/objective.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/power.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/region.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/repeatable.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/targeted_hunt.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "icons/veteran.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "minimap/minimap_frame.png",
+      "size": {
+        "w": 260,
+        "h": 260
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "minimap/minimap_marker_boss.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "minimap/minimap_marker_player.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "minimap/minimap_marker_target.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "minimap/minimap_mask.png",
+      "size": {
+        "w": 128,
+        "h": 128
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "mockups/ARCANE_HUD_TARGET_V1_HUNT.png",
+      "size": {
+        "w": 1920,
+        "h": 1080
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "reference_only",
+      "provisional": true,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "mockups/ARCANE_HUD_TARGET_V1_MOCKUP.png",
+      "size": {
+        "w": 1920,
+        "h": 1080
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "reference_only",
+      "provisional": true,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "mockups/ARCANE_HUD_TARGET_V1_SYSTEMS.png",
+      "size": {
+        "w": 1920,
+        "h": 1080
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "reference_only",
+      "provisional": true,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/hunt.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/inventory.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/mastery.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/mission.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_button_hover.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_button_normal.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_button_pressed.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_button_selected.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_icon_hunt.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_icon_inventory.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_icon_mastery.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_icon_missions.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/nav_icon_systems.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/ribbon_bg.png",
+      "size": {
+        "w": 900,
+        "h": 84
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/ribbon_item_hover.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/ribbon_item_normal.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/ribbon_item_pressed.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/ribbon_item_selected.png",
+      "size": {
+        "w": 150,
+        "h": 74
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "navigation/systems.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "objective/objective_frame.png",
+      "size": {
+        "w": 420,
+        "h": 150
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "objective/objective_progress_bg.png",
+      "size": {
+        "w": 330,
+        "h": 24
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "objective/objective_progress_fill.png",
+      "size": {
+        "w": 330,
+        "h": 24
+      },
+      "stretchable": true,
+      "patch_margins": [
+        24,
+        20,
+        24,
+        20
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_bar_fill.png",
+      "size": {
+        "w": 220,
+        "h": 26
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_bar_frame.png",
+      "size": {
+        "w": 220,
+        "h": 26
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_orb.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_orb_fill.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_orb_fill_mask.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_orb_frame.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/hp_orb_glass.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "orbs/mana_orb_fill_mask.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "orbs/mana_orb_frame.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "orbs/mana_orb_glass.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "orbs/orb_right.png",
+      "size": {
+        "w": 256,
+        "h": 256
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "provisional_ui_asset",
+      "provisional": true,
+      "do_not_integrate_currently": true
+    },
+    {
+      "file": "panels/close_button_hover.png",
+      "size": {
+        "w": 64,
+        "h": 64
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/close_button_normal.png",
+      "size": {
+        "w": 64,
+        "h": 64
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/close_button_pressed.png",
+      "size": {
+        "w": 64,
+        "h": 64
+      },
+      "stretchable": false,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_close_button.png",
+      "size": {
+        "w": 64,
+        "h": 64
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_footer.png",
+      "size": {
+        "w": 600,
+        "h": 52
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_frame.png",
+      "size": {
+        "w": 600,
+        "h": 420
+      },
+      "stretchable": true,
+      "patch_margins": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_frame_large.png",
+      "size": {
+        "w": 900,
+        "h": 600
+      },
+      "stretchable": true,
+      "patch_margins": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_frame_medium.png",
+      "size": {
+        "w": 600,
+        "h": 420
+      },
+      "stretchable": true,
+      "patch_margins": [
+        28,
+        28,
+        28,
+        28
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_header.png",
+      "size": {
+        "w": 600,
+        "h": 72
+      },
+      "stretchable": true,
+      "patch_margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_tab_normal.png",
+      "size": {
+        "w": 180,
+        "h": 58
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/panel_tab_selected.png",
+      "size": {
+        "w": 180,
+        "h": 58
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/tab_normal.png",
+      "size": {
+        "w": 180,
+        "h": 58
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/tab_selected.png",
+      "size": {
+        "w": 180,
+        "h": 58
+      },
+      "stretchable": true,
+      "patch_margins": [
+        14,
+        10,
+        14,
+        10
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "panels/tooltip_frame.png",
+      "size": {
+        "w": 430,
+        "h": 180
+      },
+      "stretchable": true,
+      "patch_margins": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "tooltips/tooltip_arrow.png",
+      "size": {
+        "w": 48,
+        "h": 48
+      },
+      "stretchable": true,
+      "patch_margins": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    },
+    {
+      "file": "tooltips/tooltip_frame.png",
+      "size": {
+        "w": 430,
+        "h": 180
+      },
+      "stretchable": true,
+      "patch_margins": [
+        12,
+        12,
+        12,
+        12
+      ],
+      "role": "hud_art",
+      "provisional": false,
+      "do_not_integrate_currently": false
+    }
+  ]
+}

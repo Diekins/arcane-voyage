@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio (sample p/ MapLoader self-test)",
+  "map": { "id": "studio_sample", "width": 2400, "height": 1600, "spawn": { "x": 520, "y": 840 }, "groundColor": "#3c6b34" },
+  "objects": [
+    { "id": "grass_1", "layer": "ground", "asset": "tilesets/plains/grass.png", "x": 0, "y": 0, "scale": 1, "z": -20, "ysort": false, "baseOffset": 0, "tile": true, "w": 2400, "h": 1600 },
+    { "id": "tree_1", "layer": "props", "asset": "tilesets/plains/props/tree.png", "x": 320, "y": 360, "scale": 1, "z": 0, "ysort": true, "baseOffset": 36 },
+    { "id": "broken_1", "layer": "props", "asset": "tilesets/plains/does_not_exist.png", "x": 700, "y": 500, "scale": 1, "z": 0, "ysort": true, "baseOffset": 0 },
+    { "id": "external_1", "layer": "props", "asset": "user/outputs/raw_sprite.png", "x": 900, "y": 500, "scale": 1, "z": 0, "ysort": true, "baseOffset": 0 }
+  ],
+  "blockers": [
+    { "id": "blk_tree_1", "x": 296, "y": 364, "w": 48, "h": 38 },
+    { "id": "blk_rock_1", "x": 1000, "y": 700, "w": 68, "h": 48 }
+  ],
+  "portals": [
+    { "id": "portal_cave", "x": 2180, "y": 820, "target": "cave", "title": "Entrada da Caverna", "asset": "tilesets/plains/props/cave.png" }
+  ],
+  "markers": [
+    { "id": "npc_elder", "kind": "npc", "x": 760, "y": 560, "npcId": "elder", "name": "", "asset": null, "facing": "down" },
+    { "id": "npc_loose", "kind": "npc", "x": 980, "y": 720, "name": "Aldric (sem npcId)", "asset": "actors/npcs/aldric_vaelor.png", "dialogue": ["Você acordou, Errante."] },
+    { "id": "svc_board", "kind": "service", "x": 820, "y": 640, "serviceId": "quest_board", "serviceKind": "quest_board" },
+    { "id": "spawn_wolf", "kind": "mob", "x": 1480, "y": 1110, "mobId": "alpha_wolf", "count": 1, "radius": 200, "respawnSeconds": 6 }
+  ],
+  "mobs": [
+    { "mobId": "alpha_wolf", "name": "Lobo Alfa", "asset": "actors/bosses/alpha_wolf.png", "role": "boss", "level": 5, "hp": 600, "damageMin": 16, "damageMax": 24, "speed": 120, "aggroRange": 320, "attackRange": 135, "respawnSeconds": 6, "xpReward": 200, "goldMin": 50, "goldMax": 90, "lootTableId": "wolf_drops", "notes": "" }
+  ],
+  "loot": {
+    "items": [ { "itemId": "wolf_fang", "name": "Presa de Lobo", "type": "material", "rarity": "common", "icon": "", "stackable": true, "value": 4, "notes": "" } ],
+    "tables": [ { "tableId": "wolf_drops", "name": "Drops do Lobo", "entries": [ { "itemId": "wolf_fang", "chance": 60, "minQty": 1, "maxQty": 2 } ] } ]
+  },
+  "npcs": [
+    { "npcId": "elder", "name": "Anciã Maelis", "asset": "actors/npcs/village/elder.png", "portrait": "", "role": "mentor", "defaultDialogue": ["Bem-vindo à Vila dos Novatos, Errante."], "tags": ["example"], "notes": "" }
+  ],
+  "services": [
+    { "serviceId": "quest_board", "serviceKind": "quest_board", "name": "Mural de Missões", "prompt": "[E] ler o mural", "dialogue": [], "config": "", "notes": "" }
+  ],
+  "assetBank": [
+    { "assetId": "boss_alpha_wolf", "name": "Lobo Alfa", "path": "actors/bosses/alpha_wolf.png", "type": "actor", "category": "boss", "status": "plugged", "tags": [], "frameW": 96, "frameH": 96, "frames": 6, "rows": 1, "directionMode": "side", "rowOrder": ["move"], "canFlip": true, "sideFacesLeft": true, "ysort": true, "baseOffset": 0, "defaultScale": 1, "collisionPreset": "feet", "notes": "" }
+  ],
+  "quests": [
+    { "questId": "starter-awakening", "title": "Despertar nos Novatos", "status": "example", "levelRecommended": 1, "giverNpcId": "elder", "startTrigger": "npc_talked:elder",
+      "steps": [
+        { "stepId": "s1", "title": "Falar com a Anciã", "type": "talk_npc", "targetId": "elder", "count": 1, "dialogue": "", "hint": "", "completionTrigger": "" },
+        { "stepId": "s2", "title": "Derrotar o Lobo Alfa", "type": "defeat_mob", "targetId": "alpha_wolf", "count": 1, "dialogue": "", "hint": "", "completionTrigger": "" }
+      ],
+      "rewards": { "xp": 200, "gold": 50, "items": [ { "itemId": "wolf_fang", "qty": 2 } ], "unlockFlags": ["ch1_done"] }, "flags": [], "notes": "" }
+  ]
+}

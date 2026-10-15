@@ -1,0 +1,104 @@
+[
+  {
+    "id": "aldric-vaelor",
+    "displayName": "Mestre Aldric",
+    "imageUrl": "/assets/npcs/aldric-vaelor.png",
+    "futureAssetPath": "npcs/aldric-vaelor.png",
+    "accentClass": "text-gold",
+    "aliases": [
+      "mestre aldric",
+      "aldric",
+      "aldric vaelor"
+    ]
+  },
+  {
+    "id": "elyra-namaris",
+    "displayName": "Elyra Namaris",
+    "imageUrl": "/assets/npcs/elyra-namaris.png",
+    "futureAssetPath": "npcs/elyra-namaris.png",
+    "accentClass": "text-emerald-300",
+    "aliases": [
+      "elyra namaris",
+      "elyra"
+    ]
+  },
+  {
+    "id": "sera",
+    "displayName": "Sera, a Menina Que Lembra",
+    "imageUrl": "/assets/npcs/sera.png",
+    "futureAssetPath": "npcs/sera.png",
+    "accentClass": "text-emerald-200",
+    "aliases": [
+      "sera"
+    ]
+  },
+  {
+    "id": "shadow-between-worlds",
+    "displayName": "Sombra Entre Mundos",
+    "imageUrl": "/assets/npcs/shadow-between-worlds.png",
+    "futureAssetPath": "npcs/shadow-between-worlds.png",
+    "accentClass": "text-indigo-300",
+    "aliases": [
+      "sombra entre mundos"
+    ]
+  },
+  {
+    "id": "archivist-faceless",
+    "displayName": "O Arquivista Sem Rosto",
+    "imageUrl": "/assets/npcs/archivist-faceless.png",
+    "futureAssetPath": "npcs/archivist-faceless.png",
+    "accentClass": "text-indigo-300",
+    "aliases": [
+      "o arquivista sem rosto",
+      "arquivista sem rosto",
+      "arquivista"
+    ]
+  },
+  {
+    "id": "nymara",
+    "displayName": "Nymara, o Primeiro Nome",
+    "imageUrl": "/assets/npcs/nymara.png",
+    "futureAssetPath": "npcs/nymara.png",
+    "accentClass": "text-gold",
+    "aliases": [
+      "nymara, o primeiro nome",
+      "nymara",
+      "o santo sem memoria",
+      "santo sem memoria"
+    ]
+  },
+  {
+    "id": "caldran-veyr",
+    "displayName": "Ser Caldran Veyr",
+    "imageUrl": "/assets/npcs/caldran-veyr.png",
+    "futureAssetPath": "npcs/caldran-veyr.png",
+    "accentClass": "text-amber-300",
+    "aliases": [
+      "ser caldran veyr",
+      "caldran veyr",
+      "caldran"
+    ]
+  },
+  {
+    "id": "maelis-noctara",
+    "displayName": "Maelis Noctara",
+    "imageUrl": "/assets/npcs/maelis-noctara.png",
+    "futureAssetPath": "npcs/maelis-noctara.png",
+    "accentClass": "text-violet-300",
+    "aliases": [
+      "maelis noctara",
+      "maelis"
+    ]
+  },
+  {
+    "id": "naira-thalor",
+    "displayName": "Naira Thalor",
+    "imageUrl": "/assets/npcs/naira-thalor.png",
+    "futureAssetPath": "npcs/naira-thalor.png",
+    "accentClass": "text-teal-300",
+    "aliases": [
+      "naira thalor",
+      "naira"
+    ]
+  }
+]

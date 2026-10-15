@@ -1,0 +1,551 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "generated_from": "tools/map-editor/maps/_build_khet_caravan_camp_ground.cjs",
+  "round_trip_of": "godot-runtime",
+  "overlay_of": "khet_caravan_camp",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "khet_caravan_camp",
+    "display_name": "Acampamento de Caravana",
+    "client_side": true,
+    "size": [
+      1500,
+      1000
+    ],
+    "spawn": [
+      250,
+      520
+    ],
+    "ground": {
+      "base_color": "#c9a86a",
+      "path_color_rgba": [
+        0.72,
+        0.58,
+        0.36,
+        0.42
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 500,
+        "height": 150
+      },
+      "tiles": {
+        "tile_size": 96,
+        "base_key": "tilesets/desert/ground/desert_sand_base_96.png",
+        "layers": [
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_1_96.png",
+            "cells": [
+              "1,1",
+              "4,1",
+              "9,2",
+              "12,1",
+              "2,8",
+              "13,9",
+              "1,9",
+              "15,7"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_2_96.png",
+            "cells": [
+              "3,2",
+              "10,2",
+              "14,8",
+              "2,3",
+              "12,3",
+              "6,9",
+              "0,6",
+              "15,2"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_pebbles_96.png",
+            "cells": [
+              "1,7",
+              "9,9",
+              "4,9",
+              "0,2",
+              "13,1",
+              "15,9"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_hardpack_road_96.png",
+            "cells": [
+              "2,5",
+              "3,5",
+              "4,5",
+              "5,5",
+              "6,5",
+              "7,5",
+              "8,5",
+              "9,5",
+              "10,5",
+              "11,5",
+              "12,5",
+              "13,5",
+              "14,5",
+              "14,3",
+              "14,4",
+              "7,6",
+              "7,7",
+              "7,8",
+              "7,9"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_n_96.png",
+            "cells": [
+              "3,4",
+              "4,4",
+              "5,4",
+              "6,4",
+              "7,4",
+              "8,4",
+              "9,4",
+              "10,4",
+              "11,4",
+              "12,4",
+              "13,4"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_s_96.png",
+            "cells": [
+              "3,6",
+              "4,6",
+              "5,6",
+              "6,6",
+              "8,6",
+              "9,6",
+              "10,6",
+              "11,6",
+              "12,6",
+              "13,6"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_plaza_adobe_96.png",
+            "cells": [
+              "10,7",
+              "10,8",
+              "11,7",
+              "11,8"
+            ]
+          }
+        ]
+      }
+    },
+    "access": {
+      "gate_flag": "khet_sar_sentinel_defeated",
+      "from_region": "khet_sar_sands",
+      "from_exit": "khet_deep_dunes",
+      "notes": [
+        "entrada via future_exit 'Dunas Profundas' em Khet-Sar (gated pela flag)"
+      ]
+    },
+    "portals": [
+      {
+        "id": "khet_camp_to_khet",
+        "position": [
+          130,
+          540
+        ],
+        "target_region": "khet_sar_sands",
+        "target_spawn": [
+          360,
+          250
+        ],
+        "gate_flag": null,
+        "draw_door": true,
+        "label": "Trilha → Areais de Khet-Sar"
+      },
+      {
+        "id": "camp_to_oasis",
+        "position": [
+          700,
+          920
+        ],
+        "target_region": "khet_oasis",
+        "target_spawn": [
+          240,
+          460
+        ],
+        "gate_flag": "caravan_camp_reached",
+        "draw_door": true,
+        "label": "Trilha Sul → Oásis de Khet-Sar",
+        "notes": [
+          "target_spawn = spawn padrão do oásis (OASIS_SPAWN); gate trivial (sempre setada no camp)"
+        ]
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "khet_city_gate",
+        "position": [
+          1380,
+          300
+        ],
+        "label": "Portões da Cidade",
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "só texto; gancho da Cidade do Deserto (Opção C); NÃO transporta ainda"
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "yalla",
+        "name": "Mercadora Yalla",
+        "position": [
+          900,
+          460
+        ],
+        "sprite_key": "npcs/village/merchant",
+        "service": "merchant",
+        "wander": false,
+        "runtime_only_fields": [
+          "painel de loja compartilhado; título diegético 'Balcão da Yalla' por região"
+        ],
+        "notes": [
+          "sprite = placeholder medieval (merchant)"
+        ]
+      },
+      {
+        "id": "kesh",
+        "name": "Ferreiro Kesh",
+        "position": [
+          1180,
+          470
+        ],
+        "sprite_key": "npcs/village/blacksmith",
+        "service": "blacksmith",
+        "wander": false,
+        "z_off": 24,
+        "runtime_only_fields": [
+          "painel de forja compartilhado; título 'Forja do Kesh'"
+        ],
+        "notes": [
+          "sprite = placeholder medieval (blacksmith); z_off +24 (na frente da tenda)"
+        ]
+      },
+      {
+        "id": "imir",
+        "name": "Guia Imir",
+        "position": [
+          520,
+          620
+        ],
+        "sprite_key": "npcs/village/elder",
+        "service": null,
+        "wander": true,
+        "notes": [
+          "lore; sprite placeholder medieval"
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "camp_healer",
+        "kind": "healer",
+        "position": [
+          1060,
+          760
+        ],
+        "label": "[E] descansar à fogueira",
+        "runtime_only_fields": [
+          "restaura HP + mana; diálogo 'Braseiro dos Viajantes'"
+        ],
+        "notes": [
+          "âncora no prop fogueira (1060,720)"
+        ]
+      }
+    ],
+    "mobs": [],
+    "chests": [],
+    "props": [
+      {
+        "type": "procedural",
+        "procedural_type": "campfire",
+        "position": [
+          1060,
+          720
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "tent",
+        "position": [
+          900,
+          340
+        ],
+        "params": {
+          "w": 150,
+          "h": 120,
+          "cloth": "#c98b54"
+        },
+        "z_hint": "ysort",
+        "blocker": "base"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "tent",
+        "position": [
+          1180,
+          360
+        ],
+        "params": {
+          "w": 130,
+          "h": 108,
+          "cloth": "#b9743f"
+        },
+        "z_hint": "ysort",
+        "blocker": "base"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "tent",
+        "position": [
+          520,
+          360
+        ],
+        "params": {
+          "w": 132,
+          "h": 110,
+          "cloth": "#c2a06a"
+        },
+        "z_hint": "ysort",
+        "blocker": "base"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "wagon",
+        "position": [
+          360,
+          760
+        ],
+        "z_hint": "ysort",
+        "blocker": "body"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "wagon",
+        "position": [
+          1280,
+          760
+        ],
+        "z_hint": "ysort",
+        "blocker": "body"
+      }
+    ],
+    "scatter": {
+      "generator": "_scatter_desert_decor",
+      "solids_norm": [
+        [
+          0.087,
+          0.17
+        ],
+        [
+          0.96,
+          0.15
+        ],
+        [
+          0.1,
+          0.9
+        ],
+        [
+          0.95,
+          0.9
+        ],
+        [
+          0.07,
+          0.4
+        ]
+      ],
+      "softs_norm": [
+        [
+          0.47,
+          0.18
+        ],
+        [
+          0.505,
+          0.95
+        ],
+        [
+          0.96,
+          0.56
+        ],
+        [
+          0.3,
+          0.93
+        ],
+        [
+          0.72,
+          0.93
+        ]
+      ],
+      "notes": [
+        "solids = cactus/dry_rock alternados (blocker pequeno)",
+        "softs = bones/dry_tuft/sand_patch (sem blocker)"
+      ]
+    },
+    "interactions": [],
+    "runtime_only": [
+      "marco caravan_camp_reached (popup 1×, SEM recompensa material)",
+      "identidade diegética de loja/forja por região (Balcão da Yalla / Forja do Kesh)",
+      "healer restaura HP + mana (diálogo 'Braseiro dos Viajantes')",
+      "tendas/carroças/fogueira são PROCEDURAIS (placeholders no editor até haver arte)"
+    ],
+    "notes": [
+      "região client-side (fora de regions.json); nome via _region_display_name",
+      "NPCs usam sprite medieval da Vila (dívida visual; reskin com Lote 1 de arte do deserto)"
+    ],
+    "blockers": [
+      {
+        "from": "tent",
+        "pos": [
+          900,
+          340
+        ],
+        "rect": [
+          858.75,
+          304,
+          82.5,
+          36
+        ]
+      },
+      {
+        "from": "tent",
+        "pos": [
+          1180,
+          360
+        ],
+        "rect": [
+          1144.25,
+          327.6,
+          71.5,
+          32.4
+        ]
+      },
+      {
+        "from": "tent",
+        "pos": [
+          520,
+          360
+        ],
+        "rect": [
+          483.7,
+          327,
+          72.6,
+          33
+        ]
+      },
+      {
+        "from": "wagon",
+        "pos": [
+          360,
+          760
+        ],
+        "rect": [
+          312,
+          734,
+          96,
+          30
+        ]
+      },
+      {
+        "from": "wagon",
+        "pos": [
+          1280,
+          760
+        ],
+        "rect": [
+          1232,
+          734,
+          96,
+          30
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          130.5,
+          170
+        ],
+        "rect": [
+          123.95,
+          162,
+          13.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1440,
+          150
+        ],
+        "rect": [
+          1416,
+          138,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          150,
+          900
+        ],
+        "rect": [
+          140.95,
+          892,
+          18.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1425,
+          900
+        ],
+        "rect": [
+          1401,
+          888,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          105,
+          400
+        ],
+        "rect": [
+          97.2,
+          392,
+          15.6,
+          16
+        ]
+      }
+    ]
+  }
+}

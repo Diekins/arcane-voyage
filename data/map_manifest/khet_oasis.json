@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "khet_oasis",
+    "display_name": "Oásis de Khet-Sar",
+    "client_side": true,
+    "size": [
+      1400,
+      900
+    ],
+    "spawn": [
+      240,
+      460
+    ],
+    "ground": {
+      "base_color": "#cdb083",
+      "path_color_rgba": [
+        0.66,
+        0.56,
+        0.36,
+        0.4
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 450,
+        "height": 150
+      }
+    },
+    "access": {
+      "gate_flag": "caravan_camp_reached",
+      "from_region": "khet_caravan_camp",
+      "from_exit": "camp_to_oasis"
+    },
+    "portals": [
+      {
+        "id": "oasis_to_camp",
+        "position": [
+          130,
+          460
+        ],
+        "target_region": "khet_caravan_camp",
+        "target_spawn": [
+          300,
+          300
+        ],
+        "gate_flag": null,
+        "draw_door": true,
+        "label": "Trilha → Acampamento de Caravana"
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "khet_oasis_city_road",
+        "position": [
+          1280,
+          460
+        ],
+        "label": "Estrada para a Cidade",
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "só texto; gancho da Cidade do Deserto",
+          "NÃO é o khet_city_gate do Acampamento"
+        ]
+      },
+      {
+        "id": "khet_oasis_salt_altar",
+        "position": [
+          700,
+          250
+        ],
+        "label": "Altar de Sal",
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "texto muda por flag khet_oasis_salt_echo_cleansed",
+          "ponto do mini-evento Eco do Sal"
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "nara",
+        "name": "Peregrina Nara",
+        "position": [
+          870,
+          660
+        ],
+        "sprite_key": "npcs/village/elder",
+        "service": null,
+        "wander": true,
+        "runtime_only_fields": [
+          "falas condicionais à flag khet_oasis_salt_echo_cleansed"
+        ],
+        "notes": [
+          "sprite = placeholder medieval da Vila (dívida visual)"
+        ]
+      }
+    ],
+    "services": [],
+    "mobs": [
+      {
+        "id": "khet_oasis_khet_oasis_salt_echo_1",
+        "name": "Eco do Sal",
+        "visual": "crawling_shade",
+        "hp": 170,
+        "aggro": 360,
+        "respawn": 999999,
+        "spawn_condition": "!flag:khet_oasis_salt_echo_cleansed",
+        "runtime_only": true,
+        "notes": [
+          "focal do mini-evento; morte → flag + recompensa via _on_oasis_salt_echo_defeated"
+        ],
+        "mob_id": "khet_oasis_salt_echo",
+        "position": [
+          640,
+          175
+        ]
+      },
+      {
+        "id": "khet_oasis_khet_oasis_dune_skitter_1",
+        "name": "Escaravelho de Sal",
+        "visual": "dune_skitter",
+        "hp": 62,
+        "aggro": 360,
+        "respawn": 999999,
+        "spawn_condition": "!flag:khet_oasis_salt_echo_cleansed",
+        "runtime_only": true,
+        "notes": [
+          "escolta; reaparece no rebuild enquanto não-limpo; some após a flag"
+        ],
+        "mob_id": "khet_oasis_dune_skitter",
+        "position": [
+          820,
+          185
+        ]
+      }
+    ],
+    "chests": [],
+    "props": [
+      {
+        "type": "procedural",
+        "procedural_type": "water_ellipse",
+        "position": [
+          700,
+          480
+        ],
+        "params": {
+          "rx": 190,
+          "ry": 110
+        },
+        "z_hint": -17,
+        "blocker": null,
+        "notes": [
+          "lago raso ATRAVESSÁVEL (sem blocker)"
+        ]
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "palm",
+        "position": [
+          470,
+          360
+        ],
+        "params": {
+          "h": 150
+        },
+        "z_hint": "ysort",
+        "blocker": "trunk"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "palm",
+        "position": [
+          940,
+          360
+        ],
+        "params": {
+          "h": 168
+        },
+        "z_hint": "ysort",
+        "blocker": "trunk"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "palm",
+        "position": [
+          520,
+          640
+        ],
+        "params": {
+          "h": 138
+        },
+        "z_hint": "ysort",
+        "blocker": "trunk"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "palm",
+        "position": [
+          560,
+          300
+        ],
+        "params": {
+          "h": 120
+        },
+        "z_hint": "ysort",
+        "blocker": "trunk"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "salt_altar",
+        "position": [
+          700,
+          250
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "notes": [
+          "= future_exit khet_oasis_salt_altar (interação [E])"
+        ]
+      }
+    ],
+    "scatter": {
+      "generator": "_scatter_desert_decor",
+      "solids_norm": [
+        [
+          0.08,
+          0.16
+        ],
+        [
+          0.92,
+          0.16
+        ],
+        [
+          0.1,
+          0.86
+        ],
+        [
+          0.9,
+          0.86
+        ]
+      ],
+      "softs_norm": [
+        [
+          0.5,
+          0.09
+        ],
+        [
+          0.06,
+          0.5
+        ],
+        [
+          0.94,
+          0.5
+        ],
+        [
+          0.3,
+          0.92
+        ]
+      ],
+      "notes": [
+        "solids = cactus/dry_rock alternados (blocker pequeno)",
+        "softs = bones/dry_tuft/sand_patch (sem blocker)"
+      ]
+    },
+    "interactions": [
+      {
+        "id": "salt_echo_event",
+        "trigger": "kill:khet_oasis_salt_echo",
+        "effect": "set_flag:khet_oasis_salt_echo_cleansed + reward(45xp,25ouro,1 Pedra Rúnica)",
+        "runtime_only": true,
+        "notes": [
+          "recompensa 1× idempotente; após limpo, mobs do oásis somem (→[])"
+        ]
+      }
+    ],
+    "runtime_only": [
+      "recompensa de chegada (flag khet_oasis_reached: +35XP/+20ouro/+1 Poção de Mana, 1×)",
+      "evento Eco do Sal (mobs condicionais por flag + cleanse + texto dinâmico do altar/Nara)",
+      "hook _on_oasis_salt_echo_defeated",
+      "lago/palmeiras/altar são PROCEDURAIS (placeholders no editor até haver arte)"
+    ],
+    "notes": [
+      "região client-side (fora de regions.json); nome via _region_display_name",
+      "Cidade do Deserto continua apenas future_exit/texto (khet_oasis_city_road NÃO transporta)"
+    ],
+    "blockers": [
+      {
+        "from": "palm",
+        "pos": [
+          470,
+          360
+        ],
+        "rect": [
+          456.5,
+          354.0,
+          27.0,
+          14.0
+        ]
+      },
+      {
+        "from": "palm",
+        "pos": [
+          940,
+          360
+        ],
+        "rect": [
+          924.88,
+          354.0,
+          30.24,
+          14.0
+        ]
+      },
+      {
+        "from": "palm",
+        "pos": [
+          520,
+          640
+        ],
+        "rect": [
+          507.58,
+          634.0,
+          24.84,
+          14.0
+        ]
+      },
+      {
+        "from": "palm",
+        "pos": [
+          560,
+          300
+        ],
+        "rect": [
+          549.2,
+          294.0,
+          21.6,
+          14.0
+        ]
+      },
+      {
+        "from": "salt_altar",
+        "pos": [
+          700,
+          250
+        ],
+        "rect": [
+          674.0,
+          238.0,
+          52.0,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          112.0,
+          144.0
+        ],
+        "rect": [
+          105.45,
+          136.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1288.0,
+          144.0
+        ],
+        "rect": [
+          1264.0,
+          132.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          140.0,
+          774.0
+        ],
+        "rect": [
+          130.95,
+          766.0,
+          18.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1260.0,
+          774.0
+        ],
+        "rect": [
+          1236.0,
+          762.0,
+          48.0,
+          24.0
+        ]
+      }
+    ]
+  }
+}

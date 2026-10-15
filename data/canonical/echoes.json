@@ -1,0 +1,210 @@
+{
+  "catalog": [
+    {
+      "id": "preservation",
+      "label": "Eco da Preservação",
+      "shortDescription": "Guardar, proteger, lembrar e impedir que algo desapareça.",
+      "feedbackText": "O Eco da Preservação brilhou por um instante."
+    },
+    {
+      "id": "liberation",
+      "label": "Eco da Libertação",
+      "shortDescription": "Soltar, encerrar ciclos e permitir descanso.",
+      "feedbackText": "O Eco da Libertação brilhou por um instante."
+    },
+    {
+      "id": "revelation",
+      "label": "Eco da Revelação",
+      "shortDescription": "Verdade, luz, confronto e exposição do que tentaram apagar.",
+      "feedbackText": "O Eco da Revelação brilhou por um instante."
+    },
+    {
+      "id": "veil",
+      "label": "Eco do Véu",
+      "shortDescription": "Silêncio, segredo, proteção e contenção por compaixão.",
+      "feedbackText": "O Eco do Véu se assentou em silêncio."
+    },
+    {
+      "id": "flow",
+      "label": "Eco do Fluxo",
+      "shortDescription": "Transformação, adaptação e terceira via entre extremos.",
+      "feedbackText": "O Eco do Fluxo correu sem parar."
+    },
+    {
+      "id": "new_name",
+      "label": "Eco do Nome Novo",
+      "shortDescription": "Identidade escolhida, renascimento e autoria do próprio caminho.",
+      "feedbackText": "Algo no seu nome mudou de peso."
+    }
+  ],
+  "choiceMap": {
+    "intro-mentor": {
+      "accept": [
+        {
+          "echo": "flow"
+        }
+      ],
+      "doubt": [
+        {
+          "echo": "new_name"
+        }
+      ]
+    },
+    "guardian-felled": {
+      "trophy": [
+        {
+          "echo": "preservation"
+        }
+      ],
+      "honor": [
+        {
+          "echo": "liberation"
+        }
+      ]
+    },
+    "golem-felled": {
+      "claim": [
+        {
+          "echo": "preservation"
+        }
+      ],
+      "listen": [
+        {
+          "echo": "flow"
+        }
+      ]
+    },
+    "drago-felled": {
+      "face": [
+        {
+          "echo": "revelation"
+        }
+      ],
+      "remember": [
+        {
+          "echo": "preservation"
+        }
+      ]
+    },
+    "archivist-felled": {
+      "preserve": [
+        {
+          "echo": "preservation"
+        }
+      ],
+      "release": [
+        {
+          "echo": "liberation"
+        }
+      ]
+    },
+    "oath-choice": {
+      "reveal": [
+        {
+          "echo": "revelation"
+        }
+      ],
+      "seal": [
+        {
+          "echo": "veil"
+        }
+      ],
+      "dissolve": [
+        {
+          "echo": "flow"
+        }
+      ],
+      "reforge": [
+        {
+          "echo": "new_name"
+        }
+      ]
+    },
+    "oath-parted-felled": {
+      "reveal": [
+        {
+          "echo": "revelation",
+          "weight": 2
+        }
+      ],
+      "seal": [
+        {
+          "echo": "veil",
+          "weight": 2
+        }
+      ],
+      "dissolve": [
+        {
+          "echo": "flow",
+          "weight": 2
+        }
+      ],
+      "reforge": [
+        {
+          "echo": "new_name",
+          "weight": 2
+        }
+      ]
+    },
+    "saint-felled": {
+      "accept": [
+        {
+          "echo": "preservation",
+          "weight": 2
+        }
+      ],
+      "refuse": [
+        {
+          "echo": "liberation",
+          "weight": 2
+        }
+      ],
+      "name_self": [
+        {
+          "echo": "new_name",
+          "weight": 2
+        }
+      ]
+    },
+    "shadow-final": {
+      "cycle": [
+        {
+          "echo": "veil",
+          "weight": 3
+        }
+      ],
+      "rupture": [
+        {
+          "echo": "liberation",
+          "weight": 3
+        }
+      ],
+      "preservation": [
+        {
+          "echo": "preservation",
+          "weight": 3
+        }
+      ],
+      "new_name": [
+        {
+          "echo": "new_name",
+          "weight": 3
+        }
+      ],
+      "last_trail": [
+        {
+          "echo": "flow",
+          "weight": 3
+        }
+      ]
+    }
+  },
+  "toneMap": {
+    "preserve": "preservation",
+    "release": "liberation",
+    "reveal": "revelation",
+    "veil": "veil",
+    "flow": "flow",
+    "new_name": "new_name"
+  }
+}

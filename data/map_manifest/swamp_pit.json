@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "swamp_pit",
+    "display_name": "Poço do Ferro-Velho",
+    "client_side": true,
+    "size": [
+      1000,
+      800
+    ],
+    "spawn": [
+      290,
+      400
+    ],
+    "ground": {
+      "base_color": "#181d1a",
+      "path_color_rgba": [
+        0.3,
+        0.27,
+        0.2,
+        0.3
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "swamp",
+      "from_exit": "swamp_to_pit",
+      "notes": [
+        "subárea: só pelo buraco do Pântano"
+      ]
+    },
+    "portals": [
+      {
+        "id": "pit_to_swamp",
+        "label": "Escada → subir ao Pântano",
+        "position": [
+          170,
+          400
+        ],
+        "target_region": "swamp",
+        "target_spawn": [
+          1520,
+          980
+        ],
+        "gate_flag": null,
+        "draw_door": true
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "scrap_colossus",
+        "name": "Coloso de Ferro-Velho",
+        "visual": "scrap_colossus",
+        "hp": 170,
+        "aggro": 340,
+        "respawn": 20,
+        "elite": true,
+        "id": "swamp_pit_scrap_colossus_1",
+        "position": [
+          550,
+          440
+        ]
+      },
+      {
+        "mob_id": "iron_leech",
+        "name": "Sanguessuga de Ferro",
+        "visual": "grove_spider",
+        "hp": 38,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "swamp_pit_iron_leech_1",
+        "position": [
+          320,
+          300
+        ]
+      },
+      {
+        "mob_id": "iron_leech",
+        "name": "Sanguessuga de Ferro",
+        "visual": "grove_spider",
+        "hp": 38,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "swamp_pit_iron_leech_2",
+        "position": [
+          340,
+          560
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "pit_colossus_hoard",
+        "position": [
+          820,
+          440
+        ],
+        "loot": {
+          "gold": 45,
+          "materials": {
+            "Núcleo Trincado": 1,
+            "Limo de Ferro": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "swamp_pit_rock_1",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          120.0,
+          160.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_pit_rock_2",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          880.0,
+          160.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_pit_rock_3",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          120.0,
+          656.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_pit_rock_4",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          880.0,
+          656.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_pit_rock_5",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          500.0,
+          96.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_pit_rock_6",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          500.0,
+          720.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      }
+    ],
+    "blockers": [
+      {
+        "from": "swamp_pit_rock_1",
+        "rect": [
+          92.0,
+          146.0,
+          56.0,
+          28
+        ]
+      },
+      {
+        "from": "swamp_pit_rock_2",
+        "rect": [
+          852.0,
+          146.0,
+          56.0,
+          28
+        ]
+      },
+      {
+        "from": "swamp_pit_rock_3",
+        "rect": [
+          92.0,
+          642.0,
+          56.0,
+          28
+        ]
+      },
+      {
+        "from": "swamp_pit_rock_4",
+        "rect": [
+          852.0,
+          642.0,
+          56.0,
+          28
+        ]
+      },
+      {
+        "from": "swamp_pit_rock_5",
+        "rect": [
+          472.0,
+          82.0,
+          56.0,
+          28
+        ]
+      },
+      {
+        "from": "swamp_pit_rock_6",
+        "rect": [
+          472.0,
+          706.0,
+          56.0,
+          28
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "elite Coloso de Ferro-Velho (mob elite, NÃO boss-system; respawn 20s)",
+      "props/blockers = _scatter_pit_decor (não extraídos)"
+    ],
+    "notes": [
+      "subárea client-side (arena do Coloso)"
+    ]
+  }
+}

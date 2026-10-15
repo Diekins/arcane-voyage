@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "ashen_grove",
+    "display_name": "Bosque de Cinza",
+    "client_side": true,
+    "size": [
+      2200,
+      1300
+    ],
+    "spawn": [
+      700,
+      1120
+    ],
+    "ground": {
+      "base_color": "#23282a",
+      "path_color_rgba": [
+        0.4,
+        0.42,
+        0.38,
+        0.3
+      ],
+      "notes": [
+        "chão pintado (ground_painted) — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "starter_village",
+      "from_exit": "village_to_north"
+    },
+    "portals": [
+      {
+        "id": "north_to_village",
+        "label": "Trilha → Vila dos Novatos",
+        "position": [
+          700,
+          1200
+        ],
+        "target_region": "starter_village",
+        "target_spawn": [
+          1100,
+          280
+        ],
+        "gate_flag": null,
+        "draw_door": true
+      },
+      {
+        "id": "grove_north_seal",
+        "label": "Raízes Negras → Coração do Bosque",
+        "position": [
+          1100,
+          250
+        ],
+        "target_region": "deep_grove",
+        "target_spawn": [
+          900,
+          1090
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "ash_wolf",
+        "name": "Lobo de Cinza",
+        "visual": "ash_wolf",
+        "hp": 45,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "ashen_grove_ash_wolf_1",
+        "position": [
+          700,
+          500
+        ]
+      },
+      {
+        "mob_id": "ash_wolf",
+        "name": "Lobo de Cinza",
+        "visual": "ash_wolf",
+        "hp": 45,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "ashen_grove_ash_wolf_2",
+        "position": [
+          1000,
+          760
+        ]
+      },
+      {
+        "mob_id": "ash_wolf",
+        "name": "Lobo de Cinza",
+        "visual": "ash_wolf",
+        "hp": 45,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "ashen_grove_ash_wolf_3",
+        "position": [
+          520,
+          820
+        ]
+      },
+      {
+        "mob_id": "veil_spider",
+        "name": "Aranha Veladora",
+        "visual": "veil_spider",
+        "hp": 50,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "ashen_grove_veil_spider_1",
+        "position": [
+          1450,
+          520
+        ]
+      },
+      {
+        "mob_id": "veil_spider",
+        "name": "Aranha Veladora",
+        "visual": "veil_spider",
+        "hp": 50,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "ashen_grove_veil_spider_2",
+        "position": [
+          1650,
+          800
+        ]
+      },
+      {
+        "mob_id": "veil_spider",
+        "name": "Aranha Veladora",
+        "visual": "veil_spider",
+        "hp": 50,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "ashen_grove_veil_spider_3",
+        "position": [
+          1300,
+          900
+        ]
+      },
+      {
+        "mob_id": "moss_warden",
+        "name": "Guardião de Musgo",
+        "visual": "moss_warden",
+        "hp": 140,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "ashen_grove_moss_warden_1",
+        "position": [
+          1100,
+          560
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "grove_hollow_cache",
+        "position": [
+          350,
+          400
+        ],
+        "loot": {
+          "gold": 35,
+          "materials": {
+            "Cinza Arcana": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      },
+      {
+        "id": "grove_monolith_offering",
+        "position": [
+          1850,
+          350
+        ],
+        "loot": {
+          "gold": 45,
+          "materials": {
+            "Cinza Arcana": 1,
+            "Núcleo Trincado": 1
+          }
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "ashen_grove_dead_tree_1",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          220.0,
+          234.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_2",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          616.0,
+          156.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_3",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1100.0,
+          182.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_4",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1584.0,
+          156.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_5",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1980.0,
+          312.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_6",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          330.0,
+          1014.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_7",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          836.0,
+          1118.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_8",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1364.0,
+          1066.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_9",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1892.0,
+          1014.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_dead_tree_10",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          2090.0,
+          650.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_column_11",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          484.0,
+          546.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_column_12",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1716.0,
+          754.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_rock_13",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1276.0,
+          520.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ashen_grove_rock_14",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          770.0,
+          780.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      }
+    ],
+    "blockers": [
+      {
+        "from": "ashen_grove_dead_tree_1",
+        "rect": [
+          209.0,
+          236.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_2",
+        "rect": [
+          605.0,
+          158.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_3",
+        "rect": [
+          1089.0,
+          184.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_4",
+        "rect": [
+          1573.0,
+          158.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_5",
+        "rect": [
+          1969.0,
+          314.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_6",
+        "rect": [
+          319.0,
+          1016.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_7",
+        "rect": [
+          825.0,
+          1120.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_8",
+        "rect": [
+          1353.0,
+          1068.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_9",
+        "rect": [
+          1881.0,
+          1016.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_dead_tree_10",
+        "rect": [
+          2079.0,
+          652.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ashen_grove_column_11",
+        "rect": [
+          472.0,
+          548.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "ashen_grove_column_12",
+        "rect": [
+          1704.0,
+          756.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "ashen_grove_rock_13",
+        "rect": [
+          1252.0,
+          508.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "ashen_grove_rock_14",
+        "rect": [
+          746.0,
+          768.0,
+          48.0,
+          24
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "elite Guardião de Musgo (respawn 18s)",
+      "props/blockers = _scatter_grove_decor + chão pintado (não extraídos)",
+      "norte abre p/ o Deep Grove"
+    ],
+    "notes": [
+      "região norte; início do arco das Raízes Negras"
+    ]
+  }
+}

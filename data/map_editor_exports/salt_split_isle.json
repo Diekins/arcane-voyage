@@ -1,0 +1,595 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "generated_from": "tools/map-editor/maps/_build_sandbar_isle_ground.cjs",
+  "round_trip_of": "godot-runtime",
+  "overlay_of": "salt_split_isle",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "salt_split_isle",
+    "display_name": "Ilha do Sal Partido",
+    "client_side": true,
+    "size": [
+      1800,
+      1200
+    ],
+    "spawn": [
+      260,
+      600
+    ],
+    "ground": {
+      "base_color": "#c9c2ad",
+      "path_color_rgba": [
+        0.9,
+        0.9,
+        0.86,
+        0.36
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 600,
+        "height": 150
+      },
+      "tiles": {
+        "tile_size": 96,
+        "layers": [
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_1_96.png",
+            "cells": [
+              "1,1",
+              "5,1",
+              "9,1",
+              "13,1",
+              "17,1",
+              "2,4",
+              "7,3",
+              "11,3",
+              "16,4",
+              "3,11",
+              "8,11",
+              "14,11",
+              "18,7"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_2_96.png",
+            "cells": [
+              "3,2",
+              "11,1",
+              "15,2",
+              "1,4",
+              "6,1",
+              "12,2",
+              "18,3",
+              "2,11",
+              "10,11",
+              "17,11",
+              "0,7",
+              "9,4",
+              "5,11"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_pebbles_96.png",
+            "cells": [
+              "4,2",
+              "8,3",
+              "13,3",
+              "17,5",
+              "0,5",
+              "18,9",
+              "6,11",
+              "11,10",
+              "2,2",
+              "15,5",
+              "7,1",
+              "12,11"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_hardpack_road_96.png",
+            "cells": [
+              "1,6",
+              "2,6",
+              "3,6",
+              "4,6",
+              "5,6",
+              "6,6",
+              "7,6",
+              "8,6",
+              "8,7",
+              "9,7",
+              "10,7",
+              "11,7",
+              "12,7",
+              "12,8",
+              "13,8",
+              "14,8",
+              "15,8",
+              "15,9",
+              "16,9",
+              "17,9"
+            ]
+          }
+        ]
+      }
+    },
+    "access": {
+      "gate_flag": "sandbar_reached",
+      "from_region": "castaway_sandbar",
+      "from_exit": "sandbar_to_isle"
+    },
+    "portals": [
+      {
+        "id": "isle_to_sandbar",
+        "label": "Barco → Banco de Areia",
+        "position": [
+          150,
+          660
+        ],
+        "target_region": "castaway_sandbar",
+        "target_spawn": [
+          550,
+          250
+        ],
+        "gate_flag": null,
+        "draw_door": true,
+        "notes": [
+          "retorno surge no Banco no NO (anti-loop)"
+        ]
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "salt_isle_horizon",
+        "label": "Horizonte Aberto",
+        "position": [
+          1680,
+          900
+        ],
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "só texto; com salt_isle_cleared VIAJA p/ khet_sar_sands (gancho do arco desértico)"
+        ]
+      }
+    ],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 78,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "salt_split_isle_dune_skitter_1",
+        "position": [
+          640,
+          360
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 78,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "salt_split_isle_dune_skitter_2",
+        "position": [
+          900,
+          760
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 78,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "salt_split_isle_dune_skitter_3",
+        "position": [
+          1180,
+          360
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 78,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "salt_split_isle_dune_skitter_4",
+        "position": [
+          760,
+          980
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 78,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "salt_split_isle_dune_skitter_5",
+        "position": [
+          1240,
+          980
+        ]
+      },
+      {
+        "mob_id": "salt_husk",
+        "name": "Casca de Sal",
+        "visual": "salt_husk",
+        "hp": 200,
+        "aggro": 480,
+        "respawn": 16,
+        "ranged": true,
+        "id": "salt_split_isle_salt_husk_1",
+        "position": [
+          1020,
+          520
+        ]
+      },
+      {
+        "mob_id": "salt_husk",
+        "name": "Casca de Sal",
+        "visual": "salt_husk",
+        "hp": 200,
+        "aggro": 480,
+        "respawn": 16,
+        "ranged": true,
+        "id": "salt_split_isle_salt_husk_2",
+        "position": [
+          700,
+          760
+        ]
+      },
+      {
+        "mob_id": "salt_split_warden",
+        "name": "Guardião do Sal Partido",
+        "visual": "tide_warden",
+        "hp": 720,
+        "aggro": 520,
+        "respawn": 999999,
+        "elite": true,
+        "defeat_flag": "salt_isle_cleared",
+        "non_respawn": true,
+        "reward": "1×: +60 XP, +80 ouro, Núcleo Trincado x2 (via _on_salt_isle_boss_defeated)",
+        "runtime_only": true,
+        "notes": [
+          "MINI-BOSS elite (mob+flag, NÃO boss-system); loot garantido; não respawna"
+        ],
+        "id": "salt_split_isle_salt_split_warden_1",
+        "position": [
+          1450,
+          600
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "salt_isle_cache",
+        "position": [
+          1560,
+          240
+        ],
+        "loot": {
+          "gold": 90,
+          "materials": {
+            "Sal Cristalizado": 3,
+            "Madeira de Naufrágio": 2,
+            "Núcleo Trincado": 1
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      }
+    ],
+    "props": [],
+    "scatter": {
+      "generator": "_scatter_desert_decor",
+      "solids_norm": [
+        [
+          0.22,
+          0.4
+        ],
+        [
+          0.58,
+          0.62
+        ],
+        [
+          0.78,
+          0.34
+        ],
+        [
+          0.35,
+          0.52
+        ],
+        [
+          0.1,
+          0.18
+        ],
+        [
+          0.28,
+          0.1
+        ],
+        [
+          0.5,
+          0.16
+        ],
+        [
+          0.72,
+          0.12
+        ],
+        [
+          0.9,
+          0.22
+        ],
+        [
+          0.14,
+          0.84
+        ],
+        [
+          0.4,
+          0.9
+        ],
+        [
+          0.64,
+          0.86
+        ],
+        [
+          0.86,
+          0.82
+        ],
+        [
+          0.95,
+          0.5
+        ]
+      ],
+      "softs_norm": [
+        [
+          0.2,
+          0.3
+        ],
+        [
+          0.66,
+          0.46
+        ],
+        [
+          0.46,
+          0.76
+        ],
+        [
+          0.82,
+          0.66
+        ],
+        [
+          0.3,
+          0.66
+        ]
+      ],
+      "notes": [
+        "scatter de deserto (else-branch)"
+      ]
+    },
+    "interactions": [
+      {
+        "id": "salt_isle_boss",
+        "trigger": "kill:salt_split_warden",
+        "runtime_only": true,
+        "effect": "set_flag:salt_isle_cleared + reward(60xp,80ouro,Núcleo Trincado x2) + abre o Horizonte → khet_sar_sands"
+      }
+    ],
+    "runtime_only": [
+      "marco salt_isle_reached (popup 1× na 1ª chegada)",
+      "mini-boss salt_split_warden: flag salt_isle_cleared + recompensa 1× + não-respawn",
+      "Horizonte Aberto vira viagem real (p/ khet_sar_sands) só com salt_isle_cleared",
+      "scatter de deserto procedural"
+    ],
+    "notes": [
+      "região client-side; 2ª escala marítima",
+      "elite via mob+flag (não boss-system)"
+    ],
+    "blockers": [
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          396,
+          480
+        ],
+        "rect": [
+          389.45,
+          472,
+          13.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1044,
+          744
+        ],
+        "rect": [
+          1020,
+          732,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1404,
+          408
+        ],
+        "rect": [
+          1394.95,
+          400,
+          18.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          630,
+          624
+        ],
+        "rect": [
+          606,
+          612,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          180,
+          216
+        ],
+        "rect": [
+          172.2,
+          208,
+          15.6,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          504,
+          120
+        ],
+        "rect": [
+          480,
+          108,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          900,
+          192
+        ],
+        "rect": [
+          893.45,
+          184,
+          13.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1296,
+          144
+        ],
+        "rect": [
+          1272,
+          132,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1620,
+          264
+        ],
+        "rect": [
+          1610.95,
+          256,
+          18.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          252,
+          1008
+        ],
+        "rect": [
+          228,
+          996,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          720,
+          1080
+        ],
+        "rect": [
+          712.2,
+          1072,
+          15.6,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1152,
+          1032
+        ],
+        "rect": [
+          1128,
+          1020,
+          48,
+          24
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1548,
+          984
+        ],
+        "rect": [
+          1541.45,
+          976,
+          13.1,
+          16
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1710,
+          600
+        ],
+        "rect": [
+          1686,
+          588,
+          48,
+          24
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8macrozonerender01"]
+
+[ext_resource type="Script" path="res://scripts/_macrozone_render.gd" id="1_mzr"]
+
+[node name="MacroZoneRender" type="Node2D"]
+script = ExtResource("1_mzr")

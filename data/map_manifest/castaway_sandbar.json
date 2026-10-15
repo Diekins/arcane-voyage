@@ -1,0 +1,486 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "castaway_sandbar",
+    "display_name": "Banco de Areia dos Náufragos",
+    "client_side": true,
+    "size": [
+      1500,
+      950
+    ],
+    "spawn": [
+      260,
+      760
+    ],
+    "ground": {
+      "base_color": "#d3c197",
+      "path_color_rgba": [
+        0.86,
+        0.86,
+        0.78,
+        0.34
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 475,
+        "height": 150
+      }
+    },
+    "access": {
+      "gate_flag": "boat_repaired",
+      "from_region": "saltwind_shore",
+      "from_exit": "coast_sea_gate(barco)"
+    },
+    "portals": [
+      {
+        "id": "sandbar_to_coast",
+        "label": "Barco → Costa do Sal-Vento",
+        "position": [
+          150,
+          820
+        ],
+        "target_region": "saltwind_shore",
+        "target_spawn": [
+          980,
+          980
+        ],
+        "gate_flag": null,
+        "draw_door": true,
+        "notes": [
+          "retorno surge na Costa LONGE do barco (anti-loop)"
+        ]
+      },
+      {
+        "id": "sandbar_to_isle",
+        "label": "Travessia → Ilha do Sal Partido",
+        "position": [
+          1360,
+          480
+        ],
+        "target_region": "salt_split_isle",
+        "target_spawn": [
+          260,
+          600
+        ],
+        "gate_flag": "sandbar_reached",
+        "draw_door": true
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "castaway_sandbar_dune_skitter_1",
+        "position": [
+          700,
+          400
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "castaway_sandbar_dune_skitter_2",
+        "position": [
+          1050,
+          560
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "castaway_sandbar_dune_skitter_3",
+        "position": [
+          820,
+          800
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "castaway_sandbar_dune_skitter_4",
+        "position": [
+          1250,
+          360
+        ]
+      },
+      {
+        "mob_id": "salt_husk",
+        "name": "Casca de Sal",
+        "visual": "salt_husk",
+        "hp": 175,
+        "aggro": 460,
+        "respawn": 16,
+        "ranged": true,
+        "id": "castaway_sandbar_salt_husk_1",
+        "position": [
+          1150,
+          480
+        ]
+      },
+      {
+        "mob_id": "salt_husk",
+        "name": "Casca de Sal",
+        "visual": "salt_husk",
+        "hp": 175,
+        "aggro": 460,
+        "respawn": 16,
+        "ranged": true,
+        "id": "castaway_sandbar_salt_husk_2",
+        "position": [
+          900,
+          800
+        ]
+      },
+      {
+        "mob_id": "tide_warden",
+        "name": "Guardião da Maré",
+        "visual": "tide_warden",
+        "hp": 240,
+        "aggro": 360,
+        "respawn": 40,
+        "elite": true,
+        "notes": [
+          "elite-lite; respawna; SEM flag"
+        ],
+        "id": "castaway_sandbar_tide_warden_1",
+        "position": [
+          1280,
+          700
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "sandbar_castaway_cache",
+        "position": [
+          1320,
+          240
+        ],
+        "loot": {
+          "gold": 60,
+          "materials": {
+            "Madeira de Naufrágio": 2,
+            "Concha Polida": 1
+          },
+          "items": [
+            "potion_mana"
+          ]
+        }
+      }
+    ],
+    "props": [],
+    "scatter": {
+      "generator": "_scatter_desert_decor",
+      "solids_norm": [
+        [
+          0.22,
+          0.4
+        ],
+        [
+          0.58,
+          0.62
+        ],
+        [
+          0.78,
+          0.34
+        ],
+        [
+          0.35,
+          0.52
+        ],
+        [
+          0.1,
+          0.18
+        ],
+        [
+          0.28,
+          0.1
+        ],
+        [
+          0.5,
+          0.16
+        ],
+        [
+          0.72,
+          0.12
+        ],
+        [
+          0.9,
+          0.22
+        ],
+        [
+          0.14,
+          0.84
+        ],
+        [
+          0.4,
+          0.9
+        ],
+        [
+          0.64,
+          0.86
+        ],
+        [
+          0.86,
+          0.82
+        ],
+        [
+          0.95,
+          0.5
+        ]
+      ],
+      "softs_norm": [
+        [
+          0.2,
+          0.3
+        ],
+        [
+          0.66,
+          0.46
+        ],
+        [
+          0.46,
+          0.76
+        ],
+        [
+          0.82,
+          0.66
+        ],
+        [
+          0.3,
+          0.66
+        ]
+      ],
+      "notes": [
+        "scatter de deserto (else-branch): 14 solids cactus/dry_rock alternados + 5 softs sem colisão"
+      ]
+    },
+    "interactions": [],
+    "runtime_only": [
+      "marco sandbar_reached (popup 1× na 1ª chegada; ABRE o portal p/ a Ilha)",
+      "gate de chegada: só acessível via barco da Costa com boat_repaired",
+      "scatter de deserto procedural (placeholders no editor)"
+    ],
+    "notes": [
+      "região client-side; 1ª escala pós-barco",
+      "anti-loop: retornos com spawn-offset"
+    ],
+    "blockers": [
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          330.0,
+          380.0
+        ],
+        "rect": [
+          323.45,
+          372.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          870.0,
+          589.0
+        ],
+        "rect": [
+          846.0,
+          577.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1170.0,
+          323.0
+        ],
+        "rect": [
+          1160.95,
+          315.0,
+          18.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          525.0,
+          494.0
+        ],
+        "rect": [
+          501.0,
+          482.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          150.0,
+          171.0
+        ],
+        "rect": [
+          142.2,
+          163.0,
+          15.6,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          420.0,
+          95.0
+        ],
+        "rect": [
+          396.0,
+          83.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          750.0,
+          152.0
+        ],
+        "rect": [
+          743.45,
+          144.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1080.0,
+          114.0
+        ],
+        "rect": [
+          1056.0,
+          102.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1350.0,
+          209.0
+        ],
+        "rect": [
+          1340.95,
+          201.0,
+          18.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          210.0,
+          798.0
+        ],
+        "rect": [
+          186.0,
+          786.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          600.0,
+          855.0
+        ],
+        "rect": [
+          592.2,
+          847.0,
+          15.6,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          960.0,
+          817.0
+        ],
+        "rect": [
+          936.0,
+          805.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1290.0,
+          779.0
+        ],
+        "rect": [
+          1283.45,
+          771.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1425.0,
+          475.0
+        ],
+        "rect": [
+          1401.0,
+          463.0,
+          48.0,
+          24.0
+        ]
+      }
+    ]
+  }
+}

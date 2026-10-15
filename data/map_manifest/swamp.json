@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "swamp",
+    "display_name": "Pântano de Ferro",
+    "client_side": false,
+    "size": [
+      2000,
+      1400
+    ],
+    "spawn": [
+      320,
+      700
+    ],
+    "ground": {
+      "base_color": "#2c352a",
+      "path_color_rgba": [
+        0.34,
+        0.3,
+        0.2,
+        0.45
+      ],
+      "notes": [
+        "tileset/manchas de lodo — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": "golem_defeated_or_lvl8",
+      "from_region": "starter_village",
+      "notes": [
+        "gated pela saída oeste da Vila"
+      ]
+    },
+    "portals": [
+      {
+        "id": "swamp_to_village",
+        "label": "Trilha → Vila dos Novatos",
+        "position": [
+          220,
+          700
+        ],
+        "target_region": "starter_village",
+        "target_spawn": [
+          320,
+          800
+        ],
+        "gate_flag": null,
+        "draw_door": true
+      },
+      {
+        "id": "swamp_to_pit",
+        "label": "Buraco do Ferro-Velho",
+        "position": [
+          1520,
+          1060
+        ],
+        "target_region": "swamp_pit",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": false,
+        "notes": [
+          "buraco que desce à subárea swamp_pit"
+        ]
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [
+      {
+        "id": "swamp_spring",
+        "kind": "swamp_spring",
+        "position": [
+          520,
+          760
+        ],
+        "label": "[E] beber da Fonte de Água Férrea",
+        "runtime_only_fields": [
+          "cura PARCIAL 1× por visita (flag transiente, não persiste)"
+        ]
+      }
+    ],
+    "mobs": [
+      {
+        "mob_id": "bog_crawler",
+        "name": "Lodo Rastejante",
+        "visual": "green_slime",
+        "hp": 55,
+        "aggro": 300,
+        "respawn": 7,
+        "id": "swamp_bog_crawler_1",
+        "position": [
+          760,
+          520
+        ]
+      },
+      {
+        "mob_id": "bog_crawler",
+        "name": "Lodo Rastejante",
+        "visual": "green_slime",
+        "hp": 55,
+        "aggro": 300,
+        "respawn": 7,
+        "id": "swamp_bog_crawler_2",
+        "position": [
+          1180,
+          760
+        ]
+      },
+      {
+        "mob_id": "bog_crawler",
+        "name": "Lodo Rastejante",
+        "visual": "green_slime",
+        "hp": 55,
+        "aggro": 300,
+        "respawn": 7,
+        "id": "swamp_bog_crawler_3",
+        "position": [
+          900,
+          980
+        ]
+      },
+      {
+        "mob_id": "iron_leech",
+        "name": "Sanguessuga de Ferro",
+        "visual": "grove_spider",
+        "hp": 38,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "swamp_iron_leech_1",
+        "position": [
+          1340,
+          460
+        ]
+      },
+      {
+        "mob_id": "iron_leech",
+        "name": "Sanguessuga de Ferro",
+        "visual": "grove_spider",
+        "hp": 38,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "swamp_iron_leech_2",
+        "position": [
+          1500,
+          700
+        ]
+      },
+      {
+        "mob_id": "iron_leech",
+        "name": "Sanguessuga de Ferro",
+        "visual": "grove_spider",
+        "hp": 38,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "swamp_iron_leech_3",
+        "position": [
+          1280,
+          940
+        ]
+      },
+      {
+        "mob_id": "iron_leech",
+        "name": "Sanguessuga de Ferro",
+        "visual": "grove_spider",
+        "hp": 38,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "swamp_iron_leech_4",
+        "position": [
+          1620,
+          520
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "swamp_sunken_cache",
+        "position": [
+          760,
+          980
+        ],
+        "loot": {
+          "gold": 35,
+          "materials": {
+            "Limo de Ferro": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      },
+      {
+        "id": "swamp_root_hollow",
+        "position": [
+          1500,
+          360
+        ],
+        "loot": {
+          "gold": 25,
+          "materials": {
+            "Raiz Pútrida": 2
+          }
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "swamp_tree_1",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          240.0,
+          280.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_2",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          680.0,
+          168.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_3",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1120.0,
+          252.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_4",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1560.0,
+          196.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_5",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1800.0,
+          476.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_6",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          320.0,
+          1148.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_7",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          880.0,
+          1260.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_8",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1360.0,
+          1176.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_tree_9",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1760.0,
+          1120.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_rock_10",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          520.0,
+          588.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_rock_11",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1240.0,
+          840.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "swamp_rock_12",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1600.0,
+          644.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      }
+    ],
+    "blockers": [
+      {
+        "from": "swamp_tree_1",
+        "rect": [
+          228.0,
+          272.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_2",
+        "rect": [
+          668.0,
+          160.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_3",
+        "rect": [
+          1108.0,
+          244.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_4",
+        "rect": [
+          1548.0,
+          188.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_5",
+        "rect": [
+          1788.0,
+          468.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_6",
+        "rect": [
+          308.0,
+          1140.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_7",
+        "rect": [
+          868.0,
+          1252.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_8",
+        "rect": [
+          1348.0,
+          1168.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_tree_9",
+        "rect": [
+          1748.0,
+          1112.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "swamp_rock_10",
+        "rect": [
+          494.0,
+          575.0,
+          52.0,
+          26
+        ]
+      },
+      {
+        "from": "swamp_rock_11",
+        "rect": [
+          1214.0,
+          827.0,
+          52.0,
+          26
+        ]
+      },
+      {
+        "from": "swamp_rock_12",
+        "rect": [
+          1574.0,
+          631.0,
+          52.0,
+          26
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "Fonte de Água Férrea (serviço swamp_spring, cura parcial 1×/visita)",
+      "props/blockers = _scatter_swamp_decor (não extraídos)"
+    ],
+    "notes": [
+      "região de hunt pós-Caverna; sem boss; subárea swamp_pit pelo buraco"
+    ]
+  }
+}

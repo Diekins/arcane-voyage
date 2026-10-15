@@ -1,0 +1,47 @@
+# --- Godot 4 ---
+# Cache/import do editor (regenerado ao abrir o projeto)
+.godot/
+# Mono/C# (caso venha a ser usado)
+.mono/
+data_*/
+mono_crash.*.json
+
+# --- Exports / builds ---
+/build/
+/export/
+/exports/
+*.apk
+*.aab
+*.pck
+*.exe
+*.x86_64
+*.dmg
+export_presets.cfg
+export_credentials.cfg
+
+# --- Temporários, logs e backups ---
+*.tmp
+*_tmp*
+*.log
+*.bak
+*.bak_*
+*.orig
+_asset_backups/
+**/_sources/
+
+# --- Segredos / ambiente ---
+.env
+.env.*
+*.pem
+*.key
+
+# --- Python (ferramentas em tools/) ---
+__pycache__/
+*.pyc
+
+# --- Sistema operacional / IDE ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

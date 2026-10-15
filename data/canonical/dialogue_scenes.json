@@ -1,0 +1,1383 @@
+[
+  {
+    "id": "intro-mentor",
+    "trigger": {
+      "kind": "level",
+      "level": 2
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Você sentiu, não sentiu? O vento mudou no Bosque dos Murmúrios. Os Ancestrais estão te observando, jovem Errante."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Acompanhe o Mural das Profecias na Cidadela. Toda lenda começa com um pergaminho — e o seu já está lá."
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceito o chamado."
+      },
+      {
+        "id": "doubt",
+        "label": "Ainda não sei se sou digno..."
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-errante",
+      "title": "O Errante",
+      "text": "Uma alma sem nome que retorna sempre que a Sombra ameaça arquivar o mundo. Não é o escolhido — é uma dívida viva que já tentou (e talvez falhou) antes.",
+      "topic": "trail"
+    }
+  },
+  {
+    "id": "after-wolf",
+    "trigger": {
+      "kind": "quest_complete",
+      "questId": "ch1-awakening"
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "emerald",
+        "text": "O Lobo Alfa caiu por sua mão. Eu ouvi o uivo final do norte — todos ouvimos."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Receba o Manto do Errante. Não é uma armadura mágica — é um símbolo. Você não é mais ninguém. Você é o Errante."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "vocation-calling",
+    "trigger": {
+      "kind": "level",
+      "level": 4
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Sinto a força crescendo em você, Errante. Mais um despertar e o Bosque exigirá uma resposta: que tipo de herói você jura ser?"
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "No Nível 5 você escolherá sua Vocação. Não há volta fácil — escolha com o coração que te trouxe até aqui."
+      }
+    ],
+    "choices": [
+      {
+        "id": "ready",
+        "label": "Estou pronto para escolher."
+      },
+      {
+        "id": "ponder",
+        "label": "Vou sentir o caminho antes."
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-vocation",
+      "title": "Vocação",
+      "text": "Escolher uma Vocação não é descobrir quem o Errante foi, e sim decidir quem ele quer ser AGORA — identidade construída, não lembrada.",
+      "topic": "trail"
+    }
+  },
+  {
+    "id": "vocation-blessing",
+    "trigger": {
+      "kind": "manual"
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "emerald",
+        "text": "Então está feito. O Errante que chegou sem nome agora carrega um juramento — e o Bosque dos Murmúrios o reconhece."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Mas um juramento exige prova. Nas Planícies dos Novatos ronda o Lobo Alfa — uma sombra maior que sua matilha. Derrote-o, e o Bosque saberá que sua Vocação tem dentes."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "guardian-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "Lobo Alfa",
+      "bossId": "wolf-alpha"
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "emerald",
+        "text": "O uivo do Lobo Alfa silenciou. Eu o ouvi mesmo daqui — o primeiro Guardião das Planícies tombou por sua mão. Sua Vocação provou ter dentes."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Os caçadores antigos honravam a fera caída de duas formas. Como você marca esta vitória, Errante?"
+      }
+    ],
+    "choices": [
+      {
+        "id": "trophy",
+        "label": "Tomo a presa como troféu."
+      },
+      {
+        "id": "honor",
+        "label": "Honro o lobo e seu último uivo."
+      }
+    ],
+    "loreRecord": null
+  },
+  {
+    "id": "cave-calling",
+    "trigger": {
+      "kind": "level",
+      "level": 8
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Você não é mais o novato que pisou no Bosque. Sinto a montanha te chamando, Errante — e o que dorme sob ela não acordou por acaso."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "No Nível 10, a trilha rumo à Caverna Esquecida se abrirá. Lá, um Guardião de cristal e silêncio aguarda: o Golem de Cristal. Explore os túneis e quebre seu peito."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "emerald",
+        "text": "Quem derruba o Golem calça as Botas do Errante — a segunda peça do seu legado. Prepare sua lâmina: a montanha não perdoa os despreparados."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "golem-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "Golem de Cristal",
+      "bossId": "crystal-golem"
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "emerald",
+        "text": "O Golem de Cristal se partiu — e mil canções esquecidas se ergueram do pó. Eu as ouvi até daqui, Errante. Você caminha agora onde uma civilização inteira dormia."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Sob a pedra restam estilhaços que cantam. Como você carrega o que encontrou na Caverna Esquecida?"
+      }
+    ],
+    "choices": [
+      {
+        "id": "claim",
+        "label": "Reúno os fragmentos de cristal."
+      },
+      {
+        "id": "listen",
+        "label": "Escuto as canções esquecidas."
+      }
+    ],
+    "loreRecord": null
+  },
+  {
+    "id": "before-cave",
+    "trigger": {
+      "kind": "level",
+      "level": 10
+    },
+    "lines": [
+      {
+        "speaker": "Sussurro Antigo",
+        "npcId": null,
+        "portraitInitials": "??",
+        "tone": "void",
+        "text": "...sob a pedra... canções esquecidas... encontre-me, Errante..."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "after-golem",
+    "trigger": {
+      "kind": "quest_complete",
+      "questId": "ch2-crystal-heart"
+    },
+    "lines": [
+      {
+        "speaker": "Eco da Caverna",
+        "npcId": null,
+        "portraitInitials": "EC",
+        "tone": "void",
+        "text": "Você partiu o coração de cristal. Mil canções se erguem. Calce as Botas do Errante — agora você caminha com eles."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "volcano-calling",
+    "trigger": {
+      "kind": "level",
+      "level": 18
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Você sobreviveu à Caverna e às canções que não eram suas. Agora um calor antigo te procura, Errante. No Nível 20, a Caldeira Flamejante abrirá sua trilha."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "blood",
+        "text": "Lá dorme o Drago Magmático — o Guardião da Primeira Ira, que queima para não lembrar do que perdeu. Explore a Caldeira e quebre essa fúria, mas saiba: não é o fim da montanha. É uma porta."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "O fogo do Drago lambe um véu antigo. Atrás dele há uma cidade que insiste em não existir: Aethelgard. Quando o Guardião cair, a primeira Fenda estável se abrirá — e o que dorme nela conhece o seu nome."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "before-volcano",
+    "trigger": {
+      "kind": "level",
+      "level": 20
+    },
+    "lines": [
+      {
+        "speaker": "Solari, a Chama",
+        "npcId": null,
+        "portraitInitials": "SO",
+        "tone": "blood",
+        "text": "Sente o cheiro de cinzas? A Caldeira chama. O Drago testa apenas os dignos — e eu marco apenas os que sobrevivem."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "after-magma",
+    "trigger": {
+      "kind": "quest_complete",
+      "questId": "ch3-magma-pact"
+    },
+    "lines": [
+      {
+        "speaker": "Solari, a Chama",
+        "npcId": null,
+        "portraitInitials": "SO",
+        "tone": "blood",
+        "text": "O Drago se ajoelhou. Eu te marco com a Fagulha — visível apenas aos dignos. Você é Selado, Errante."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "drago-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "Drago Magmático",
+      "bossId": "magma-dragon"
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "blood",
+        "text": "O Drago Magmático se apagou — e o fogo dele queimou mais do que escamas. Eu vi daqui, Errante: parte do véu que escondia Aethelgard ardeu junto. A cidade que não existe está sangrando pela Caldeira."
+      },
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "??",
+        "tone": "void",
+        "text": "Você já esteve aqui. Já cruzou esta Fenda antes de ter um nome a perder. Venha — Aethelgard se lembra de você, mesmo que você não se lembre dela."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Não escute o que sopra da Fenda sem decidir quem você é. Como você carrega o que o fogo revelou?"
+      }
+    ],
+    "choices": [
+      {
+        "id": "face",
+        "label": "Encaro Aethelgard além do véu."
+      },
+      {
+        "id": "remember",
+        "label": "Tento lembrar o que havia atrás do fogo."
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-rift-veils",
+      "title": "Fendas e Véus",
+      "text": "Cada Fenda é uma memória tentando voltar pelo lugar errado. O fogo do Drago queimou o véu que escondia Aethelgard — e o que vaza dali conhece o seu nome.",
+      "topic": "rifts"
+    }
+  },
+  {
+    "id": "before-rift",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "Drago Magmático",
+      "bossId": "magma-dragon"
+    },
+    "lines": [
+      {
+        "speaker": "Voz da Fenda",
+        "npcId": null,
+        "portraitInitials": "FT",
+        "tone": "rift",
+        "text": "Você ouve o tique-taque agora? Não é o tempo passando. É o tempo te procurando. A Fenda se abriu — e ela tem um nome."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "aethelgard-glimpse",
+    "trigger": {
+      "kind": "level",
+      "level": 21
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Olhe — ali, pela Fenda. Uma rua inteira apareceu por alguns segundos: placas sem uma única letra, fontes secas, um sino que não soa mas que você jura ter ouvido. Isso é Aethelgard, a cidade que não existe."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Não... não é nada. Um reflexo da Fenda, só isso. (Ele desvia o olhar rápido demais, Errante. Aldric reconheceu aquela rua — e finge que não.)"
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-aethelgard",
+      "title": "Aethelgard",
+      "text": "A Cidade Que Não Existe — a primeira arquivada pela Sombra. Mapas a recusam e as pessoas esquecem seu nome; ela não foi destruída, foi preservada demais.",
+      "topic": "aethelgard"
+    }
+  },
+  {
+    "id": "sera-remembers",
+    "trigger": {
+      "kind": "level",
+      "level": 22
+    },
+    "lines": [
+      {
+        "speaker": "Sera, a Menina Que Lembra",
+        "npcId": "sera",
+        "portraitInitials": "SE",
+        "tone": "emerald",
+        "text": "Aethelgard. Viu? Eu consigo dizer e não esqueço. Todo mundo esquece o nome dela um minuto depois. Eu não. É por isso que ela me chama."
+      },
+      {
+        "speaker": "Sera, a Menina Que Lembra",
+        "npcId": "sera",
+        "portraitInitials": "SE",
+        "tone": "emerald",
+        "text": "Ela não morreu, moço. Foi pior: alguém tentou salvá-la e a guardou demais. Tiraram dela a mudança, a morte, o nascimento. Uma cidade que não pode acabar também não pode viver."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "neutral",
+        "text": "(Aldric empalidece ao ouvir a menina. Ele sabe que ela está certa — e teme o quanto ela ainda lembra.)"
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-elyra",
+      "title": "Elyra Namaris",
+      "text": "A Cartógrafa das Trilhas Impossíveis: provou que se podia abrir uma Trilha para algo que não existe mais. Tentou alcançar Aethelgard e foi apagada — não morta, removida da memória do mundo.",
+      "topic": "elyra"
+    }
+  },
+  {
+    "id": "archivist-whisper",
+    "trigger": {
+      "kind": "level",
+      "level": 23
+    },
+    "lines": [
+      {
+        "speaker": "O Arquivista Sem Rosto",
+        "npcId": "archivist-faceless",
+        "portraitInitials": "AR",
+        "tone": "void",
+        "text": "Catalogado. Indexado. Arquivado. Tudo em Aethelgard tem seu verbete, seu selo, seu lugar exato na ordem. Lembrar sem método é profanar — e você, Errante, caminha pela minha cidade sem permissão."
+      },
+      {
+        "speaker": "O Arquivista Sem Rosto",
+        "npcId": "archivist-faceless",
+        "portraitInitials": "AR",
+        "tone": "void",
+        "text": "Procurei sua ficha. Seu rosto consta nos registros. Seu nome, não. Um nome fora de ordem é uma vida em ruínas — e eu existo para corrigir ruínas. Quando nos encontrarmos, traga o que resta de você."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-archivist",
+      "title": "O Arquivista Sem Rosto",
+      "text": "Guardião de Aethelgard que catalogou todos os nomes menos o próprio. Para ele, memória sem método é profanação — e a cidade foi salva, não destruída.",
+      "topic": "aethelgard"
+    }
+  },
+  {
+    "id": "archivist-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "Arquivista Sem Rosto",
+      "bossId": "faceless-archivist"
+    },
+    "lines": [
+      {
+        "speaker": "O Arquivista Sem Rosto",
+        "npcId": "archivist-faceless",
+        "portraitInitials": "AR",
+        "tone": "void",
+        "text": "As páginas... caem. Os selos se desfazem. Por um instante o método silencia — e eu... eu também tinha um nome, não tinha? Alguém me arquivou primeiro. Eu me esqueci de mim para nunca esquecer ninguém."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Ele não morreu, Errante. Ele lembrou. Aethelgard inteira respira por essa brecha agora — e os nomes que ele guardava esperam o que você decidir. Eu já guardei demais; a escolha é sua."
+      },
+      {
+        "speaker": "O Arquivista Sem Rosto",
+        "npcId": "archivist-faceless",
+        "portraitInitials": "AR",
+        "tone": "neutral",
+        "text": "Os registros estão abertos. Preservá-los protege o que foi — mas prende. Libertá-los devolve os nomes ao mundo — mas o mundo pode perdê-los de novo. O que você faz com a memória que sobrou?"
+      }
+    ],
+    "choices": [
+      {
+        "id": "preserve",
+        "label": "Preservo parte dos registros."
+      },
+      {
+        "id": "release",
+        "label": "Liberto os nomes presos."
+      }
+    ],
+    "loreRecord": null
+  },
+  {
+    "id": "after-throne",
+    "trigger": {
+      "kind": "quest_complete",
+      "questId": "ch5-throne"
+    },
+    "lines": [
+      {
+        "speaker": "Aethelgard",
+        "npcId": null,
+        "portraitInitials": "AE",
+        "tone": "gold",
+        "text": "O Trono aceitou seu tributo. Os portões se abrem. Você é coroado pelos Ancestrais — e o reino jamais esquecerá seu nome."
+      }
+    ],
+    "choices": null,
+    "loreRecord": null
+  },
+  {
+    "id": "orders-fracture",
+    "trigger": {
+      "kind": "level",
+      "level": 24
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Aethelgard voltou, e com ela uma pergunta que nenhuma Ordem sabe responder junto: o que fazer com uma memória perigosa? O Sol quer queimá-la em público. O Véu quer enterrá-la. O Mar quer deixá-la correr."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "A cidade não rachou só pedra, Errante. Rachou a confiança que mantinha as três Ordens à mesma mesa. Quando elas se olham agora, veem traição — e cada uma jura que a traidora é a outra."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-orders-partidas",
+      "title": "As Ordens Partidas",
+      "text": "O retorno de Aethelgard partiu a aliança das três Ordens. Cada uma responde à mesma pergunta — o que fazer com uma memória perigosa — de um jeito que as outras chamam de traição.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "sun-veil-tide",
+    "trigger": {
+      "kind": "level",
+      "level": 25
+    },
+    "lines": [
+      {
+        "speaker": "Ser Caldran Veyr",
+        "npcId": "caldran-veyr",
+        "portraitInitials": "CV",
+        "tone": "gold",
+        "text": "Revele tudo. A Sombra cresce no segredo — e há segredos demais nesta mesa. Queimar é também iluminar, mesmo que a luz mostre onde cada um de nós mentiu."
+      },
+      {
+        "speaker": "Maelis Noctara",
+        "npcId": "maelis-noctara",
+        "portraitInitials": "MN",
+        "tone": "void",
+        "text": "Tolice de criança. Um nome dito cedo demais quebra a mente que o ouve. Selar não é covardia — é a única misericórdia que sobrou. Nem toda luz cura."
+      },
+      {
+        "speaker": "Naira Thalor",
+        "npcId": "naira-thalor",
+        "portraitInitials": "NT",
+        "tone": "emerald",
+        "text": "Vocês dois querem decidir o fim da maré. Eu só pergunto: e se deixarmos correr? O que afunda não desaparece — aprende outra forma de existir. Talvez a cidade precise nos atravessar, não o contrário."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-sun-veil-tide",
+      "title": "Sol, Véu e Mar",
+      "text": "Sol Eterno quer REVELAR tudo; Véu Sombrio quer OCULTAR para proteger; Mar Profundo quer DEIXAR FLUIR e transformar. Três respostas à mesma ferida — e nenhuma confia nas outras.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "broken-oath-whisper",
+    "trigger": {
+      "kind": "level",
+      "level": 26
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Há um juramento velho no fundo de tudo isto, Errante — feito antes das Ordens, antes de Aethelgard cair. Cada Ordem o conta de um jeito, e em cada versão é a outra que o quebrou."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "void",
+        "text": "Eu conheço a versão verdadeira. Mas ela tem dois nomes nela — o meu e o seu. Quando o Juramento Partido finalmente cobrar o que lhe devem, vai ser você a decidir o que fazer com uma promessa quebrada."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-broken-oath",
+      "title": "O Juramento Partido",
+      "text": "Um pacto anterior às Ordens, que cada uma conta culpando a outra. A versão verdadeira tem dois nomes: Aldric e o Errante. Decidir o que fazer com a promessa quebrada será o eixo do Ato 4.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "champion-trial",
+    "trigger": {
+      "kind": "level",
+      "level": 27
+    },
+    "lines": [
+      {
+        "speaker": "Ser Caldran Veyr",
+        "npcId": "caldran-veyr",
+        "portraitInitials": "CV",
+        "tone": "gold",
+        "text": "Você está sobre o Círculo dos Campeões, Errante — onde o juramento foi gravado. Para o Sol Eterno, ele foi uma PROMESSA traída: juramos revelar a verdade e alguém a enterrou. Sangramos por isso até hoje."
+      },
+      {
+        "speaker": "Maelis Noctara",
+        "npcId": "maelis-noctara",
+        "portraitInitials": "MN",
+        "tone": "void",
+        "text": "Mentira conveniente. O mesmo juramento, para o Véu, foi um SEGREDO violado: juramos guardar um nome, e o Sol quis gritá-lo ao mundo. A ferida não é a verdade escondida — é a verdade exposta cedo demais."
+      },
+      {
+        "speaker": "Naira Thalor",
+        "npcId": "naira-thalor",
+        "portraitInitials": "NT",
+        "tone": "emerald",
+        "text": "E para o Mar, foi um CURSO represado. O juramento devia correr e mudar com o tempo; eles dois o congelaram em pedra. Três Ordens, um só juramento — e cada uma jura que a cicatriz é a sua."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-champion-trial",
+      "title": "O Julgamento dos Campeões",
+      "text": "No Círculo dos Campeões, as três Ordens contam o MESMO juramento antigo como feridas diferentes: o Sol como promessa traída, o Véu como segredo violado, o Mar como curso represado. Uma só ferida, três culpas.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "fourth-signature",
+    "trigger": {
+      "kind": "level",
+      "level": 28
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Espere... o pergaminho do juramento tem três selos — Sol, Véu, Mar. Mas há um quarto lugar, raspado até o couro. Alguém assinou aqui, Errante. E depois foi apagado tão fundo que nem o pacto lembra de quem."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "void",
+        "text": "Olhe a sua mão. Essa cicatriz que nenhuma lâmina te deu... ela está ardendo no exato instante em que toco o selo vazio. Como se o juramento te reconhecesse — ou reconhecesse o que tiraram de você."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-fourth-signature",
+      "title": "A Quarta Assinatura",
+      "text": "O pacto antigo não tinha três selos, mas quatro: o quarto foi raspado fora da memória. A cicatriz impossível do Errante reage ao selo vazio — sugerindo que o juramento envolveu alguém apagado pela Sombra.",
+      "topic": "shadow"
+    }
+  },
+  {
+    "id": "oath-parted-calling",
+    "trigger": {
+      "kind": "level",
+      "level": 29
+    },
+    "lines": [
+      {
+        "speaker": "O Juramento Partido",
+        "npcId": null,
+        "portraitInitials": "JP",
+        "tone": "rift",
+        "text": "Vocês me chamam de pacto. Eu sou o que sobrou de uma promessa que ninguém cumpriu. Ouça o que eu sou, Errante: \"Revelem-me, e eu sangro. Selem-me, e eu apodreço. Dissolvam-me, e eu esqueço. Refaçam-me, e eu mudo.\""
+      },
+      {
+        "speaker": "O Juramento Partido",
+        "npcId": null,
+        "portraitInitials": "JP",
+        "tone": "void",
+        "text": "Não venha me derrotar como se eu fosse um monstro. Eu não peço uma lâmina — peço uma interpretação. As Ordens me partiram em quatro respostas e fugiram de todas. Você vai ter de escolher como eu termino. Ainda não. Mas vai."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-oath-parted-calling",
+      "title": "O Juramento Partido Fala",
+      "text": "O pacto antigo ganhou voz antes de virar Guardião. Ele se define por quatro sofrimentos — Revelar (sangra), Selar (apodrece), Dissolver (esquece), Refazer (muda) — e pede interpretação, não só derrota.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "oath-choice",
+    "trigger": {
+      "kind": "level",
+      "level": 30
+    },
+    "lines": [
+      {
+        "speaker": "O Juramento Partido",
+        "npcId": null,
+        "portraitInitials": "JP",
+        "tone": "rift",
+        "text": "Chegou a hora de me dizer, não de me vencer. Quatro vias me partem, Errante: REVELAR o que escondi e me deixar sangrar a verdade; SELAR-me em silêncio para que ninguém mais se quebre; DISSOLVER-me e deixar a promessa virar outra coisa; ou REFAZER-me com um nome que ainda não existe."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Não precisa selar o destino do Ato hoje — mas o que você inclinar agora ecoa. Diga ao Juramento que tipo de mão você é. O resto da decisão virá quando ele finalmente cobrar tudo."
+      }
+    ],
+    "choices": [
+      {
+        "id": "reveal",
+        "label": "Revelar o Juramento"
+      },
+      {
+        "id": "seal",
+        "label": "Selar o Juramento"
+      },
+      {
+        "id": "dissolve",
+        "label": "Dissolver o Juramento"
+      },
+      {
+        "id": "reforge",
+        "label": "Refazer o Juramento"
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-oath-choice",
+      "title": "As Quatro Respostas",
+      "text": "Diante do Juramento Partido, quatro vias se abrem: REVELAR (trazer a verdade à luz, mesmo que sangre), SELAR (guardar o segredo por compaixão), DISSOLVER (deixar a promessa fluir e mudar) ou REFAZER (reescrevê-la com um nome novo). Uma primeira tomada de posição, não o fim.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "oath-parted-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "O Juramento Partido",
+      "bossId": "broken-oath"
+    },
+    "lines": [
+      {
+        "speaker": "O Juramento Partido",
+        "npcId": null,
+        "portraitInitials": "JP",
+        "tone": "rift",
+        "text": "Você não me venceu — me alcançou. Senti a sua mão fechar e, pela primeira vez desde que me partiram, alguém ficou para responder em vez de fugir. As Ordens gritaram suas versões e foram embora. Você ficou."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "O nome no fundo deste pacto é meu, Errante. E o seu. Eu jurei, eu quebrei, e deixei você carregar a fratura por mim. O que você fizer agora não me absolve — mas é a primeira coisa honesta que acontece com esta promessa em muito tempo."
+      },
+      {
+        "speaker": "O Juramento Partido",
+        "npcId": null,
+        "portraitInitials": "JP",
+        "tone": "void",
+        "text": "Então diga, agora que dói de verdade: me revela e eu sangro a verdade; me sela e eu apodreço em silêncio; me dissolve e eu esqueço; ou me refaz, e eu viro um nome que ainda não existe. Não há resposta sem perda. Só a sua."
+      }
+    ],
+    "choices": [
+      {
+        "id": "reveal",
+        "label": "Revelar — a verdade vem à luz, mesmo que sangre."
+      },
+      {
+        "id": "seal",
+        "label": "Selar — o segredo fica guardado, mas pesa."
+      },
+      {
+        "id": "dissolve",
+        "label": "Dissolver — a promessa flui e vira outra coisa."
+      },
+      {
+        "id": "reforge",
+        "label": "Refazer — um nome novo, um pacto novo."
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-oath-parted-felled",
+      "title": "O Juramento Respondido",
+      "text": "No Círculo dos Campeões, o Juramento Partido é finalmente RESPONDIDO — não morto. A resposta (Revelar/Selar/Dissolver/Refazer) fecha o Ato 4. Do pacto respondido resta o Anel do Errante: vínculo e promessa, não poder bruto.",
+      "topic": "orders"
+    }
+  },
+  {
+    "id": "silent-altars",
+    "trigger": {
+      "kind": "level",
+      "level": 31
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "gold",
+        "text": "Você sente, não sente? Todos os altares ficaram mudos. Acenda incenso, recite o nome de um deus, sangre na pedra — nada responde. Não é abandono, Errante. É medo. Pela primeira vez, o Panteão não sabe o que dizer."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Os seis que sustentam o mundo se calaram juntos. Quando deuses guardam silêncio na mesma hora, ou esconderam um erro — ou descobriram que sempre foram um."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-silent-altars",
+      "title": "O Silêncio dos Altares",
+      "text": "No início do Ato 5, todos os altares emudecem: nenhum deus responde a oração, oferenda ou sangue. Não é abandono — é o Panteão em crise, calado pela primeira vez diante de um erro antigo.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "broken-conclave",
+    "trigger": {
+      "kind": "level",
+      "level": 32
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "void",
+        "text": "O silêncio rachou numa discussão que abala o céu. Aurel quer queimar a verdade à luz; Morwen quer deixar o que morreu descansar; Velkar exige que o juramento seja cumprido; Luthien sonha um mundo onde nada disso doeu; Sael sussurra que talvez nada seja verdade."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "E há um sexto trono vazio: Nymara, o Primeiro Nome, não fala. Seis vontades colidindo sem um centro — é o Conclave Quebrado. Os deuses vão te julgar, Errante, justamente porque não conseguem se julgar."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-broken-conclave",
+      "title": "O Conclave Quebrado",
+      "text": "As seis vontades do Panteão — Aurel, Morwen, Velkar, Luthien, Sael e a ausente Nymara — colidem sem um centro. Dessa fratura nasce o Conclave Quebrado: os deuses julgam o Errante porque não conseguem julgar a si mesmos.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "nymara-whisper",
+    "trigger": {
+      "kind": "level",
+      "level": 33
+    },
+    "lines": [
+      {
+        "speaker": "Nymara, o Primeiro Nome",
+        "npcId": "nymara",
+        "portraitInitials": "NY",
+        "tone": "void",
+        "text": "Eu lembro a sensação de ser chamada. Não lembro o som. Esvaziaram-me primeiro — para que o Arquivo aprendesse, em mim, como preservar um nome sem deixá-lo viver. Sou a deusa de tudo que tem nome, e o meu me foi tirado."
+      },
+      {
+        "speaker": "Nymara, o Primeiro Nome",
+        "npcId": "nymara",
+        "portraitInitials": "NY",
+        "tone": "rift",
+        "text": "Olho para você e reconheço a mesma ferida. Você também foi usado como porta, Errante — algo passou através do seu nome e o fechou atrás de si. Quando chegar a hora de me julgar, lembre: talvez estejamos julgando a mesma mão."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-nymara",
+      "title": "Nymara, o Primeiro Nome",
+      "text": "A deusa de tudo que tem nome foi esvaziada DE PROPÓSITO — para o Arquivo aprender, nela, a preservar identidades sem deixá-las viver. Lembra a sensação de ser chamada, não o som. Reconhece no Errante a mesma ferida: também usado como porta.",
+      "topic": "shadow"
+    }
+  },
+  {
+    "id": "trial-aurel",
+    "trigger": {
+      "kind": "level",
+      "level": 34
+    },
+    "lines": [
+      {
+        "speaker": "Aurel, o Primeiro Fogo",
+        "npcId": null,
+        "portraitInitials": "AU",
+        "tone": "blood",
+        "text": "Eu sou a chama que abriu sua estrada queimando o que estava no caminho. Toda luz tem cinzas atrás dela. Você ainda caminharia se soubesse quem queimou para abrir a sua estrada?"
+      },
+      {
+        "speaker": "Aurel, o Primeiro Fogo",
+        "npcId": null,
+        "portraitInitials": "AU",
+        "tone": "gold",
+        "text": "Não respondo agora. Carregue a pergunta. Um fogo que não sabe o que consumiu não é coragem — é incêndio."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-trial-aurel",
+      "title": "Prova de Aurel",
+      "text": "Aurel, o Primeiro Fogo, pergunta se o Errante seguiria sabendo quem foi queimado para abrir seu caminho. A prova é sobre força que avança consumindo — e sobre conhecer as cinzas que ficaram atrás da luz.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "trial-morwen",
+    "trigger": {
+      "kind": "level",
+      "level": 35
+    },
+    "lines": [
+      {
+        "speaker": "Morwen, a Primeira Morta",
+        "npcId": null,
+        "portraitInitials": "MO",
+        "tone": "void",
+        "text": "Você chama os mortos pelo nome e eles acordam. Mas eu vi seu coração: você quer honrá-los, ou quer que eles continuem servindo à sua saudade? Repouso não é esquecimento. É permissão para partir."
+      },
+      {
+        "speaker": "Morwen, a Primeira Morta",
+        "npcId": null,
+        "portraitInitials": "MO",
+        "tone": "neutral",
+        "text": "Há memórias que você guarda por amor. E há outras que você guarda porque soltá-las dói mais do que carregá-las. Aprenda a diferença antes de me julgar."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-trial-morwen",
+      "title": "Prova de Morwen",
+      "text": "Morwen, a Primeira Morta, pergunta se o Errante honra os mortos ou os mantém presos à própria saudade. A prova é sobre luto e repouso — distinguir o amor que guarda do medo que não solta.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "trial-velkar",
+    "trigger": {
+      "kind": "level",
+      "level": 36
+    },
+    "lines": [
+      {
+        "speaker": "Velkar, o Primeiro Juramento",
+        "npcId": null,
+        "portraitInitials": "VE",
+        "tone": "gold",
+        "text": "Antes de você ter um nome, você fez uma promessa. Eu a guardo, mesmo que você não a lembre. Diga-me, Errante: uma promessa esquecida ainda prende quem a fez?"
+      },
+      {
+        "speaker": "Velkar, o Primeiro Juramento",
+        "npcId": null,
+        "portraitInitials": "VE",
+        "tone": "rift",
+        "text": "O Juramento Partido que você ouviu lá atrás é meu filho rachado. Eu sou o juramento inteiro — e a sua assinatura está em mim, num lugar que apagaram. Lembrar ou não, você ainda deve."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-trial-velkar",
+      "title": "Prova de Velkar",
+      "text": "Velkar, o Primeiro Juramento, guarda uma promessa que o Errante fez antes de ter nome e pergunta se um juramento esquecido ainda prende quem o fez. Liga-se ao Juramento Partido e à assinatura apagada do pacto antigo.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "trial-luthien",
+    "trigger": {
+      "kind": "level",
+      "level": 37
+    },
+    "lines": [
+      {
+        "speaker": "Luthien, o Primeiro Sonho",
+        "npcId": null,
+        "portraitInitials": "LU",
+        "tone": "emerald",
+        "text": "Eu sonhei um mundo onde nada disto doeu. Posso te mostrar, se quiser descansar nele. Mas responda primeiro: se uma mentira cura a sua dor, por que chamá-la de mentira?"
+      },
+      {
+        "speaker": "Luthien, o Primeiro Sonho",
+        "npcId": null,
+        "portraitInitials": "LU",
+        "tone": "rift",
+        "text": "O sonho é a primeira rebelião contra o fim — mas também a porta mais macia para nunca mais voltar. Eu não pergunto se você sonha. Pergunto se você ainda sabe acordar."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-trial-luthien",
+      "title": "Prova de Luthien",
+      "text": "Luthien, o Primeiro Sonho, oferece um mundo onde nada doeu e pergunta por que chamar de mentira o que cura. A prova é sobre esperança e fuga — sonhar como rebelião contra o fim, sem deixar de saber acordar.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "trial-sael",
+    "trigger": {
+      "kind": "level",
+      "level": 38
+    },
+    "lines": [
+      {
+        "speaker": "Sael, a Primeira Mentira",
+        "npcId": null,
+        "portraitInitials": "SA",
+        "tone": "void",
+        "text": "Todos me odeiam até precisarem de mim. Mas seja honesto, já que está aqui: você odeia a mentira — ou odeia ter acreditado nela? Eu nunca enganei ninguém que não quisesse ser enganado."
+      },
+      {
+        "speaker": "Sael, a Primeira Mentira",
+        "npcId": null,
+        "portraitInitials": "SA",
+        "tone": "neutral",
+        "text": "Há mentiras que matam e mentiras que são a única manta numa noite fria. Eu sou as duas. Antes de me julgar, descubra qual delas você mais usou — e por quê."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-trial-sael",
+      "title": "Prova de Sael",
+      "text": "Sael, a Primeira Mentira, pergunta se o Errante odeia a mentira ou odeia ter acreditado nela. A prova distingue a mentira que mata da que protege — e força o Errante a encarar quais delas ele mesmo usou.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "trial-nymara",
+    "trigger": {
+      "kind": "level",
+      "level": 39
+    },
+    "lines": [
+      {
+        "speaker": "Nymara, o Primeiro Nome",
+        "npcId": "nymara",
+        "portraitInitials": "NY",
+        "tone": "void",
+        "text": "Esta é a última prova, e ela é minha. Eu, que perdi meu nome, te pergunto o impossível: se eu não lembrar o meu, você ainda consegue me chamar? Um nome não é o som — é a mão que se estende mesmo no escuro."
+      },
+      {
+        "speaker": "Nymara, o Primeiro Nome",
+        "npcId": "nymara",
+        "portraitInitials": "NY",
+        "tone": "gold",
+        "text": "Não te darei o seu nome de volta como uma chave. Vou esperar você escolher. Porque o nome antigo explica os seus passos — mas não decide o seu caminho."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-trial-nymara",
+      "title": "Prova de Nymara",
+      "text": "A última prova é da própria Nymara: ela pergunta se ainda pode ser chamada sem lembrar o próprio nome, e se recusa a devolver o nome do Errante como uma chave — espera que ele ESCOLHA. O nome antigo explica os passos, não decide o caminho.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "saint-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "O Santo Sem Memória",
+      "bossId": "nameless-saint"
+    },
+    "lines": [
+      {
+        "speaker": "O Santo Sem Memória",
+        "npcId": "nymara",
+        "portraitInitials": "SM",
+        "tone": "void",
+        "text": "Você me alcançou no centro do Panteão, Errante. Os deuses não te trouxeram de joelhos para coroar — para sentenciar. \"Errante\" nunca foi um título. Foi a pena que te deram quando entregaram o seu Nome Verdadeiro ao esquecimento."
+      },
+      {
+        "speaker": "Nymara, o Primeiro Nome",
+        "npcId": "nymara",
+        "portraitInitials": "NY",
+        "tone": "gold",
+        "text": "Eu fui esvaziada para ensinar o Arquivo a guardar pessoas inteiras — e virei isto: uma santa sem o próprio nome. Sei o peso do que te ofereço. Esta coroa não é poder, nem vaidade. É a obrigação de responder quando chamarem por você."
+      },
+      {
+        "speaker": "O Santo Sem Memória",
+        "npcId": "nymara",
+        "portraitInitials": "SM",
+        "tone": "rift",
+        "text": "Então decide, agora que o teu nome cabe na tua mão: aceitar a sentença e o ciclo que ela mantém de pé; recusá-la e arrancar o nome à força, sabendo que a Sombra escuta mais alto quem grita; ou nomear a ti mesmo, e carregar um nome que ninguém antes pronunciou."
+      },
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "SE",
+        "tone": "rift",
+        "text": "(Muito além do último altar, algo escuta a tua resposta e sorri. A Última Trilha ainda não se abriu — mas já sabe o teu nome antes de ti.)"
+      }
+    ],
+    "choices": [
+      {
+        "id": "accept",
+        "label": "Aceitar a sentença — carregar o ciclo, manter o mundo de pé."
+      },
+      {
+        "id": "refuse",
+        "label": "Recusar a sentença — arrancar o nome, mesmo que a Sombra escute."
+      },
+      {
+        "id": "name_self",
+        "label": "Nomear a si mesmo — um nome que ninguém pronunciou."
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-saint-felled",
+      "title": "A Coroa Sem Trono",
+      "text": "No Panteão Silencioso, o Santo Sem Memória (Nymara esvaziada) sentencia o Errante em vez de coroá-lo: \"Errante\" foi a pena pelo Nome Verdadeiro entregue ao esquecimento. A Coroa do Errante não é poder — é a obrigação de responder a um nome. Três vias: ACEITAR a sentença, RECUSÁ-la ou NOMEAR a si mesmo. A Sombra apenas escuta, à espera da Última Trilha.",
+      "topic": "pantheon"
+    }
+  },
+  {
+    "id": "last-trail-opens",
+    "trigger": {
+      "kind": "level",
+      "level": 40
+    },
+    "lines": [
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Todos esses anos eu pensei que a Trilha do Errante levasse de volta — ao nome, ao começo, ao que foi tirado. Ah. Então era isso. Não era uma rota de volta."
+      },
+      {
+        "speaker": "Elyra Namaris",
+        "npcId": "elyra-namaris",
+        "portraitInitials": "EL",
+        "tone": "emerald",
+        "text": "Era uma rota para além. Eu a abri uma vez e fui apagada por isso — você a abre agora porque é o único que ainda pode escolher o que há do outro lado. A Última Trilha não devolve. Ela atravessa."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-last-trail-opens",
+      "title": "A Última Trilha",
+      "text": "A Trilha final do Errante nunca foi caminho de volta ao nome perdido — é caminho para ALÉM. Elyra a abriu uma vez e foi apagada; o Errante a abre agora por ser o último que ainda pode escolher o que existe do outro lado.",
+      "topic": "trail"
+    }
+  },
+  {
+    "id": "archive-threshold",
+    "trigger": {
+      "kind": "level",
+      "level": 41
+    },
+    "lines": [
+      {
+        "speaker": "Elyra Namaris",
+        "npcId": "elyra-namaris",
+        "portraitInitials": "EL",
+        "tone": "void",
+        "text": "Olhe à frente. O Arquivo Vazio. Sem poeira, sem ruína, sem uma única dobra fora do lugar. Nenhum mapa deveria ser tão limpo — porque um mapa vivo tem rasuras, e isto aqui não tem nenhuma."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "neutral",
+        "text": "É assim que a Sombra salva: ela não destrói nada. Ela guarda tudo, perfeito e imóvel, até que nada possa mais mudar. Tudo aqui foi preservado. E tudo aqui está morto."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-archive-threshold",
+      "title": "O Limiar do Arquivo",
+      "text": "O Arquivo Vazio é branco, limpo e perfeito demais — sem poeira nem rasuras. É como a Sombra 'salva': não destrói, preserva tudo imóvel até nada poder mudar. Preservado e, por isso, morto.",
+      "topic": "shadow"
+    }
+  },
+  {
+    "id": "shadow-offer",
+    "trigger": {
+      "kind": "level",
+      "level": 42
+    },
+    "lines": [
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "SO",
+        "tone": "void",
+        "text": "Você chegou longe demais para temer-me agora. Então ouça a verdade, que eu nunca precisei mentir: eu não sou o fim do mundo, Errante. Eu sou o fim da perda. Comigo, nada que você amou precisa morrer de novo."
+      },
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "SO",
+        "tone": "rift",
+        "text": "Traga-me a Chave quando a encontrar. Eu lhe devolvo o nome que o mundo roubou — inteiro, perfeito, para sempre. Só não te direi o preço: um nome que não pode ser perdido também não pode mais crescer."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-shadow-offer",
+      "title": "A Oferta da Sombra",
+      "text": "A Sombra não mente: oferece devolver o Nome Verdadeiro do Errante em troca da Chave da Última Trilha — mas o nome viria fechado, arquivado, perfeito e incapaz de mudar. 'Eu sou o fim da perda', diz ela; o preço silenciado é deixar de poder crescer.",
+      "topic": "shadow"
+    }
+  },
+  {
+    "id": "last-trail-felled",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "O Guardião do Limiar",
+      "bossId": "threshold-guardian"
+    },
+    "lines": [
+      {
+        "speaker": "O Guardião do Limiar",
+        "npcId": null,
+        "portraitInitials": "GL",
+        "tone": "void",
+        "text": "Você carrega os cinco ecos do seu nome — manto, botas, lâmina, anel, coroa. Eu não guardo a porta contra você; guardo contra quem chega incompleto. Passe. O que vem depois não se vence: se escolhe."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Então é esta a porta que eu temi a vida toda, Errante. Olhe: ela é feita de ausência — só aparece quando você não a encara de frente. Isto na sua mão é a Chave da Última Trilha. Ela abre o fim. Mas qual fim... isso ela não decide por você."
+      },
+      {
+        "speaker": "Elyra Namaris",
+        "npcId": "elyra-namaris",
+        "portraitInitials": "EL",
+        "tone": "neutral",
+        "text": "Eu fui apagada por tentar alcançar este limiar — e mesmo assim cheguei, porque você se lembrou de mim. A Trilha não é volta, é travessia. Quando você cruzar, não vai recuperar quem foi: vai decidir quem fica."
+      },
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "SO",
+        "tone": "void",
+        "text": "(A Chave pulsa, e do outro lado da porta algo se acomoda, paciente.) Você a tem agora, Errante. Eu não vou te impedir de chegar — vou esperar. O nome ainda não foi dito. Quando a porta abrir, descobriremos juntos se você quer recebê-lo... ou escrevê-lo."
+      }
+    ],
+    "choices": null,
+    "loreRecord": {
+      "id": "lore-scene-last-trail-felled",
+      "title": "A Chave Desperta",
+      "text": "Com os Cinco Ecos do Nome reunidos (Set 5/5), o Guardião do Limiar cede e a Chave da Última Trilha desperta — 'feita de ausência'. Ela ABRE o fim, mas NÃO o escolhe. Aldric e Elyra cruzam o limiar com o Errante; a Sombra apenas espera do outro lado. O Nome Verdadeiro e os finais ainda não foram ditos.",
+      "topic": "trail"
+    }
+  },
+  {
+    "id": "shadow-final",
+    "trigger": {
+      "kind": "boss_defeated",
+      "bossName": "A Sombra Entre Mundos",
+      "bossId": "shadow-between-worlds"
+    },
+    "lines": [
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "SO",
+        "tone": "void",
+        "text": "Você atravessou tudo para chegar até mim — e mesmo assim eu não vou lutar. Eu nunca quis te destruir, Errante. Eu quero te completar. Entregue a Chave e eu te devolvo o Nome Verdadeiro: inteiro, perfeito, para sempre. Nada que você amou precisará morrer de novo."
+      },
+      {
+        "speaker": "Mestre Aldric",
+        "npcId": "aldric-vaelor",
+        "portraitInitials": "MA",
+        "tone": "rift",
+        "text": "Um nome que não pode ser perdido também não pode mais crescer, Errante. Ela oferece o fim da dor pagando com o fim da vida — tudo guardado, nada vivo. A Chave é sua. O que você abre com ela é só seu."
+      },
+      {
+        "speaker": "Elyra Namaris",
+        "npcId": "elyra-namaris",
+        "portraitInitials": "EL",
+        "tone": "neutral",
+        "text": "Você abriu o Arquivo Vazio por mim, uma vez — e me perdeu para isto. Não deixe o meu nome apagado te prender ao dela. Escolha como quem ainda pode mudar de ideia amanhã: é só isso que a Sombra nunca vai poder oferecer."
+      },
+      {
+        "speaker": "Sombra Entre Mundos",
+        "npcId": "shadow-between-worlds",
+        "portraitInitials": "SO",
+        "tone": "rift",
+        "text": "Então decida, e o mundo decide com você. Não te pergunto qual é o seu nome — pergunto o que você faz com o direito de tê-lo. Como termina a Última Trilha?"
+      }
+    ],
+    "choices": [
+      {
+        "id": "cycle",
+        "label": "Ciclo — aceitar a preservação total; selar a Sombra, o ciclo continua."
+      },
+      {
+        "id": "rupture",
+        "label": "Ruptura — quebrar o Arquivo Vazio; a perda e a liberdade voltam."
+      },
+      {
+        "id": "preservation",
+        "label": "Preservação — guardar com compaixão, sem congelar o mundo."
+      },
+      {
+        "id": "new_name",
+        "label": "Nome Novo — recusar o nome antigo e escrever um que nunca existiu."
+      },
+      {
+        "id": "last_trail",
+        "label": "Última Trilha — abrir um caminho além de todas as respostas."
+      }
+    ],
+    "loreRecord": {
+      "id": "lore-scene-shadow-final",
+      "title": "O Fim da Trilha",
+      "text": "Diante da Sombra Entre Mundos — a compaixão do Arquivo Vazio que quer acabar com a perda preservando tudo — o Errante responde com a ESCOLHA FINAL. Cinco finais: Ciclo (selar/preservar tudo), Ruptura (quebrar o Arquivo), Preservação (guardar com compaixão), Nome Novo (autoria do próprio nome) ou Última Trilha (abrir caminho além das respostas). O Nome Verdadeiro não é revelado: é decidido.",
+      "topic": "trail"
+    }
+  }
+]

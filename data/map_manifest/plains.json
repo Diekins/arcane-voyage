@@ -1,0 +1,602 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "plains",
+    "display_name": "Planície dos Novatos",
+    "client_side": false,
+    "size": [
+      2400,
+      1600
+    ],
+    "spawn": [
+      520,
+      840
+    ],
+    "ground": {
+      "base_color": "#3c6b34",
+      "path_color_rgba": [
+        0.62,
+        0.52,
+        0.34,
+        0.5
+      ],
+      "notes": [
+        "tileset real (grass/dirt) — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "starter_village"
+    },
+    "portals": [
+      {
+        "id": "plains_to_cave",
+        "label": "Entrada da Caverna",
+        "position": [
+          2180,
+          820
+        ],
+        "target_region": "cave",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": false
+      },
+      {
+        "id": "plains_to_village",
+        "label": "Estrada → Vila dos Novatos",
+        "position": [
+          170,
+          840
+        ],
+        "target_region": "starter_village",
+        "target_spawn": [
+          1100,
+          1320
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [],
+    "npcs": [
+      {
+        "id": "aldric",
+        "name": "Aldric Vaelor",
+        "position": [
+          980,
+          720
+        ],
+        "sprite_key": "actors/npcs/aldric_vaelor",
+        "service": null,
+        "wander": false,
+        "notes": [
+          "NPC de campanha (Ato 1)"
+        ]
+      }
+    ],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "young_wolf",
+        "name": "Lobo Jovem",
+        "visual": "young_wolf",
+        "hp": 30,
+        "aggro": 320,
+        "respawn": 6,
+        "id": "plains_young_wolf_1",
+        "position": [
+          900,
+          520
+        ]
+      },
+      {
+        "mob_id": "young_wolf",
+        "name": "Lobo Jovem",
+        "visual": "young_wolf",
+        "hp": 30,
+        "aggro": 320,
+        "respawn": 6,
+        "id": "plains_young_wolf_2",
+        "position": [
+          1750,
+          520
+        ]
+      },
+      {
+        "mob_id": "young_wolf",
+        "name": "Lobo Jovem",
+        "visual": "young_wolf",
+        "hp": 30,
+        "aggro": 320,
+        "respawn": 6,
+        "id": "plains_young_wolf_3",
+        "position": [
+          1250,
+          1320
+        ]
+      },
+      {
+        "mob_id": "young_wolf",
+        "name": "Lobo Jovem",
+        "visual": "young_wolf",
+        "hp": 30,
+        "aggro": 320,
+        "respawn": 6,
+        "id": "plains_young_wolf_4",
+        "position": [
+          2000,
+          1180
+        ]
+      },
+      {
+        "mob_id": "young_wolf",
+        "name": "Lobo Jovem",
+        "visual": "young_wolf",
+        "hp": 30,
+        "aggro": 320,
+        "respawn": 6,
+        "id": "plains_young_wolf_5",
+        "position": [
+          720,
+          1260
+        ]
+      },
+      {
+        "mob_id": "wild_boar",
+        "name": "Javali Bravio",
+        "visual": "wild_boar",
+        "hp": 48,
+        "aggro": 300,
+        "respawn": 7,
+        "id": "plains_wild_boar_1",
+        "position": [
+          1500,
+          400
+        ]
+      },
+      {
+        "mob_id": "wild_boar",
+        "name": "Javali Bravio",
+        "visual": "wild_boar",
+        "hp": 48,
+        "aggro": 300,
+        "respawn": 7,
+        "id": "plains_wild_boar_2",
+        "position": [
+          650,
+          400
+        ]
+      },
+      {
+        "mob_id": "wild_boar",
+        "name": "Javali Bravio",
+        "visual": "wild_boar",
+        "hp": 48,
+        "aggro": 300,
+        "respawn": 7,
+        "id": "plains_wild_boar_3",
+        "position": [
+          2050,
+          560
+        ]
+      },
+      {
+        "mob_id": "road_bandit",
+        "name": "Bandido de Estrada",
+        "visual": "road_bandit",
+        "hp": 75,
+        "aggro": 420,
+        "respawn": 14,
+        "id": "plains_road_bandit_1",
+        "position": [
+          2080,
+          520
+        ]
+      },
+      {
+        "mob_id": "starving_wolf",
+        "name": "Lobo Faminto",
+        "visual": "young_wolf",
+        "hp": 36,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "plains_starving_wolf_1",
+        "position": [
+          1080,
+          700
+        ]
+      },
+      {
+        "mob_id": "starving_wolf",
+        "name": "Lobo Faminto",
+        "visual": "young_wolf",
+        "hp": 36,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "plains_starving_wolf_2",
+        "position": [
+          1380,
+          760
+        ]
+      },
+      {
+        "mob_id": "starving_wolf",
+        "name": "Lobo Faminto",
+        "visual": "young_wolf",
+        "hp": 36,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "plains_starving_wolf_3",
+        "position": [
+          1240,
+          640
+        ]
+      },
+      {
+        "mob_id": "elder_boar",
+        "name": "Javali Ancião",
+        "visual": "wild_boar",
+        "hp": 120,
+        "aggro": 280,
+        "respawn": 16,
+        "id": "plains_elder_boar_1",
+        "position": [
+          1500,
+          1100
+        ]
+      },
+      {
+        "mob_id": "elder_boar",
+        "name": "Javali Ancião",
+        "visual": "wild_boar",
+        "hp": 120,
+        "aggro": 280,
+        "respawn": 16,
+        "id": "plains_elder_boar_2",
+        "position": [
+          820,
+          900
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "plains_supply_cache_1",
+        "position": [
+          700,
+          1180
+        ],
+        "loot": {
+          "gold": 25,
+          "materials": {
+            "Couro Áspero": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "plains_tree_1",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          240.0,
+          288.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_2",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          672.0,
+          160.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_3",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1200.0,
+          256.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_4",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1728.0,
+          192.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_5",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          2160.0,
+          352.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_6",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          336.0,
+          1344.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_7",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          960.0,
+          1440.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_8",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          1536.0,
+          1376.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_9",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          2064.0,
+          1312.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_tree_10",
+        "type": "procedural",
+        "procedural_type": "tree",
+        "position": [
+          2280.0,
+          800.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_rock_11",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          528.0,
+          640.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_rock_12",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1392.0,
+          992.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_rock_13",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1872.0,
+          544.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "plains_rock_14",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          840.0,
+          832.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      }
+    ],
+    "blockers": [
+      {
+        "from": "plains_tree_1",
+        "rect": [
+          228.0,
+          280.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_2",
+        "rect": [
+          660.0,
+          152.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_3",
+        "rect": [
+          1188.0,
+          248.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_4",
+        "rect": [
+          1716.0,
+          184.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_5",
+        "rect": [
+          2148.0,
+          344.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_6",
+        "rect": [
+          324.0,
+          1336.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_7",
+        "rect": [
+          948.0,
+          1432.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_8",
+        "rect": [
+          1524.0,
+          1368.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_9",
+        "rect": [
+          2052.0,
+          1304.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_tree_10",
+        "rect": [
+          2268.0,
+          792.0,
+          24.0,
+          24.0
+        ]
+      },
+      {
+        "from": "plains_rock_11",
+        "rect": [
+          502.0,
+          627.0,
+          52.0,
+          26
+        ]
+      },
+      {
+        "from": "plains_rock_12",
+        "rect": [
+          1366.0,
+          979.0,
+          52.0,
+          26
+        ]
+      },
+      {
+        "from": "plains_rock_13",
+        "rect": [
+          1846.0,
+          531.0,
+          52.0,
+          26
+        ]
+      },
+      {
+        "from": "plains_rock_14",
+        "rect": [
+          814.0,
+          819.0,
+          52.0,
+          26
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "BOSS Lobo Alfa @ (1480,1110) — construído em _build_wolf (fora de _mob_configs)",
+      "Aldric = NPC de campanha (Ato 1)",
+      "props/blockers = _scatter_plains_props + tileset (não extraídos)"
+    ],
+    "notes": [
+      "Ato 1; em regions.json; mobs com stats completos no runtime"
+    ]
+  }
+}

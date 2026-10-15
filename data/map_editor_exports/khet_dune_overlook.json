@@ -1,0 +1,296 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "generated_from": "tools/map-editor/maps/_build_hub_trio_ground.cjs",
+  "round_trip_of": "editor-authored",
+  "overlay_of": "khet_dune_overlook",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "khet_dune_overlook",
+    "display_name": "Mirante das Dunas",
+    "client_side": true,
+    "size": [
+      1000,
+      700
+    ],
+    "spawn": [
+      200,
+      360
+    ],
+    "ground": {
+      "base_color": "#d8b87a",
+      "path_color_rgba": [
+        0.8,
+        0.66,
+        0.42,
+        0.4
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 350,
+        "height": 120
+      },
+      "tiles": {
+        "tile_size": 96,
+        "base_key": "tilesets/desert/ground/desert_sand_base_96.png",
+        "layers": [
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_1_96.png",
+            "cells": [
+              "0,0",
+              "10,0",
+              "0,7",
+              "10,7",
+              "8,1",
+              "1,6"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_2_96.png",
+            "cells": [
+              "9,1",
+              "1,1",
+              "9,6",
+              "2,7",
+              "6,0",
+              "0,5"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_pebbles_96.png",
+            "cells": [
+              "10,3",
+              "0,2",
+              "7,7",
+              "3,7",
+              "9,5"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_hardpack_road_96.png",
+            "cells": [
+              "1,3",
+              "2,3",
+              "3,3",
+              "4,3",
+              "5,3",
+              "6,3",
+              "7,3",
+              "8,3",
+              "9,3",
+              "4,1",
+              "4,2",
+              "2,4",
+              "2,5"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_n_96.png",
+            "cells": [
+              "3,2",
+              "5,2",
+              "6,2",
+              "7,2"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_s_96.png",
+            "cells": [
+              "3,4",
+              "5,4",
+              "6,4",
+              "7,4",
+              "8,4"
+            ]
+          }
+        ]
+      }
+    },
+    "access": {
+      "gate_flag": "khet_oasis_reached",
+      "from_region": "khet_oasis",
+      "from_exit": "oasis_to_overlook"
+    },
+    "portals": [
+      {
+        "id": "overlook_to_oasis",
+        "label": "Trilha → Oásis de Khet-Sar",
+        "position": [
+          120,
+          360
+        ],
+        "target_region": "khet_oasis",
+        "target_spawn": [
+          300,
+          600
+        ],
+        "gate_flag": null,
+        "draw_door": true
+      },
+      {
+        "id": "overlook_to_scrub",
+        "label": "Trilha → Charneca de Sal",
+        "position": [
+          450,
+          180
+        ],
+        "target_region": "khet_salt_scrub",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": true,
+        "notes": [
+          "saída opcional p/ a micro-hunt editor-authored (GODOT-MAPLOADER-MOBS-CHESTS-PILOT-1)"
+        ]
+      },
+      {
+        "id": "overlook_to_waystation",
+        "label": "Trilha → Posto de Khet-Sar",
+        "position": [
+          250,
+          540
+        ],
+        "target_region": "khet_waystation",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": true,
+        "notes": [
+          "saída opcional p/ o mini-hub editor-authored (GODOT-MAPLOADER-SERVICES-INTERACTIONS-PILOT-1)"
+        ]
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "overlook_city_road",
+        "label": "Estrada para a Cidade",
+        "position": [
+          880,
+          360
+        ],
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "só texto; aponta p/ a Cidade do Deserto (NÃO implementada); não é o khet_city_gate"
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "dune_watcher",
+        "name": "Vigia das Dunas",
+        "position": [
+          560,
+          480
+        ],
+        "sprite_key": "npcs/village/elder",
+        "service": null,
+        "wander": true,
+        "dialogue": [
+          "Daqui se vê o deserto inteiro, Errante.",
+          "Ao longe, as muralhas de Khet-Sar — e tempestades de areia que engolem caravanas.",
+          "Descanse os olhos no horizonte antes de seguir."
+        ],
+        "notes": [
+          "sprite = placeholder medieval da Vila (dívida visual)"
+        ]
+      }
+    ],
+    "services": [],
+    "mobs": [],
+    "chests": [],
+    "props": [
+      {
+        "type": "procedural",
+        "procedural_type": "palm",
+        "position": [
+          320,
+          240
+        ],
+        "params": {
+          "h": 140
+        },
+        "z_hint": "ysort",
+        "blocker": "trunk"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "palm",
+        "position": [
+          760,
+          250
+        ],
+        "params": {
+          "h": 120
+        },
+        "z_hint": "ysort",
+        "blocker": "trunk"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          450,
+          540
+        ],
+        "params": {
+          "r": 24
+        },
+        "z_hint": "ysort",
+        "blocker": "base"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "cactus",
+        "position": [
+          700,
+          560
+        ],
+        "params": {
+          "h": 50
+        },
+        "z_hint": "ysort",
+        "blocker": "base"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "bones",
+        "position": [
+          520,
+          280
+        ],
+        "z_hint": -15,
+        "blocker": null
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "dry_tuft",
+        "position": [
+          380,
+          420
+        ],
+        "z_hint": -15,
+        "blocker": null
+      }
+    ],
+    "blockers": [],
+    "interactions": [],
+    "runtime_only": [
+      "NPC 'Vigia das Dunas' é lore (placeholder visual; sem serviço)",
+      "future_exit 'Estrada para a Cidade' só texto (Cidade não implementada)"
+    ],
+    "notes": [
+      "região EDITOR-AUTHORED (piloto do MapLoader, GODOT-MAPLOADER-NEW-REGION-PILOT-1)",
+      "fonte da verdade do LAYOUT = este arquivo (não Main.gd); lógica/gates ficam no runtime",
+      "props procedurais geram seus próprios blockers no runtime (blockers[] vazio neste piloto)"
+    ]
+  }
+}

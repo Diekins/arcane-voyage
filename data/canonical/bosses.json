@@ -1,0 +1,181 @@
+[
+  {
+    "id": "wolf-alpha",
+    "name": "Lobo Alfa",
+    "regionId": "bosque",
+    "element": "ice",
+    "tier": "novice",
+    "habitat": "Planície dos Novatos",
+    "lore": "Uivo que silencia as estepes. Mais rápido do que parece.",
+    "knownStats": {
+      "hp": "~150",
+      "damage": "10–18",
+      "weakness": "Fogo"
+    },
+    "lootTable": [
+      "Presa do Lobo Alfa",
+      "Pelo bruto"
+    ]
+  },
+  {
+    "id": "crystal-golem",
+    "name": "Golem de Cristal",
+    "regionId": "bosque",
+    "element": "lightning",
+    "tier": "veteran",
+    "habitat": "Caverna Esquecida",
+    "lore": "Cada cristal pulsa uma memória ancestral.",
+    "knownStats": {
+      "hp": "~600",
+      "damage": "20–35",
+      "weakness": "Impacto"
+    },
+    "lootTable": [
+      "Coração de Cristal",
+      "Lasca arcana"
+    ]
+  },
+  {
+    "id": "magma-dragon",
+    "name": "Drago Magmático",
+    "regionId": "minas",
+    "element": "fire",
+    "tier": "elite",
+    "habitat": "Caldeira Flamejante",
+    "lore": "Suas escamas escorrem lava — cada batida de asa é um terremoto.",
+    "knownStats": {
+      "hp": "~1.500",
+      "damage": "30–55",
+      "weakness": "Gelo"
+    },
+    "lootTable": [
+      "Escama de Drago",
+      "Coração ígneo"
+    ]
+  },
+  {
+    "id": "time-devourer",
+    "name": "Devorador do Tempo",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "raid",
+    "habitat": "Fenda Temporal",
+    "lore": "Existe em todos os tempos ao mesmo tempo. Engole eras inteiras.",
+    "knownStats": {
+      "hp": "Cooperativo",
+      "damage": "Variável",
+      "weakness": "Coletivo"
+    },
+    "lootTable": [
+      "Eco do Tempo",
+      "Essência de Chefe"
+    ]
+  },
+  {
+    "id": "faceless-archivist",
+    "name": "Arquivista Sem Rosto",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "elite",
+    "habitat": "Aethelgard",
+    "lore": "Catalogou todos os nomes do mundo, menos o próprio. Ao perder, ele não morre — finalmente lembra.",
+    "knownStats": {
+      "hp": "~1.200",
+      "damage": "25–45",
+      "weakness": "Revelação"
+    },
+    "lootTable": [
+      "Página Sem Nome",
+      "Selo de Preservação"
+    ]
+  },
+  {
+    "id": "broken-oath",
+    "name": "O Juramento Partido",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "elite",
+    "habitat": "O Círculo dos Campeões",
+    "lore": "Não é criatura: é um pacto fraturado que ganhou forma. Pede interpretação, não lâmina — Revelar, Selar, Dissolver ou Refazer.",
+    "knownStats": {
+      "hp": "~1.400",
+      "damage": "30–50",
+      "weakness": "Resposta"
+    },
+    "lootTable": [
+      "Estilhaço do Juramento",
+      "Selo das Três Ordens"
+    ]
+  },
+  {
+    "id": "nameless-saint",
+    "name": "O Santo Sem Memória",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "elite",
+    "habitat": "O Panteão Silencioso",
+    "lore": "Nymara, o Primeiro Nome, esvaziada de propósito para ensinar o Arquivo a preservar identidades. Não coroa: sentencia. Pergunta se um nome liberta ou prende.",
+    "knownStats": {
+      "hp": "~1.600",
+      "damage": "35–55",
+      "weakness": "Nome"
+    },
+    "lootTable": [
+      "Sílaba do Primeiro Nome",
+      "Coroa de Letras Quebradas"
+    ]
+  },
+  {
+    "id": "threshold-guardian",
+    "name": "O Guardião do Limiar",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "elite",
+    "habitat": "A Última Trilha",
+    "lore": "Não é a Sombra — é a porta sem nome que a antecede. Só cede a quem reuniu os cinco ecos do próprio nome; a Chave que ele guarda abre o fim, mas não o escolhe.",
+    "knownStats": {
+      "hp": "~1.800",
+      "damage": "40–60",
+      "weakness": "Nome"
+    },
+    "lootTable": [
+      "Eco da Ausência",
+      "Lasca do Limiar"
+    ]
+  },
+  {
+    "id": "shadow-between-worlds",
+    "name": "A Sombra Entre Mundos",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "raid",
+    "habitat": "O Arquivo Vazio",
+    "lore": "Não é vilã: é a compaixão do Arquivo Vazio, que quer acabar com a perda preservando tudo — inclusive você. 'Vencê-la' é alcançar a escolha final, não matá-la.",
+    "knownStats": {
+      "hp": "Imensurável",
+      "damage": "—",
+      "weakness": "Escolha"
+    },
+    "lootTable": [
+      "Fragmento do Nome",
+      "Eco do Fim"
+    ]
+  },
+  {
+    "id": "aethelgard",
+    "name": "Aethelgard",
+    "regionId": "fenda",
+    "element": "void",
+    "tier": "raid",
+    "habitat": "Trono do Vazio",
+    "lore": "O Soberano caído cuja coroa virou armadilha.",
+    "knownStats": {
+      "hp": "Imensurável",
+      "damage": "Devastador",
+      "weakness": "Soberania"
+    },
+    "lootTable": [
+      "Emblema do Vazio"
+    ]
+  }
+]

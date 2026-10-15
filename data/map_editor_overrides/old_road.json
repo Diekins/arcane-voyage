@@ -1,0 +1,63 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "generated_from": "godot/data/map_manifest/old_road.json",
+  "round_trip_of": "godot-runtime (legacy override piloto — GODOT-MAPLOADER-LEGACY-OVERRIDE-PILOT-1)",
+  "coordinate_system": { "origin": "top-left", "x": "right", "y": "down", "unit": "px-world" },
+  "interaction_radii": { "portal_E": 150, "portal_auto": 64, "interact_E": 140 },
+  "region": {
+    "id": "old_road",
+    "display_name": "Ruínas da Estrada Velha",
+    "client_side": true,
+    "size": [2200, 1300],
+    "spawn": [320, 650],
+    "ground": { "base_color": "#4a4636", "path_color_rgba": [0.55, 0.5, 0.4, 0.4], "path_band": { "axis": "horizontal", "center_y": 650, "height": 150 } },
+    "access": { "gate_flag": null, "from_region": "starter_village", "from_exit": "village_to_east" },
+    "portals": [
+      { "id": "east_to_village", "label": "Trilha → Vila dos Novatos", "position": [220, 650], "target_region": "starter_village", "target_spawn": [1880, 800], "gate_flag": null, "draw_door": true },
+      { "id": "old_road_to_coast", "label": "Rota Antiga ao Mar → Costa do Sal-Vento", "position": [2030, 650], "target_region": "saltwind_shore", "target_spawn": [300, 650], "gate_flag": null, "draw_door": false }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      { "id": "old_road_ruin_raider_1", "mob_id": "ruin_raider", "name": "Salteador das Ruínas", "visual": "road_bandit", "hp": 70, "aggro": 400, "respawn": 12, "dmg_min": 9, "dmg_max": 14, "xp": 34, "gold": 18, "atk_range": 90, "cooldown": 1.3, "speed": 130, "radius": 20, "color": "2e2a2e", "loot": [{ "name": "Bolsa de Moedas", "chance": 0.4 }, { "name": "Pedra Rúnica", "chance": 0.2 }], "position": [1100, 500] },
+      { "id": "old_road_ruin_raider_2", "mob_id": "ruin_raider", "name": "Salteador das Ruínas", "visual": "road_bandit", "hp": 70, "aggro": 400, "respawn": 12, "dmg_min": 9, "dmg_max": 14, "xp": 34, "gold": 18, "atk_range": 90, "cooldown": 1.3, "speed": 130, "radius": 20, "color": "2e2a2e", "loot": [{ "name": "Bolsa de Moedas", "chance": 0.4 }, { "name": "Pedra Rúnica", "chance": 0.2 }], "position": [1500, 820] },
+      { "id": "old_road_ruin_raider_3", "mob_id": "ruin_raider", "name": "Salteador das Ruínas", "visual": "road_bandit", "hp": 70, "aggro": 400, "respawn": 12, "dmg_min": 9, "dmg_max": 14, "xp": 34, "gold": 18, "atk_range": 90, "cooldown": 1.3, "speed": 130, "radius": 20, "color": "2e2a2e", "loot": [{ "name": "Bolsa de Moedas", "chance": 0.4 }, { "name": "Pedra Rúnica", "chance": 0.2 }], "position": [1750, 560] },
+      { "id": "old_road_feral_hound_1", "mob_id": "feral_hound", "name": "Cão Selvagem", "visual": "young_wolf", "hp": 40, "aggro": 360, "respawn": 7, "dmg_min": 6, "dmg_max": 10, "xp": 22, "gold": 6, "atk_range": 84, "cooldown": 1.1, "speed": 160, "radius": 22, "color": "7a6a52", "side_left": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.5 }, { "name": "Carne Crua", "chance": 0.3 }], "position": [800, 900] },
+      { "id": "old_road_feral_hound_2", "mob_id": "feral_hound", "name": "Cão Selvagem", "visual": "young_wolf", "hp": 40, "aggro": 360, "respawn": 7, "dmg_min": 6, "dmg_max": 10, "xp": 22, "gold": 6, "atk_range": 84, "cooldown": 1.1, "speed": 160, "radius": 22, "color": "7a6a52", "side_left": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.5 }, { "name": "Carne Crua", "chance": 0.3 }], "position": [1000, 1050] },
+      { "id": "old_road_feral_hound_3", "mob_id": "feral_hound", "name": "Cão Selvagem", "visual": "young_wolf", "hp": 40, "aggro": 360, "respawn": 7, "dmg_min": 6, "dmg_max": 10, "xp": 22, "gold": 6, "atk_range": 84, "cooldown": 1.1, "speed": 160, "radius": 22, "color": "7a6a52", "side_left": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.5 }, { "name": "Carne Crua", "chance": 0.3 }], "position": [1250, 720] },
+      { "id": "old_road_fallen_sentry_1", "mob_id": "fallen_sentry", "name": "Sentinela Tombada", "visual": "fallen_sentry", "hp": 130, "aggro": 300, "respawn": 18, "elite": true, "dmg_min": 12, "dmg_max": 17, "xp": 55, "gold": 22, "atk_range": 98, "cooldown": 1.9, "speed": 65, "radius": 28, "color": "857d6a", "wander_radius": 80, "loot": [{ "name": "Pedra Rúnica", "chance": 0.55 }, { "name": "Núcleo Trincado", "chance": 0.15 }], "position": [1850, 650] }
+    ],
+    "chests": [
+      { "id": "road_milestone_cache", "position": [1600, 300], "loot": { "gold": 35, "materials": { "Pedra Rúnica": 2 }, "items": ["potion_minor"] } },
+      { "id": "road_toll_strongbox", "position": [1950, 1000], "loot": { "gold": 50, "materials": { "Bolsa de Moedas": 1, "Pedra Rúnica": 1 } } }
+    ],
+    "props": [
+      { "id": "old_road_column_1", "type": "procedural", "procedural_type": "column", "position": [220, 195], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_2", "type": "procedural", "procedural_type": "column", "position": [660, 130], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_3", "type": "procedural", "procedural_type": "column", "position": [1210, 208], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_4", "type": "procedural", "procedural_type": "column", "position": [1716, 156], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_5", "type": "procedural", "procedural_type": "column", "position": [1980, 390], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_6", "type": "procedural", "procedural_type": "column", "position": [264, 1105], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_7", "type": "procedural", "procedural_type": "column", "position": [880, 1170], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_8", "type": "procedural", "procedural_type": "column", "position": [1540, 1105], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_column_9", "type": "procedural", "procedural_type": "column", "position": [1936, 1066], "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_rock_10", "type": "procedural", "procedural_type": "dry_rock", "position": [550, 585], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_rock_11", "type": "procedural", "procedural_type": "dry_rock", "position": [1320, 780], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_rock_12", "type": "procedural", "procedural_type": "dry_rock", "position": [1804, 520], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" },
+      { "id": "old_road_rock_13", "type": "procedural", "procedural_type": "dry_rock", "position": [990, 936], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" }
+    ],
+    "blockers": [],
+    "interactions": [],
+    "runtime_only": [
+      "elite Sentinela Tombada (respawn 18s; comportamento no runtime)",
+      "props procedurais (placeholders); o builder original usa tileset real"
+    ],
+    "notes": [
+      "★ LEGACY OVERRIDE PILOTO (GODOT-MAPLOADER-LEGACY-OVERRIDE-PILOT-1): este JSON substitui o LAYOUT de old_road",
+      "se LEGACY_OVERRIDE_ENABLED['old_road']=true e o arquivo for válido; senão o runtime usa _build_old_road",
+      "props procedurais geram seus próprios blockers no runtime (blockers[] vazio); sem boss/NPC (runtime_extras no-op)"
+    ]
+  }
+}

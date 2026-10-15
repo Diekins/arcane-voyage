@@ -1,0 +1,588 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "deep_grove",
+    "display_name": "Coração das Raízes Negras",
+    "client_side": true,
+    "size": [
+      1800,
+      1300
+    ],
+    "spawn": [
+      900,
+      1090
+    ],
+    "ground": {
+      "base_color": "#15171a",
+      "path_color_rgba": [
+        0.26,
+        0.22,
+        0.26,
+        0.34
+      ],
+      "notes": [
+        "chão pintado — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "ashen_grove",
+      "from_exit": "grove_north_seal"
+    },
+    "portals": [
+      {
+        "id": "deep_to_grove",
+        "label": "Passagem → Bosque de Cinza",
+        "position": [
+          900,
+          1230
+        ],
+        "target_region": "ashen_grove",
+        "target_spawn": [
+          1100,
+          360
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      },
+      {
+        "id": "deep_north_exit",
+        "label": "Raízes Profundas → Ninho Ancestral",
+        "position": [
+          900,
+          130
+        ],
+        "target_region": "ancient_root_nest",
+        "target_spawn": [
+          850,
+          1030
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "dark_sprout",
+        "name": "Broto Sombrio",
+        "visual": "shadow_sprout",
+        "hp": 60,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "deep_grove_dark_sprout_1",
+        "position": [
+          520,
+          820
+        ]
+      },
+      {
+        "mob_id": "dark_sprout",
+        "name": "Broto Sombrio",
+        "visual": "shadow_sprout",
+        "hp": 60,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "deep_grove_dark_sprout_2",
+        "position": [
+          1300,
+          820
+        ]
+      },
+      {
+        "mob_id": "dark_sprout",
+        "name": "Broto Sombrio",
+        "visual": "shadow_sprout",
+        "hp": 60,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "deep_grove_dark_sprout_3",
+        "position": [
+          720,
+          960
+        ]
+      },
+      {
+        "mob_id": "root_spider",
+        "name": "Aranha de Raiz",
+        "visual": "root_spider",
+        "hp": 72,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "deep_grove_root_spider_1",
+        "position": [
+          450,
+          460
+        ]
+      },
+      {
+        "mob_id": "root_spider",
+        "name": "Aranha de Raiz",
+        "visual": "root_spider",
+        "hp": 72,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "deep_grove_root_spider_2",
+        "position": [
+          1350,
+          460
+        ]
+      },
+      {
+        "mob_id": "root_spider",
+        "name": "Aranha de Raiz",
+        "visual": "root_spider",
+        "hp": 72,
+        "aggro": 360,
+        "respawn": 8,
+        "id": "deep_grove_root_spider_3",
+        "position": [
+          600,
+          640
+        ]
+      },
+      {
+        "mob_id": "hollow_watcher",
+        "name": "Vigia Oco",
+        "visual": "hollow_watcher",
+        "hp": 165,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "deep_grove_hollow_watcher_1",
+        "position": [
+          1400,
+          660
+        ]
+      },
+      {
+        "mob_id": "hollow_watcher",
+        "name": "Vigia Oco",
+        "visual": "hollow_watcher",
+        "hp": 165,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "deep_grove_hollow_watcher_2",
+        "position": [
+          400,
+          660
+        ]
+      },
+      {
+        "mob_id": "root_matriarch",
+        "name": "Matriarca das Raízes",
+        "visual": "root_matriarch",
+        "hp": 280,
+        "aggro": 360,
+        "respawn": 60,
+        "elite": true,
+        "notes": [
+          "mini-boss (mob elite); respawn 60s"
+        ],
+        "id": "deep_grove_root_matriarch_1",
+        "position": [
+          900,
+          560
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "deep_root_reliquary",
+        "position": [
+          340,
+          980
+        ],
+        "loot": {
+          "gold": 55,
+          "materials": {
+            "Raiz Negra": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      },
+      {
+        "id": "deep_buried_altar",
+        "position": [
+          1460,
+          360
+        ],
+        "loot": {
+          "gold": 70,
+          "materials": {
+            "Raiz Negra": 1,
+            "Núcleo Trincado": 1
+          }
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "deep_grove_dead_tree_1",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          144.0,
+          182.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_2",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          468.0,
+          130.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_3",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1332.0,
+          130.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_4",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1656.0,
+          208.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_5",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          108.0,
+          650.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_6",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1692.0,
+          650.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_7",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          180.0,
+          1144.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_dead_tree_8",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1620.0,
+          1144.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_column_9",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          360.0,
+          416.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_column_10",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1440.0,
+          416.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_column_11",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          360.0,
+          910.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_column_12",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1440.0,
+          910.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_rock_13",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          612.0,
+          260.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_rock_14",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1188.0,
+          260.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_rock_15",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          540.0,
+          1066.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "deep_grove_rock_16",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1260.0,
+          1066.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      }
+    ],
+    "blockers": [
+      {
+        "from": "deep_grove_dead_tree_1",
+        "rect": [
+          133.0,
+          184.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_2",
+        "rect": [
+          457.0,
+          132.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_3",
+        "rect": [
+          1321.0,
+          132.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_4",
+        "rect": [
+          1645.0,
+          210.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_5",
+        "rect": [
+          97.0,
+          652.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_6",
+        "rect": [
+          1681.0,
+          652.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_7",
+        "rect": [
+          169.0,
+          1146.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_dead_tree_8",
+        "rect": [
+          1609.0,
+          1146.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "deep_grove_column_9",
+        "rect": [
+          348.0,
+          418.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "deep_grove_column_10",
+        "rect": [
+          1428.0,
+          418.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "deep_grove_column_11",
+        "rect": [
+          348.0,
+          912.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "deep_grove_column_12",
+        "rect": [
+          1428.0,
+          912.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "deep_grove_rock_13",
+        "rect": [
+          590.0,
+          249.0,
+          44.0,
+          22
+        ]
+      },
+      {
+        "from": "deep_grove_rock_14",
+        "rect": [
+          1166.0,
+          249.0,
+          44.0,
+          22
+        ]
+      },
+      {
+        "from": "deep_grove_rock_15",
+        "rect": [
+          518.0,
+          1055.0,
+          44.0,
+          22
+        ]
+      },
+      {
+        "from": "deep_grove_rock_16",
+        "rect": [
+          1238.0,
+          1055.0,
+          44.0,
+          22
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "mini-boss Matriarca das Raízes (mob elite)",
+      "elite Vigia Oco",
+      "props/blockers = _scatter_deep_grove_decor (não extraídos)"
+    ],
+    "notes": [
+      "subárea norte do Bosque; arco das Raízes Negras"
+    ]
+  }
+}

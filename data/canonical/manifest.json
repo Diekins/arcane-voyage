@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    "campaign_acts.json",
+    "campaign_quests.json",
+    "dialogue_scenes.json",
+    "regions.json",
+    "bosses.json",
+    "npcs.json",
+    "relics.json",
+    "endings.json",
+    "echoes.json",
+    "manifest.json"
+  ],
+  "counts": {
+    "campaign_acts": 6,
+    "campaign_quests": 10,
+    "dialogue_scenes": 42,
+    "regions": 10,
+    "bosses": 10,
+    "npcs": 9,
+    "relics": 6,
+    "endings": 5,
+    "echoes_catalog": 6
+  },
+  "generatedAt": "2026-06-03T01:00:40.392Z"
+}

@@ -1,0 +1,526 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "cave",
+    "display_name": "Caverna Esquecida",
+    "client_side": false,
+    "size": [
+      1800,
+      1200
+    ],
+    "spawn": [
+      440,
+      620
+    ],
+    "ground": {
+      "base_color": "#1b2030",
+      "path_color_rgba": [
+        0.4,
+        0.44,
+        0.55,
+        0.3
+      ],
+      "notes": [
+        "tileset real (cave_floor) — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "plains"
+    },
+    "portals": [
+      {
+        "id": "cave_to_plains",
+        "label": "Saída para a Planície",
+        "position": [
+          250,
+          600
+        ],
+        "target_region": "plains",
+        "target_spawn": null,
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "crystal_bat",
+        "name": "Morcego Cristalino",
+        "visual": "crystal_bat",
+        "hp": 56,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "cave_crystal_bat_1",
+        "position": [
+          720,
+          360
+        ]
+      },
+      {
+        "mob_id": "crystal_bat",
+        "name": "Morcego Cristalino",
+        "visual": "crystal_bat",
+        "hp": 56,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "cave_crystal_bat_2",
+        "position": [
+          1120,
+          920
+        ]
+      },
+      {
+        "mob_id": "crystal_bat",
+        "name": "Morcego Cristalino",
+        "visual": "crystal_bat",
+        "hp": 56,
+        "aggro": 360,
+        "respawn": 7,
+        "id": "cave_crystal_bat_3",
+        "position": [
+          1500,
+          940
+        ]
+      },
+      {
+        "mob_id": "living_shard",
+        "name": "Fragmento Vivo",
+        "visual": "living_shard",
+        "hp": 62,
+        "aggro": 300,
+        "respawn": 8,
+        "id": "cave_living_shard_1",
+        "position": [
+          980,
+          700
+        ]
+      },
+      {
+        "mob_id": "living_shard",
+        "name": "Fragmento Vivo",
+        "visual": "living_shard",
+        "hp": 62,
+        "aggro": 300,
+        "respawn": 8,
+        "id": "cave_living_shard_2",
+        "position": [
+          1120,
+          430
+        ]
+      },
+      {
+        "mob_id": "crawling_shade",
+        "name": "Sombra",
+        "visual": "crawling_shade",
+        "hp": 90,
+        "aggro": 440,
+        "respawn": 12,
+        "id": "cave_crawling_shade_1",
+        "position": [
+          1520,
+          350
+        ]
+      },
+      {
+        "mob_id": "grove_spider",
+        "name": "Aranha do Mato",
+        "visual": "grove_spider",
+        "hp": 46,
+        "aggro": 340,
+        "respawn": 6,
+        "id": "cave_grove_spider_1",
+        "position": [
+          640,
+          980
+        ]
+      },
+      {
+        "mob_id": "grove_spider",
+        "name": "Aranha do Mato",
+        "visual": "grove_spider",
+        "hp": 46,
+        "aggro": 340,
+        "respawn": 6,
+        "id": "cave_grove_spider_2",
+        "position": [
+          1320,
+          820
+        ]
+      },
+      {
+        "mob_id": "green_slime",
+        "name": "Gosma Verde",
+        "visual": "green_slime",
+        "hp": 38,
+        "aggro": 280,
+        "respawn": 6,
+        "id": "cave_green_slime_1",
+        "position": [
+          840,
+          300
+        ]
+      },
+      {
+        "mob_id": "green_slime",
+        "name": "Gosma Verde",
+        "visual": "green_slime",
+        "hp": 38,
+        "aggro": 280,
+        "respawn": 6,
+        "id": "cave_green_slime_2",
+        "position": [
+          1200,
+          360
+        ]
+      },
+      {
+        "mob_id": "dusk_bat",
+        "name": "Morcego da Penumbra",
+        "visual": "crystal_bat",
+        "hp": 30,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "cave_dusk_bat_1",
+        "position": [
+          820,
+          420
+        ]
+      },
+      {
+        "mob_id": "dusk_bat",
+        "name": "Morcego da Penumbra",
+        "visual": "crystal_bat",
+        "hp": 30,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "cave_dusk_bat_2",
+        "position": [
+          1180,
+          860
+        ]
+      },
+      {
+        "mob_id": "dusk_bat",
+        "name": "Morcego da Penumbra",
+        "visual": "crystal_bat",
+        "hp": 30,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "cave_dusk_bat_3",
+        "position": [
+          1420,
+          880
+        ]
+      },
+      {
+        "mob_id": "dusk_bat",
+        "name": "Morcego da Penumbra",
+        "visual": "crystal_bat",
+        "hp": 30,
+        "aggro": 380,
+        "respawn": 6.5,
+        "id": "cave_dusk_bat_4",
+        "position": [
+          900,
+          1000
+        ]
+      },
+      {
+        "mob_id": "stone_sentinel",
+        "name": "Sentinela de Pedra",
+        "visual": "stone_sentinel",
+        "hp": 140,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "cave_stone_sentinel_1",
+        "position": [
+          1640,
+          920
+        ]
+      }
+    ],
+    "chests": [],
+    "props": [
+      {
+        "id": "cave_crystal_1",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          360.0,
+          360.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_2",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          810.0,
+          240.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_3",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          1116.0,
+          504.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_4",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          1440.0,
+          336.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_5",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          576.0,
+          864.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_6",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          1260.0,
+          912.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_7",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          936.0,
+          1032.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_crystal_8",
+        "type": "procedural",
+        "procedural_type": "crystal",
+        "position": [
+          1620.0,
+          720.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_rock_9",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          270.0,
+          600.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_rock_10",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          990.0,
+          744.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_rock_11",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1530.0,
+          540.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      },
+      {
+        "id": "cave_rock_12",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          720.0,
+          408.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": true
+      }
+    ],
+    "blockers": [
+      {
+        "from": "cave_crystal_1",
+        "rect": [
+          342.0,
+          348.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_2",
+        "rect": [
+          792.0,
+          228.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_3",
+        "rect": [
+          1098.0,
+          492.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_4",
+        "rect": [
+          1422.0,
+          324.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_5",
+        "rect": [
+          558.0,
+          852.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_6",
+        "rect": [
+          1242.0,
+          900.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_7",
+        "rect": [
+          918.0,
+          1020.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_crystal_8",
+        "rect": [
+          1602.0,
+          708.0,
+          36.0,
+          21.0
+        ]
+      },
+      {
+        "from": "cave_rock_9",
+        "rect": [
+          238.0,
+          584.0,
+          64.0,
+          32
+        ]
+      },
+      {
+        "from": "cave_rock_10",
+        "rect": [
+          958.0,
+          728.0,
+          64.0,
+          32
+        ]
+      },
+      {
+        "from": "cave_rock_11",
+        "rect": [
+          1498.0,
+          524.0,
+          64.0,
+          32
+        ]
+      },
+      {
+        "from": "cave_rock_12",
+        "rect": [
+          688.0,
+          392.0,
+          64.0,
+          32
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "BOSS Golem de Cristal @ (1380,600) — construído em _build_golem (fora de _mob_configs)",
+      "props/blockers = _scatter_cave_decor + tileset (não extraídos)"
+    ],
+    "notes": [
+      "Ato 2; em regions.json"
+    ]
+  }
+}

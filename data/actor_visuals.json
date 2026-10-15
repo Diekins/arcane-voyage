@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "note": "Manifesto de spritesheets top-down. Sem o png em res://assets/actors/<key>.png, o ActorAnimator usa FALLBACK procedural. Plugados de verdade em GODOT-MOB-SPRITES-PLUG-1: young_wolf, crystal_bat.",
+  "plug_format": "Cada PNG plugado é UMA STRIP horizontal de quadros quadrados (lado = altura), 1 linha = anim 'move' em loop. O ActorAnimator usa 'move' p/ idle (lento) e walk (rápido); attack/hit/death são procedurais por cima do sprite animado.",
+  "frame_target_px": { "mob": 64, "hero": 64, "boss": 96 },
+  "states": {
+    "idle":   { "frames": 4 },
+    "walk":   { "frames": 6 },
+    "attack": { "frames": 5 },
+    "hit":    { "frames": 2 },
+    "death":  { "frames": 6 }
+  },
+  "directions": ["down", "side"],
+  "actors": {
+    "hero/errante":         { "frame_w": 64,  "frame_h": 64,  "fps": 8, "tier": "hero", "plugged": true,  "sheet": "assets/actors/hero/errante.png", "frames": 10, "note": "row0 do raw = stance down-facing (espada+escudo); flip L/R; idle/attack/hit/death procedurais. VISUAL PADRÃO/FALLBACK (desarmado, arma desconhecida, ou strip de arquétipo ausente)." },
+    "hero/player_wanderer_sword":    { "frame_w": 64, "frame_h": 64, "fps": 8, "tier": "hero", "plugged": true, "sheet": "assets/actors/hero/player_wanderer_sword.png",    "side_sheet": "assets/actors/hero/player_wanderer_sword_side.png",    "up_sheet": "assets/actors/hero/player_wanderer_sword_up.png",    "frames": 4, "directions": ["down", "side", "up"], "note": "GODOT-PLAYER-ARCHETYPE-SPRITES-1 — equipar arma 'sword' (Player Archetypes Pack 1, fatiado de 1254 quadrado 4x4: row0=down, row2=side/right -> flip p/ esquerda, row3=up). side_faces_left=false, can_flip=true." },
+    "hero/player_wanderer_archer":   { "frame_w": 64, "frame_h": 64, "fps": 8, "tier": "hero", "plugged": true, "sheet": "assets/actors/hero/player_wanderer_archer.png",   "side_sheet": "assets/actors/hero/player_wanderer_archer_side.png",   "up_sheet": "assets/actors/hero/player_wanderer_archer_up.png",   "frames": 4, "directions": ["down", "side", "up"], "note": "GODOT-PLAYER-ARCHETYPE-SPRITES-1 — arma 'bow' (arqueiro, sem escudo)." },
+    "hero/player_wanderer_mage":     { "frame_w": 64, "frame_h": 64, "fps": 8, "tier": "hero", "plugged": true, "sheet": "assets/actors/hero/player_wanderer_mage.png",     "side_sheet": "assets/actors/hero/player_wanderer_mage_side.png",     "up_sheet": "assets/actors/hero/player_wanderer_mage_up.png",     "frames": 4, "directions": ["down", "side", "up"], "note": "GODOT-PLAYER-ARCHETYPE-SPRITES-1 — arma 'staff' (mago, cajado + foco de cristal ciano)." },
+    "hero/player_wanderer_spearman": { "frame_w": 64, "frame_h": 64, "fps": 8, "tier": "hero", "plugged": true, "sheet": "assets/actors/hero/player_wanderer_spearman.png", "side_sheet": "assets/actors/hero/player_wanderer_spearman_side.png", "up_sheet": "assets/actors/hero/player_wanderer_spearman_up.png", "frames": 4, "directions": ["down", "side", "up"], "note": "GODOT-PLAYER-ARCHETYPE-SPRITES-1 — arma 'spear' (lanceiro, sem escudo)." },
+    "hero/player_wanderer_oracle":   { "frame_w": 64, "frame_h": 64, "fps": 8, "tier": "hero", "plugged": true, "sheet": "assets/actors/hero/player_wanderer_oracle.png",   "side_sheet": "assets/actors/hero/player_wanderer_oracle_side.png",   "up_sheet": "assets/actors/hero/player_wanderer_oracle_up.png",   "frames": 4, "directions": ["down", "side", "up"], "note": "GODOT-ORACLE-SPRITE-PLUG-1 — arma 'book' (Oráculo, suporte). side_faces_left=false, can_flip=true. Manifesto doc-only (loader resolve por caminho)." },
+    "npcs/aldric_vaelor":   { "frame_w": 64,  "frame_h": 64,  "fps": 6, "tier": "npc",  "plugged": true,  "sheet": "assets/actors/npcs/aldric_vaelor.png", "talk_sheet": "assets/actors/npcs/aldric_vaelor_talk.png", "frames": 4, "talk_frames": 4, "note": "NPC do mundo (down-facing). 'move'=idle (4f) + 'talk'=gesto (4f). Retrato 512² segue só no DIÁLOGO." },
+    "npcs/village/elder":   { "frame_w": 64,  "frame_h": 64,  "fps": 5, "tier": "npc",  "plugged": true,  "sheet": "assets/actors/npcs/village/elder.png", "frames": 4, "note": "Vila (GODOT-STARTER-VILLAGE-1): Anciã Maelis, idle down-facing 4f; talk=pulso procedural" },
+    "npcs/village/guard":   { "frame_w": 64,  "frame_h": 64,  "fps": 5, "tier": "npc",  "plugged": true,  "sheet": "assets/actors/npcs/village/guard.png", "frames": 4, "note": "Vila: Guarda Tomas (lança+escudo), idle down-facing 4f; talk procedural" },
+    "npcs/village/farmer":  { "frame_w": 64,  "frame_h": 64,  "fps": 5, "tier": "npc",  "plugged": true,  "sheet": "assets/actors/npcs/village/farmer.png", "frames": 4, "note": "Vila: Fazendeiro Bran (chapéu de palha), idle down-facing 4f; talk procedural" },
+    "mobs/young_wolf":      { "frame_w": 64,  "frame_h": 64,  "fps": 8, "tier": "mob",  "plugged": true,  "sheet": "assets/actors/mobs/young_wolf.png", "frames": 9, "note": "corrida lateral (1 linha do raw); flip p/ esquerda/direita" },
+    "mobs/crystal_bat":     { "frame_w": 64,  "frame_h": 64,  "fps": 8, "tier": "mob",  "plugged": true,  "sheet": "assets/actors/mobs/crystal_bat.png", "frames": 7, "note": "voo/bater de asas (front/down)" },
+    "mobs/stone_sentinel":  { "frame_w": 96,  "frame_h": 96,  "fps": 5, "tier": "elite", "plugged": true,  "sheet": "assets/actors/mobs/stone_sentinel.png", "frames": 4, "note": "Golem/sentinela de PEDRA (cinza+veios ciano), tank lento da Caverna. 4-dir REAL (down/side/up, 4f/96px). Plugado em GODOT-STONE-SENTINEL-SPRITE-IMPORT-1. Manifesto é doc-only (loader resolve por caminho)" },
+    "bosses/alpha_wolf":    { "frame_w": 96,  "frame_h": 96,  "fps": 7, "tier": "boss", "plugged": true,  "sheet": "assets/actors/bosses/alpha_wolf.png", "frames": 6, "note": "Lobo Alfa: corrida lateral c/ chamas cianas (flip L/R); attack/hit/death procedurais" },
+    "bosses/crystal_golem": { "frame_w": 120, "frame_h": 120, "fps": 6, "tier": "boss", "plugged": true,  "sheet": "assets/actors/bosses/crystal_golem.png", "frames": 11, "note": "Golem: idle down-facing (corpo rochoso + cristais); attack/hit/death procedurais" }
+  }
+}

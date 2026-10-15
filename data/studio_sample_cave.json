@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio (STUDIO-PLAYABLE-SAMPLE-1 — cave/final)",
+  "map": { "id": "sample_cave", "width": 1600, "height": 1100, "spawn": { "x": 430, "y": 560 }, "groundColor": "#141826" },
+  "objects": [
+    { "id": "floor", "layer": "ground", "asset": "tilesets/cave/cave_floor.png", "x": 0, "y": 0, "z": -20, "ysort": false, "baseOffset": 0, "tile": true, "w": 1600, "h": 1100 },
+    { "id": "crystal_a", "layer": "props", "asset": "tilesets/cave/props/crystal.png", "x": 980, "y": 420, "scale": 1, "z": 0, "ysort": true, "baseOffset": 0 },
+    { "id": "crystal_b", "layer": "props", "asset": "tilesets/cave/props/crystal.png", "x": 1320, "y": 700, "scale": 1, "z": 0, "ysort": true, "baseOffset": 0 }
+  ],
+  "blockers": [
+    { "id": "blk_crystal_a", "x": 954, "y": 412, "w": 52, "h": 34 }
+  ],
+  "portals": [
+    { "id": "to_hunt", "x": 200, "y": 560, "target": "sample_hunt", "title": "← Sample Hunt", "asset": "tilesets/cave/props/cave_exit.png" }
+  ],
+  "markers": [
+    { "id": "golem_boss", "kind": "mob", "x": 1150, "y": 560, "mobId": "crystal_golem", "count": 1, "radius": 0, "respawnSeconds": 0 }
+  ],
+  "mobs": [
+    { "mobId": "crystal_golem", "name": "Golem de Cristal", "asset": "actors/bosses/crystal_golem.png", "role": "boss", "level": 6, "hp": 600, "damageMin": 30, "damageMax": 45, "speed": 70, "aggroRange": 300, "attackRange": 150, "respawnSeconds": 0, "xpReward": 260, "goldMin": 80, "goldMax": 140, "lootTableId": "", "notes": "" }
+  ],
+  "loot": { "items": [], "tables": [] },
+  "npcs": [],
+  "services": [],
+  "assetBank": [
+    { "assetId": "boss_crystal_golem", "name": "Golem de Cristal", "path": "actors/bosses/crystal_golem.png", "type": "actor", "category": "boss", "status": "plugged", "tags": [], "frameW": 120, "frameH": 120, "frames": 11, "rows": 1, "directionMode": "none", "rowOrder": ["move"], "canFlip": false, "sideFacesLeft": null, "ysort": true, "baseOffset": 0, "defaultScale": 1, "collisionPreset": "feet", "notes": "idle down-facing (não-provisório)" }
+  ],
+  "quests": []
+}

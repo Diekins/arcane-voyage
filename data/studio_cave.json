@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio (MAP-LOADER-GODOT-2 — destino de portal)",
+  "map": {
+    "id": "cave",
+    "width": 1800,
+    "height": 1200,
+    "spawn": {
+      "x": 320,
+      "y": 600
+    },
+    "groundColor": "#141826"
+  },
+  "objects": [
+    {
+      "id": "floor_1",
+      "layer": "ground",
+      "asset": "tilesets/cave/cave_floor.png",
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "z": -20,
+      "ysort": false,
+      "baseOffset": 0,
+      "tile": true,
+      "w": 1800,
+      "h": 1200
+    },
+    {
+      "id": "crystal_1",
+      "layer": "props",
+      "asset": "tilesets/cave/props/crystal.png",
+      "x": 1230,
+      "y": 470,
+      "scale": 1,
+      "z": 0,
+      "ysort": true,
+      "baseOffset": 0
+    },
+    {
+      "id": "crystal_2",
+      "layer": "props",
+      "asset": "tilesets/cave/props/crystal.png",
+      "x": 1530,
+      "y": 720,
+      "scale": 1,
+      "z": 0,
+      "ysort": true,
+      "baseOffset": 0
+    }
+  ],
+  "blockers": [
+    {
+      "id": "blk_crystal_1",
+      "x": 1204,
+      "y": 462,
+      "w": 52,
+      "h": 34
+    }
+  ],
+  "portals": [
+    {
+      "id": "portal_back",
+      "x": 250,
+      "y": 600,
+      "target": "smoke_clearing",
+      "title": "Voltar à Clareira",
+      "asset": "tilesets/cave/props/cave_exit.png"
+    }
+  ],
+  "markers": [
+    {
+      "id": "spawn_bat",
+      "kind": "mob",
+      "x": 1380,
+      "y": 600,
+      "mobId": "crystal_bat",
+      "count": 1,
+      "radius": 160,
+      "respawnSeconds": 7
+    },
+    {
+      "id": "chest_cave_north_niche",
+      "kind": "chest",
+      "x": 560,
+      "y": 360,
+      "name": "",
+      "asset": null,
+      "loot": {
+        "gold": 25,
+        "materials": {
+          "Fragmento de Cristal": 2
+        }
+      },
+      "title": "Nicho de Cristal",
+      "ysort": true,
+      "baseOffset": 0
+    },
+    {
+      "id": "chest_cave_south_coffer",
+      "kind": "chest",
+      "x": 700,
+      "y": 950,
+      "name": "",
+      "asset": null,
+      "loot": {
+        "gold": 35,
+        "materials": {
+          "Pó Luminescente": 2
+        },
+        "items": [
+          "potion_minor"
+        ]
+      },
+      "title": "Cofre de Pedra",
+      "ysort": true,
+      "baseOffset": 0
+    }
+  ],
+  "mobs": [
+    {
+      "mobId": "crystal_bat",
+      "name": "Morcego Cristalino",
+      "asset": "actors/mobs/crystal_bat.png",
+      "role": "common",
+      "level": 3,
+      "hp": 55,
+      "damageMin": 6,
+      "damageMax": 10,
+      "speed": 130,
+      "aggroRange": 360,
+      "attackRange": 92,
+      "respawnSeconds": 7,
+      "xpReward": 22,
+      "goldMin": 4,
+      "goldMax": 12,
+      "lootTableId": "",
+      "notes": ""
+    }
+  ],
+  "loot": {
+    "items": [],
+    "tables": []
+  },
+  "npcs": [],
+  "services": [],
+  "assetBank": [
+    {
+      "assetId": "mob_crystal_bat",
+      "name": "Morcego Cristalino",
+      "path": "actors/mobs/crystal_bat.png",
+      "type": "actor",
+      "category": "mob",
+      "status": "plugged",
+      "tags": [],
+      "frameW": 64,
+      "frameH": 64,
+      "frames": 7,
+      "rows": 1,
+      "directionMode": "omnidirectional",
+      "rowOrder": [
+        "move"
+      ],
+      "canFlip": false,
+      "sideFacesLeft": null,
+      "ysort": true,
+      "baseOffset": 0,
+      "defaultScale": 1,
+      "collisionPreset": "feet",
+      "notes": "voo front/down"
+    }
+  ],
+  "quests": []
+}

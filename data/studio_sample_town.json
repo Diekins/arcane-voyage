@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio (STUDIO-PLAYABLE-SAMPLE-1 — hub)",
+  "map": { "id": "sample_town", "width": 1600, "height": 1100, "spawn": { "x": 700, "y": 650 }, "groundColor": "#3c6b34" },
+  "objects": [
+    { "id": "grass", "layer": "ground", "asset": "tilesets/plains/grass.png", "x": 0, "y": 0, "z": -20, "ysort": false, "baseOffset": 0, "tile": true, "w": 1600, "h": 1100 },
+    { "id": "plaza", "layer": "overlay", "asset": "tilesets/starter_village/plaza.png", "x": 540, "y": 360, "z": -18, "ysort": false, "baseOffset": 0, "tile": true, "w": 520, "h": 380 },
+    { "id": "fountain", "layer": "props", "asset": "tilesets/starter_village/fountain.png", "x": 800, "y": 540, "scale": 1, "z": 0, "ysort": true, "baseOffset": 30 },
+    { "id": "guild", "layer": "props", "asset": "tilesets/starter_village/guild_hall.png", "x": 420, "y": 300, "scale": 1, "z": 0, "ysort": true, "baseOffset": 48 },
+    { "id": "healer_house", "layer": "props", "asset": "tilesets/starter_village/healer.png", "x": 1150, "y": 420, "scale": 1, "z": 0, "ysort": true, "baseOffset": 44 },
+    { "id": "signpost", "layer": "props", "asset": "tilesets/starter_village/signpost.png", "x": 1360, "y": 600, "scale": 1, "z": 0, "ysort": true, "baseOffset": 26 }
+  ],
+  "blockers": [
+    { "id": "blk_fountain", "x": 740, "y": 522, "w": 120, "h": 70 },
+    { "id": "blk_guild", "x": 350, "y": 294, "w": 140, "h": 60 }
+  ],
+  "portals": [
+    { "id": "to_hunt", "x": 1500, "y": 560, "target": "sample_hunt", "title": "→ Sample Hunt", "asset": "tilesets/starter_village/gate.png" }
+  ],
+  "markers": [
+    { "id": "npc_elder", "kind": "npc", "x": 640, "y": 520, "npcId": "elder", "facing": "down" },
+    { "id": "svc_healer", "kind": "service", "x": 1150, "y": 560, "serviceId": "town_healer", "serviceKind": "healer" }
+  ],
+  "mobs": [],
+  "loot": { "items": [], "tables": [] },
+  "npcs": [
+    { "npcId": "elder", "name": "Anciã Maelis", "asset": "actors/npcs/village/elder.png", "portrait": "", "role": "mentor", "defaultDialogue": ["Bem-vindo, Errante. A caçada espera além do portão a leste."], "tags": ["sample"], "notes": "" }
+  ],
+  "services": [
+    { "serviceId": "town_healer", "serviceKind": "healer", "name": "Curandeira", "prompt": "[E] descansar (curar)", "dialogue": [], "config": "", "notes": "" }
+  ],
+  "assetBank": [
+    { "assetId": "npc_elder", "name": "Anciã (vila)", "path": "actors/npcs/village/elder.png", "type": "actor", "category": "npc", "status": "plugged", "tags": [], "frameW": 64, "frameH": 64, "frames": 4, "rows": 1, "directionMode": "none", "rowOrder": ["move"], "canFlip": false, "sideFacesLeft": null, "ysort": true, "baseOffset": 0, "defaultScale": 1, "collisionPreset": "feet", "notes": "down-facing" }
+  ],
+  "quests": []
+}

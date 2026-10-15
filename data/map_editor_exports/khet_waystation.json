@@ -1,0 +1,282 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "generated_from": "tools/map-editor/maps/_build_hub_trio_ground.cjs",
+  "round_trip_of": "editor-authored",
+  "overlay_of": "khet_waystation",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "khet_waystation",
+    "display_name": "Posto de Khet-Sar",
+    "client_side": true,
+    "size": [
+      1000,
+      700
+    ],
+    "spawn": [
+      180,
+      380
+    ],
+    "ground": {
+      "base_color": "#cdb083",
+      "path_color_rgba": [
+        0.78,
+        0.64,
+        0.4,
+        0.4
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 380,
+        "height": 120
+      },
+      "tiles": {
+        "tile_size": 96,
+        "base_key": "tilesets/desert/ground/desert_sand_base_96.png",
+        "layers": [
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_1_96.png",
+            "cells": [
+              "0,0",
+              "10,0",
+              "0,7",
+              "10,7",
+              "8,6",
+              "1,6"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_sand_var_2_96.png",
+            "cells": [
+              "9,0",
+              "1,0",
+              "9,7",
+              "2,7",
+              "0,5",
+              "10,2"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_pebbles_96.png",
+            "cells": [
+              "0,2",
+              "10,5",
+              "7,7",
+              "2,6"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_hardpack_road_96.png",
+            "cells": [
+              "1,3",
+              "2,3",
+              "3,3",
+              "4,3",
+              "5,3",
+              "6,3",
+              "7,3",
+              "8,3",
+              "9,3"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_n_96.png",
+            "cells": [
+              "1,2",
+              "2,2",
+              "6,2",
+              "7,2",
+              "8,2",
+              "9,2"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_road_edge_s_96.png",
+            "cells": [
+              "1,4",
+              "2,4",
+              "6,4",
+              "7,4",
+              "8,4",
+              "9,4"
+            ]
+          },
+          {
+            "key": "tilesets/desert/ground/desert_plaza_adobe_96.png",
+            "cells": [
+              "3,3",
+              "3,4",
+              "4,3",
+              "4,4"
+            ]
+          }
+        ]
+      }
+    },
+    "access": {
+      "gate_flag": "khet_oasis_reached",
+      "from_region": "khet_dune_overlook",
+      "from_exit": "overlook_to_waystation"
+    },
+    "portals": [
+      {
+        "id": "waystation_to_overlook",
+        "label": "Trilha → Mirante das Dunas",
+        "position": [
+          100,
+          380
+        ],
+        "target_region": "khet_dune_overlook",
+        "target_spawn": [
+          200,
+          360
+        ],
+        "gate_flag": null,
+        "draw_door": true
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "waystation_city_road",
+        "label": "Rota da Cidade",
+        "position": [
+          880,
+          380
+        ],
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "só texto; a rota segue p/ Khet-Sar (Cidade do Deserto NÃO implementada); não é o khet_city_gate"
+        ]
+      }
+    ],
+    "npcs": [
+      {
+        "id": "waystation_trader",
+        "name": "Mercadora do Posto",
+        "position": [
+          650,
+          360
+        ],
+        "sprite_key": "npcs/village/merchant",
+        "service": "merchant",
+        "wander": false,
+        "dialogue": [
+          "Suprimentos pra estrada, forasteiro? Tenho poções e munição."
+        ],
+        "notes": [
+          "sprite = placeholder medieval (merchant); abre a loja compartilhada (potion HP/mana/flechas)"
+        ]
+      }
+    ],
+    "services": [
+      {
+        "id": "waystation_rest",
+        "kind": "rest",
+        "position": [
+          400,
+          380
+        ],
+        "label": "[E] descansar no posto",
+        "runtime_only_fields": [
+          "restaura HP + mana (reusa _use_healer)"
+        ]
+      }
+    ],
+    "mobs": [],
+    "chests": [],
+    "props": [
+      {
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          300,
+          540
+        ],
+        "params": {
+          "r": 22
+        },
+        "z_hint": "ysort",
+        "blocker": "base"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "dry_tuft",
+        "position": [
+          500,
+          540
+        ],
+        "z_hint": -15,
+        "blocker": null
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "bones",
+        "position": [
+          720,
+          500
+        ],
+        "z_hint": -15,
+        "blocker": null
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "campfire",
+        "position": [
+          400,
+          430
+        ],
+        "z_hint": "ysort",
+        "blocker": null
+      }
+    ],
+    "blockers": [],
+    "interactions": [
+      {
+        "id": "khet_waystation_marker",
+        "type": "one_time_story_marker",
+        "position": [
+          650,
+          200
+        ],
+        "label": "vasculhar a placa de suprimentos",
+        "flag": "khet_waystation_supplies_claimed",
+        "reward": {
+          "xp": 25,
+          "gold": 15,
+          "items": [
+            "potion_mana"
+          ]
+        },
+        "dialogue_before": [
+          "Uma placa de caravana, meio soterrada, marca um esconderijo de suprimentos do posto.",
+          "Você recolhe o que sobrou — pode servir na estrada."
+        ],
+        "dialogue_after": [
+          "A placa do posto já foi vasculhada; nada mais resta aqui."
+        ]
+      }
+    ],
+    "runtime_only": [
+      "service 'rest' reusa o healer (HP+mana); texto contextual do Posto no runtime",
+      "merchant abre a loja COMPARTILHADA (estoque existente: poções/flechas); título segue o skin atual",
+      "interaction one_time_story_marker: flag khet_waystation_supplies_claimed + recompensa 1× (story_flags; sem schema novo)",
+      "future_exit 'Rota da Cidade' só texto (Cidade não implementada)"
+    ],
+    "notes": [
+      "região EDITOR-AUTHORED — mini-hub piloto do MapLoader (services + interaction) — GODOT-MAPLOADER-SERVICES-INTERACTIONS-PILOT-1",
+      "fonte da verdade do LAYOUT = este arquivo; lógica/gates ficam no runtime",
+      "sem mobs/chests (hub seguro)"
+    ]
+  }
+}

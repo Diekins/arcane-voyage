@@ -1,0 +1,73 @@
+{
+  "version": "1.1",
+  "source": "map-editor",
+  "override_of": "plains",
+  "generated_from": "godot/data/map_manifest/plains.json + _mob_configs/_chest_defs (Main.gd)",
+  "round_trip_of": "godot-runtime (legacy override piloto — GODOT-MAPLOADER-LEGACY-OVERRIDE-PLAINS-PILOT-1)",
+  "coordinate_system": { "origin": "top-left", "x": "right", "y": "down", "unit": "px-world" },
+  "interaction_radii": { "portal_E": 150, "portal_auto": 64, "interact_E": 140 },
+  "region": {
+    "id": "plains",
+    "display_name": "Planície dos Novatos",
+    "client_side": false,
+    "size": [2400, 1600],
+    "spawn": [520, 840],
+    "ground": { "base_color": "#3c6b34", "path_color_rgba": [0.62, 0.52, 0.34, 0.5] },
+    "access": { "gate_flag": null, "from_region": "starter_village" },
+    "portals": [
+      { "id": "plains_to_cave", "label": "Entrada da Caverna", "position": [2180, 820], "target_region": "cave", "target_spawn": null, "gate_flag": null, "draw_door": true },
+      { "id": "plains_to_village", "label": "Estrada → Vila dos Novatos", "position": [170, 840], "target_region": "starter_village", "target_spawn": [1100, 1320], "gate_flag": null, "draw_door": true }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      { "id": "plains_young_wolf_1", "mob_id": "young_wolf", "name": "Lobo Jovem", "visual": "young_wolf", "hp": 30, "xp": 12, "gold": 4, "dmg_min": 3, "dmg_max": 6, "aggro": 320, "atk_range": 84, "cooldown": 1.4, "speed": 110, "respawn": 6, "windup": 0.4, "recover": 0.25, "color": "8a6d54", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.3 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [900, 520] },
+      { "id": "plains_young_wolf_2", "mob_id": "young_wolf", "name": "Lobo Jovem", "visual": "young_wolf", "hp": 30, "xp": 12, "gold": 4, "dmg_min": 3, "dmg_max": 6, "aggro": 320, "atk_range": 84, "cooldown": 1.4, "speed": 110, "respawn": 6, "windup": 0.4, "recover": 0.25, "color": "8a6d54", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.3 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [1750, 520] },
+      { "id": "plains_young_wolf_3", "mob_id": "young_wolf", "name": "Lobo Jovem", "visual": "young_wolf", "hp": 30, "xp": 12, "gold": 4, "dmg_min": 3, "dmg_max": 6, "aggro": 320, "atk_range": 84, "cooldown": 1.4, "speed": 110, "respawn": 6, "windup": 0.4, "recover": 0.25, "color": "8a6d54", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.3 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [1250, 1320] },
+      { "id": "plains_young_wolf_4", "mob_id": "young_wolf", "name": "Lobo Jovem", "visual": "young_wolf", "hp": 30, "xp": 12, "gold": 4, "dmg_min": 3, "dmg_max": 6, "aggro": 320, "atk_range": 84, "cooldown": 1.4, "speed": 110, "respawn": 6, "windup": 0.4, "recover": 0.25, "color": "8a6d54", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.3 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [2000, 1180] },
+      { "id": "plains_young_wolf_5", "mob_id": "young_wolf", "name": "Lobo Jovem", "visual": "young_wolf", "hp": 30, "xp": 12, "gold": 4, "dmg_min": 3, "dmg_max": 6, "aggro": 320, "atk_range": 84, "cooldown": 1.4, "speed": 110, "respawn": 6, "windup": 0.4, "recover": 0.25, "color": "8a6d54", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.3 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [720, 1260] },
+      { "id": "plains_wild_boar_1", "mob_id": "wild_boar", "name": "Javali Bravio", "visual": "wild_boar", "hp": 48, "xp": 18, "gold": 7, "dmg_min": 6, "dmg_max": 10, "aggro": 300, "atk_range": 90, "cooldown": 1.5, "speed": 120, "respawn": 7, "windup": 0.4, "recover": 0.25, "color": "6b4a2f", "radius": 22, "shape": "circle", "side_left": false, "can_flip": true, "loot": [{ "name": "Couro Áspero", "chance": 0.55 }, { "name": "Presa de Javali", "chance": 0.35 }, { "name": "Carne Crua", "chance": 0.3 }, { "name": "Elmo de Ronda", "chance": 0.06 }], "position": [1500, 400] },
+      { "id": "plains_wild_boar_2", "mob_id": "wild_boar", "name": "Javali Bravio", "visual": "wild_boar", "hp": 48, "xp": 18, "gold": 7, "dmg_min": 6, "dmg_max": 10, "aggro": 300, "atk_range": 90, "cooldown": 1.5, "speed": 120, "respawn": 7, "windup": 0.4, "recover": 0.25, "color": "6b4a2f", "radius": 22, "shape": "circle", "side_left": false, "can_flip": true, "loot": [{ "name": "Couro Áspero", "chance": 0.55 }, { "name": "Presa de Javali", "chance": 0.35 }, { "name": "Carne Crua", "chance": 0.3 }, { "name": "Elmo de Ronda", "chance": 0.06 }], "position": [650, 400] },
+      { "id": "plains_wild_boar_3", "mob_id": "wild_boar", "name": "Javali Bravio", "visual": "wild_boar", "hp": 48, "xp": 18, "gold": 7, "dmg_min": 6, "dmg_max": 10, "aggro": 300, "atk_range": 90, "cooldown": 1.5, "speed": 120, "respawn": 7, "windup": 0.4, "recover": 0.25, "color": "6b4a2f", "radius": 22, "shape": "circle", "side_left": false, "can_flip": true, "loot": [{ "name": "Couro Áspero", "chance": 0.55 }, { "name": "Presa de Javali", "chance": 0.35 }, { "name": "Carne Crua", "chance": 0.3 }, { "name": "Elmo de Ronda", "chance": 0.06 }], "position": [2050, 560] },
+      { "id": "plains_road_bandit_1", "mob_id": "road_bandit", "name": "Bandido de Estrada", "visual": "road_bandit", "hp": 75, "xp": 32, "gold": 22, "dmg_min": 10, "dmg_max": 16, "aggro": 420, "atk_range": 92, "cooldown": 1.2, "speed": 135, "respawn": 14, "windup": 0.45, "recover": 0.2, "color": "2e2a2e", "radius": 20, "shape": "circle", "side_left": false, "can_flip": true, "wander_radius": 90, "loot": [{ "name": "Bolsa de Moedas", "chance": 0.6 }, { "name": "Pano Rasgado", "chance": 0.4 }, { "name": "Adaga do Caminho Velho", "chance": 0.12 }], "position": [2080, 520] },
+      { "id": "plains_starving_wolf_1", "mob_id": "starving_wolf", "name": "Lobo Faminto", "visual": "young_wolf", "hp": 36, "xp": 16, "gold": 5, "dmg_min": 5, "dmg_max": 9, "aggro": 360, "atk_range": 84, "cooldown": 1.1, "speed": 150, "respawn": 7, "windup": 0.25, "recover": 0.2, "color": "7a5c44", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.4 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [1080, 700] },
+      { "id": "plains_starving_wolf_2", "mob_id": "starving_wolf", "name": "Lobo Faminto", "visual": "young_wolf", "hp": 36, "xp": 16, "gold": 5, "dmg_min": 5, "dmg_max": 9, "aggro": 360, "atk_range": 84, "cooldown": 1.1, "speed": 150, "respawn": 7, "windup": 0.25, "recover": 0.2, "color": "7a5c44", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.4 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [1380, 760] },
+      { "id": "plains_starving_wolf_3", "mob_id": "starving_wolf", "name": "Lobo Faminto", "visual": "young_wolf", "hp": 36, "xp": 16, "gold": 5, "dmg_min": 5, "dmg_max": 9, "aggro": 360, "atk_range": 84, "cooldown": 1.1, "speed": 150, "respawn": 7, "windup": 0.25, "recover": 0.2, "color": "7a5c44", "radius": 22, "shape": "circle", "side_left": true, "can_flip": true, "loot": [{ "name": "Pelo de Lobo", "chance": 0.55 }, { "name": "Presa de Lobo", "chance": 0.4 }, { "name": "Carne Crua", "chance": 0.25 }], "position": [1240, 640] },
+      { "id": "plains_elder_boar_1", "mob_id": "elder_boar", "name": "Javali Ancião", "visual": "wild_boar", "hp": 120, "xp": 42, "gold": 16, "dmg_min": 8, "dmg_max": 13, "aggro": 280, "atk_range": 96, "cooldown": 1.8, "speed": 80, "respawn": 16, "windup": 0.6, "recover": 0.35, "color": "5a3f28", "radius": 26, "shape": "circle", "side_left": false, "can_flip": true, "wander_radius": 100, "loot": [{ "name": "Couro Áspero", "chance": 0.6 }, { "name": "Presa de Javali", "chance": 0.5 }, { "name": "Carne Crua", "chance": 0.3 }], "position": [1500, 1100] },
+      { "id": "plains_elder_boar_2", "mob_id": "elder_boar", "name": "Javali Ancião", "visual": "wild_boar", "hp": 120, "xp": 42, "gold": 16, "dmg_min": 8, "dmg_max": 13, "aggro": 280, "atk_range": 96, "cooldown": 1.8, "speed": 80, "respawn": 16, "windup": 0.6, "recover": 0.35, "color": "5a3f28", "radius": 26, "shape": "circle", "side_left": false, "can_flip": true, "wander_radius": 100, "loot": [{ "name": "Couro Áspero", "chance": 0.6 }, { "name": "Presa de Javali", "chance": 0.5 }, { "name": "Carne Crua", "chance": 0.3 }], "position": [820, 900] }
+    ],
+    "chests": [
+      { "id": "plains_supply_cache_1", "position": [700, 1180], "loot": { "gold": 25, "materials": { "Couro Áspero": 2 }, "items": ["potion_minor"] } }
+    ],
+    "props": [
+      { "id": "plains_tree_1", "type": "procedural", "procedural_type": "tree", "position": [240, 288], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_2", "type": "procedural", "procedural_type": "tree", "position": [672, 160], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_3", "type": "procedural", "procedural_type": "tree", "position": [1200, 256], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_4", "type": "procedural", "procedural_type": "tree", "position": [1728, 192], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_5", "type": "procedural", "procedural_type": "tree", "position": [2160, 352], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_6", "type": "procedural", "procedural_type": "tree", "position": [336, 1344], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_7", "type": "procedural", "procedural_type": "tree", "position": [960, 1440], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_8", "type": "procedural", "procedural_type": "tree", "position": [1536, 1376], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_9", "type": "procedural", "procedural_type": "tree", "position": [2064, 1312], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_tree_10", "type": "procedural", "procedural_type": "tree", "position": [2280, 800], "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_rock_11", "type": "procedural", "procedural_type": "dry_rock", "position": [528, 640], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_rock_12", "type": "procedural", "procedural_type": "dry_rock", "position": [1392, 992], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_rock_13", "type": "procedural", "procedural_type": "dry_rock", "position": [1872, 544], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" },
+      { "id": "plains_rock_14", "type": "procedural", "procedural_type": "dry_rock", "position": [840, 832], "params": { "r": 24 }, "z_hint": "ysort", "blocker": "base" }
+    ],
+    "blockers": [],
+    "interactions": [],
+    "runtime_only": [
+      "BOSS Lobo Alfa @ (1480,1110) — _build_wolf via _legacy_runtime_extras (NÃO está em mobs[])",
+      "Aldric Vaelor @ (980,720) — NPC de campanha Ato 1, _build_aldric via _legacy_runtime_extras (removido de npcs[] p/ não duplicar)",
+      "props procedurais geram seus próprios blockers no runtime (blockers[] vazio)"
+    ],
+    "notes": [
+      "★ LEGACY OVERRIDE PILOTO 2 (GODOT-MAPLOADER-LEGACY-OVERRIDE-PLAINS-PILOT-1): substitui o LAYOUT de plains",
+      "se LEGACY_OVERRIDE_ENABLED['plains']=true e o arquivo for válido; senão o runtime usa _build_plains",
+      "runtime-only (Lobo Alfa + Aldric) é re-adicionado por _legacy_runtime_extras — o override NÃO os controla",
+      "visual é placeholder por design (chão liso + props procedurais); o builder original usa tileset real + cave.png/placa/cerca"
+    ]
+  }
+}

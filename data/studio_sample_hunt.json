@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio (STUDIO-PLAYABLE-SAMPLE-1 — hunt)",
+  "map": { "id": "sample_hunt", "width": 2000, "height": 1300, "spawn": { "x": 340, "y": 650 }, "groundColor": "#3c6b34" },
+  "objects": [
+    { "id": "grass", "layer": "ground", "asset": "tilesets/plains/grass.png", "x": 0, "y": 0, "z": -20, "ysort": false, "baseOffset": 0, "tile": true, "w": 2000, "h": 1300 },
+    { "id": "path", "layer": "overlay", "asset": "tilesets/plains/dirt.png", "x": 0, "y": 590, "z": -18, "ysort": false, "baseOffset": 0, "tile": true, "w": 2000, "h": 160 },
+    { "id": "tree_a", "layer": "props", "asset": "tilesets/plains/props/tree.png", "x": 520, "y": 280, "scale": 1, "z": 0, "ysort": true, "baseOffset": 36 },
+    { "id": "tree_b", "layer": "props", "asset": "tilesets/plains/props/tree.png", "x": 1500, "y": 320, "scale": 1, "z": 0, "ysort": true, "baseOffset": 36 },
+    { "id": "rock_a", "layer": "props", "asset": "tilesets/plains/props/rock.png", "x": 900, "y": 1050, "scale": 1, "z": 0, "ysort": true, "baseOffset": 12 },
+    { "id": "cave_mouth", "layer": "props", "asset": "tilesets/plains/props/cave.png", "x": 1850, "y": 640, "scale": 1, "z": 0, "ysort": true, "baseOffset": 60 }
+  ],
+  "blockers": [
+    { "id": "blk_tree_a", "x": 496, "y": 284, "w": 48, "h": 38 },
+    { "id": "blk_rock_a", "x": 866, "y": 1042, "w": 68, "h": 48 }
+  ],
+  "portals": [
+    { "id": "to_town", "x": 160, "y": 650, "target": "sample_town", "title": "← Sample Town", "asset": null },
+    { "id": "to_cave", "x": 1850, "y": 640, "target": "sample_cave", "title": "→ Sample Cave", "asset": null }
+  ],
+  "markers": [
+    { "id": "bat_1", "kind": "mob", "x": 1000, "y": 460, "mobId": "crystal_bat", "count": 1, "radius": 160, "respawnSeconds": 7 },
+    { "id": "bat_2", "kind": "mob", "x": 1320, "y": 920, "mobId": "crystal_bat", "count": 1, "radius": 140, "respawnSeconds": 7 }
+  ],
+  "mobs": [
+    { "mobId": "crystal_bat", "name": "Morcego Cristalino", "asset": "actors/mobs/crystal_bat.png", "role": "common", "level": 3, "hp": 55, "damageMin": 6, "damageMax": 10, "speed": 130, "aggroRange": 360, "attackRange": 92, "respawnSeconds": 7, "xpReward": 22, "goldMin": 4, "goldMax": 12, "lootTableId": "", "notes": "" }
+  ],
+  "loot": { "items": [], "tables": [] },
+  "npcs": [],
+  "services": [],
+  "assetBank": [
+    { "assetId": "mob_crystal_bat", "name": "Morcego Cristalino", "path": "actors/mobs/crystal_bat.png", "type": "actor", "category": "mob", "status": "plugged", "tags": [], "frameW": 64, "frameH": 64, "frames": 7, "rows": 1, "directionMode": "omnidirectional", "rowOrder": ["move"], "canFlip": false, "sideFacesLeft": null, "ysort": true, "baseOffset": 0, "defaultScale": 1, "collisionPreset": "feet", "notes": "voo front/down (não-provisório)" }
+  ],
+  "quests": []
+}

@@ -1,0 +1,575 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "ancient_root_nest",
+    "display_name": "Ninho da Raiz Ancestral",
+    "client_side": true,
+    "size": [
+      1700,
+      1200
+    ],
+    "spawn": [
+      850,
+      1030
+    ],
+    "ground": {
+      "base_color": "#100d10",
+      "path_color_rgba": [
+        0.3,
+        0.2,
+        0.14,
+        0.36
+      ],
+      "notes": [
+        "chão pintado — só base_color representável"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "deep_grove",
+      "from_exit": "deep_north_exit"
+    },
+    "portals": [
+      {
+        "id": "nest_to_deep",
+        "label": "Passagem → Coração das Raízes",
+        "position": [
+          850,
+          1150
+        ],
+        "target_region": "deep_grove",
+        "target_spawn": [
+          900,
+          240
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "hungry_root",
+        "name": "Raiz Faminta",
+        "visual": "hungry_root",
+        "hp": 52,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "ancient_root_nest_hungry_root_1",
+        "position": [
+          480,
+          760
+        ]
+      },
+      {
+        "mob_id": "hungry_root",
+        "name": "Raiz Faminta",
+        "visual": "hungry_root",
+        "hp": 52,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "ancient_root_nest_hungry_root_2",
+        "position": [
+          1220,
+          760
+        ]
+      },
+      {
+        "mob_id": "hungry_root",
+        "name": "Raiz Faminta",
+        "visual": "hungry_root",
+        "hp": 52,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "ancient_root_nest_hungry_root_3",
+        "position": [
+          680,
+          920
+        ]
+      },
+      {
+        "mob_id": "hungry_root",
+        "name": "Raiz Faminta",
+        "visual": "hungry_root",
+        "hp": 52,
+        "aggro": 400,
+        "respawn": 7,
+        "id": "ancient_root_nest_hungry_root_4",
+        "position": [
+          1020,
+          920
+        ]
+      },
+      {
+        "mob_id": "hollow_husk",
+        "name": "Carapaça Oca",
+        "visual": "hollow_husk",
+        "hp": 195,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "ancient_root_nest_hollow_husk_1",
+        "position": [
+          440,
+          520
+        ]
+      },
+      {
+        "mob_id": "hollow_husk",
+        "name": "Carapaça Oca",
+        "visual": "hollow_husk",
+        "hp": 195,
+        "aggro": 300,
+        "respawn": 18,
+        "elite": true,
+        "id": "ancient_root_nest_hollow_husk_2",
+        "position": [
+          1260,
+          520
+        ]
+      },
+      {
+        "mob_id": "sap_eye",
+        "name": "Olho de Seiva",
+        "visual": "sap_eye",
+        "hp": 96,
+        "aggro": 460,
+        "respawn": 12,
+        "id": "ancient_root_nest_sap_eye_1",
+        "position": [
+          320,
+          380
+        ]
+      },
+      {
+        "mob_id": "sap_eye",
+        "name": "Olho de Seiva",
+        "visual": "sap_eye",
+        "hp": 96,
+        "aggro": 460,
+        "respawn": 12,
+        "id": "ancient_root_nest_sap_eye_2",
+        "position": [
+          1380,
+          380
+        ]
+      },
+      {
+        "mob_id": "ancient_root_heart",
+        "name": "Coração da Raiz Ancestral",
+        "visual": "ancient_root_heart",
+        "hp": 460,
+        "aggro": 420,
+        "respawn": 90,
+        "elite": true,
+        "defeat_flag": "(fechamento do arco das Raízes — _on_ancient_heart_defeated)",
+        "runtime_only": true,
+        "notes": [
+          "BOSS do arco (mob elite); derrota dispara fechamento no runtime"
+        ],
+        "id": "ancient_root_nest_ancient_root_heart_1",
+        "position": [
+          850,
+          360
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "nest_marrow_cache",
+        "position": [
+          300,
+          980
+        ],
+        "loot": {
+          "gold": 80,
+          "materials": {
+            "Seiva Negra Cristalizada": 2
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      },
+      {
+        "id": "nest_ancient_reliquary",
+        "position": [
+          1400,
+          300
+        ],
+        "loot": {
+          "gold": 110,
+          "materials": {
+            "Fragmento da Raiz Ancestral": 1,
+            "Núcleo de Raiz Negra": 1
+          }
+        }
+      }
+    ],
+    "props": [
+      {
+        "id": "ancient_root_nest_dead_tree_1",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          170.0,
+          192.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_2",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          510.0,
+          120.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_3",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1190.0,
+          120.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_4",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1530.0,
+          192.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_5",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          102.0,
+          600.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_6",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1598.0,
+          600.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_7",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          204.0,
+          1020.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_dead_tree_8",
+        "type": "procedural",
+        "procedural_type": "dead_tree",
+        "position": [
+          1496.0,
+          1020.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_column_9",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          408.0,
+          408.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_column_10",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1292.0,
+          408.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_column_11",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          408.0,
+          792.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_column_12",
+        "type": "procedural",
+        "procedural_type": "column",
+        "position": [
+          1292.0,
+          792.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_rock_13",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          612.0,
+          192.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_rock_14",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1088.0,
+          192.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_rock_15",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          578.0,
+          960.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      },
+      {
+        "id": "ancient_root_nest_rock_16",
+        "type": "procedural",
+        "procedural_type": "dry_rock",
+        "position": [
+          1122.0,
+          960.0
+        ],
+        "z_hint": "ysort",
+        "blocker": "base",
+        "approx": false
+      }
+    ],
+    "blockers": [
+      {
+        "from": "ancient_root_nest_dead_tree_1",
+        "rect": [
+          159.0,
+          194.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_2",
+        "rect": [
+          499.0,
+          122.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_3",
+        "rect": [
+          1179.0,
+          122.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_4",
+        "rect": [
+          1519.0,
+          194.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_5",
+        "rect": [
+          91.0,
+          602.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_6",
+        "rect": [
+          1587.0,
+          602.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_7",
+        "rect": [
+          193.0,
+          1022.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_dead_tree_8",
+        "rect": [
+          1485.0,
+          1022.0,
+          22.0,
+          22.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_column_9",
+        "rect": [
+          396.0,
+          410.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_column_10",
+        "rect": [
+          1280.0,
+          410.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_column_11",
+        "rect": [
+          396.0,
+          794.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_column_12",
+        "rect": [
+          1280.0,
+          794.0,
+          24.0,
+          20.0
+        ]
+      },
+      {
+        "from": "ancient_root_nest_rock_13",
+        "rect": [
+          588.0,
+          180.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "ancient_root_nest_rock_14",
+        "rect": [
+          1064.0,
+          180.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "ancient_root_nest_rock_15",
+        "rect": [
+          554.0,
+          948.0,
+          48.0,
+          24
+        ]
+      },
+      {
+        "from": "ancient_root_nest_rock_16",
+        "rect": [
+          1098.0,
+          948.0,
+          48.0,
+          24
+        ]
+      }
+    ],
+    "interactions": [],
+    "runtime_only": [
+      "BOSS Coração da Raiz Ancestral (mob elite + fechamento de arco)",
+      "elite Carapaça Oca",
+      "props/blockers = _scatter_ancient_nest_decor (não extraídos)"
+    ],
+    "notes": [
+      "fechamento do arco das Raízes Negras (subárea norte do Deep Grove)"
+    ]
+  }
+}

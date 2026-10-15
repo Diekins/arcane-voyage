@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "saltwind_shore",
+    "display_name": "Costa do Sal-Vento",
+    "client_side": true,
+    "size": [
+      2200,
+      1300
+    ],
+    "spawn": [
+      300,
+      650
+    ],
+    "ground": {
+      "base_color": "#cdb98a",
+      "path_color_rgba": [
+        0.92,
+        0.88,
+        0.74,
+        0.3
+      ],
+      "painted": true,
+      "notes": [
+        "chão PINTADO (ground_painted.png) — terrain-only; só base_color é representável no editor"
+      ]
+    },
+    "access": {
+      "gate_flag": null,
+      "from_region": "old_road",
+      "from_exit": "COAST_FROM_OLD_ROAD(2030,650)"
+    },
+    "portals": [
+      {
+        "id": "coast_to_old_road",
+        "label": "Trilha → Ruínas da Estrada Velha",
+        "position": [
+          170,
+          650
+        ],
+        "target_region": "old_road",
+        "target_spawn": [
+          1900,
+          650
+        ],
+        "gate_flag": null,
+        "draw_door": false
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "coast_sea_gate",
+        "label": "Cais Quebrado — Rota Marítima",
+        "position": [
+          1100,
+          1120
+        ],
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "[E] no barco encalhado = quest de reparo (ver interactions); com boat_repaired VIAJA p/ castaway_sandbar",
+          "target_doc open_sea documentado, não ativo"
+        ]
+      }
+    ],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "saltwind_shore_dune_skitter_1",
+        "position": [
+          840,
+          420
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "saltwind_shore_dune_skitter_2",
+        "position": [
+          1520,
+          420
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "saltwind_shore_dune_skitter_3",
+        "position": [
+          1040,
+          860
+        ]
+      },
+      {
+        "mob_id": "dune_skitter",
+        "name": "Escaravelho das Dunas",
+        "visual": "dune_skitter",
+        "hp": 60,
+        "aggro": 380,
+        "respawn": 7,
+        "id": "saltwind_shore_dune_skitter_4",
+        "position": [
+          1700,
+          760
+        ]
+      },
+      {
+        "mob_id": "salt_husk",
+        "name": "Casca de Sal",
+        "visual": "salt_husk",
+        "hp": 175,
+        "aggro": 460,
+        "respawn": 16,
+        "ranged": true,
+        "id": "saltwind_shore_salt_husk_1",
+        "position": [
+          1140,
+          470
+        ]
+      },
+      {
+        "mob_id": "salt_husk",
+        "name": "Casca de Sal",
+        "visual": "salt_husk",
+        "hp": 175,
+        "aggro": 460,
+        "respawn": 16,
+        "ranged": true,
+        "id": "saltwind_shore_salt_husk_2",
+        "position": [
+          760,
+          980
+        ]
+      },
+      {
+        "mob_id": "tide_warden",
+        "name": "Guardião da Maré",
+        "visual": "tide_warden",
+        "hp": 240,
+        "aggro": 360,
+        "respawn": 40,
+        "elite": true,
+        "notes": [
+          "elite-lite (NÃO boss-system); RESPAWNA (40s); SEM flag de derrota"
+        ],
+        "id": "saltwind_shore_tide_warden_1",
+        "position": [
+          1100,
+          940
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "coast_wreck_cache",
+        "position": [
+          320,
+          320
+        ],
+        "loot": {
+          "gold": 50,
+          "materials": {
+            "Madeira de Naufrágio": 2,
+            "Sal Cristalizado": 1
+          },
+          "items": [
+            "potion_minor"
+          ]
+        }
+      },
+      {
+        "id": "coast_tidal_strongbox",
+        "position": [
+          1880,
+          320
+        ],
+        "loot": {
+          "gold": 70,
+          "materials": {
+            "Sal Cristalizado": 2,
+            "Concha Polida": 2
+          }
+        }
+      }
+    ],
+    "props": [
+      {
+        "type": "sprite",
+        "procedural_type": "boat",
+        "position": [
+          1210,
+          1130
+        ],
+        "blocker": "approx",
+        "notes": [
+          "barco encalhado (sprite real assets/effects/boats/saltwind_boat.png), proa leste; marco visual"
+        ]
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "anchor",
+        "position": [
+          820,
+          1070
+        ],
+        "blocker": "approx",
+        "notes": [
+          "âncora quebrada (marco da rota antiga)"
+        ]
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "driftwood",
+        "position": [
+          440,
+          390
+        ],
+        "params": {
+          "scale": 0.4
+        },
+        "blocker": "approx"
+      },
+      {
+        "type": "procedural",
+        "procedural_type": "driftwood",
+        "position": [
+          1716,
+          520
+        ],
+        "params": {
+          "scale": 0.6
+        },
+        "blocker": "approx"
+      }
+    ],
+    "scatter": {
+      "generator": "_scatter_coast_decor",
+      "coast_rocks_norm": [
+        [
+          0.16,
+          0.2
+        ],
+        [
+          0.42,
+          0.16
+        ],
+        [
+          0.7,
+          0.18
+        ],
+        [
+          0.88,
+          0.3
+        ],
+        [
+          0.22,
+          0.68
+        ],
+        [
+          0.8,
+          0.66
+        ],
+        [
+          0.6,
+          0.78
+        ]
+      ],
+      "driftwood_norm": [
+        [
+          0.2,
+          0.3,
+          0.4
+        ],
+        [
+          0.78,
+          0.4,
+          0.6
+        ]
+      ],
+      "anchor": [
+        820,
+        1070
+      ],
+      "water_blocker_inset": 195,
+      "notes": [
+        "chão PINTADO + colisão: mar (faixa sul) + 7 pedras sólidas (r=26) + 2 destroços + âncora",
+        "driftwood/anchor têm blocker no runtime mas a fórmula exata não foi resolvida aqui (lacuna)"
+      ]
+    },
+    "interactions": [
+      {
+        "id": "boat_repair",
+        "trigger": "interact:coast_sea_gate",
+        "runtime_only": true,
+        "requires": {
+          "Madeira de Naufrágio": 5,
+          "Sal Cristalizado": 3,
+          "Concha Polida": 2
+        },
+        "effect": "consome materiais + set_flag:boat_repaired + reward(90xp,60ouro,1 Poção de Mana); DEPOIS [E] no barco VIAJA p/ castaway_sandbar",
+        "notes": [
+          "o 'combate' não existe aqui; é turn-in de materiais (Guardião da Maré NÃO precisa morrer)"
+        ]
+      }
+    ],
+    "runtime_only": [
+      "marco coast_route_found (popup 1× na 1ª chegada)",
+      "quest de reparo do barco (boat_repaired) + recompensa 1× (ver interactions)",
+      "gate de embarque: só viaja ao Banco com boat_repaired",
+      "chão pintado + coast decor procedural (placeholders no editor)"
+    ],
+    "notes": [
+      "região client-side; nome via _region_display_name",
+      "início do arco litoral→deserto; fronteira leste do mundo conhecido"
+    ],
+    "blockers": [
+      {
+        "from": "sea",
+        "pos": [
+          0,
+          1105
+        ],
+        "rect": [
+          0,
+          1105,
+          2200,
+          195
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          352.0,
+          260.0
+        ],
+        "rect": [
+          326.0,
+          247.0,
+          52.0,
+          26.0
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          924.0,
+          208.0
+        ],
+        "rect": [
+          898.0,
+          195.0,
+          52.0,
+          26.0
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          1540.0,
+          234.0
+        ],
+        "rect": [
+          1514.0,
+          221.0,
+          52.0,
+          26.0
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          1936.0,
+          390.0
+        ],
+        "rect": [
+          1910.0,
+          377.0,
+          52.0,
+          26.0
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          484.0,
+          884.0
+        ],
+        "rect": [
+          458.0,
+          871.0,
+          52.0,
+          26.0
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          1760.0,
+          858.0
+        ],
+        "rect": [
+          1734.0,
+          845.0,
+          52.0,
+          26.0
+        ]
+      },
+      {
+        "from": "coast_rock",
+        "pos": [
+          1320.0,
+          1014.0
+        ],
+        "rect": [
+          1294.0,
+          1001.0,
+          52.0,
+          26.0
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "generator": "arcane-voyage-studio chests-content-pass-1",
+  "map": {
+    "id": "plains",
+    "width": 2400,
+    "height": 1600,
+    "spawn": {
+      "x": 520,
+      "y": 840
+    },
+    "groundColor": "#3c6b34"
+  },
+  "objects": [
+    {
+      "id": "grass_1",
+      "layer": "ground",
+      "asset": "tilesets/plains/grass.png",
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "z": -20,
+      "ysort": false,
+      "baseOffset": 0,
+      "tile": true,
+      "w": 2400,
+      "h": 1600
+    },
+    {
+      "id": "dirt_1",
+      "layer": "overlay",
+      "asset": "tilesets/plains/dirt.png",
+      "x": 0,
+      "y": 760,
+      "scale": 1,
+      "z": -18,
+      "ysort": false,
+      "baseOffset": 0,
+      "tile": true,
+      "w": 2400,
+      "h": 210
+    },
+    {
+      "id": "tree_1",
+      "layer": "props",
+      "asset": "tilesets/plains/props/tree.png",
+      "x": 192,
+      "y": 208,
+      "scale": 1,
+      "z": 0,
+      "ysort": true,
+      "baseOffset": 36
+    },
+    {
+      "id": "tree_2",
+      "layer": "props",
+      "asset": "tilesets/plains/props/tree.png",
+      "x": 2160,
+      "y": 240,
+      "scale": 1,
+      "z": 0,
+      "ysort": true,
+      "baseOffset": 36
+    },
+    {
+      "id": "rock_1",
+      "layer": "props",
+      "asset": "tilesets/plains/props/rock.png",
+      "x": 576,
+      "y": 640,
+      "scale": 1,
+      "z": 0,
+      "ysort": true,
+      "baseOffset": 12
+    },
+    {
+      "id": "bush_1",
+      "layer": "props",
+      "asset": "tilesets/plains/props/bush.png",
+      "x": 960,
+      "y": 992,
+      "scale": 1,
+      "z": -14,
+      "ysort": false,
+      "baseOffset": 0
+    }
+  ],
+  "blockers": [
+    {
+      "id": "blk_tree_1",
+      "x": 168,
+      "y": 212,
+      "w": 48,
+      "h": 38
+    },
+    {
+      "id": "blk_tree_2",
+      "x": 2142,
+      "y": 242,
+      "w": 36,
+      "h": 30
+    },
+    {
+      "id": "blk_rock_1",
+      "x": 542,
+      "y": 632,
+      "w": 68,
+      "h": 48
+    },
+    {
+      "id": "blk_cave_l",
+      "x": 2058,
+      "y": 750,
+      "w": 58,
+      "h": 135
+    },
+    {
+      "id": "blk_cave_r",
+      "x": 2244,
+      "y": 750,
+      "w": 58,
+      "h": 135
+    }
+  ],
+  "portals": [
+    {
+      "id": "portal_cave",
+      "x": 2180,
+      "y": 820,
+      "target": "cave",
+      "title": "Entrada da Caverna",
+      "asset": "tilesets/plains/props/cave.png"
+    },
+    {
+      "id": "portal_village",
+      "x": 170,
+      "y": 840,
+      "target": "starter_village",
+      "title": "Estrada → Vila dos Novatos",
+      "asset": null
+    }
+  ],
+  "markers": [
+    {
+      "id": "npc_aldric",
+      "kind": "npc",
+      "x": 980,
+      "y": 720,
+      "name": "Aldric Vaelor",
+      "asset": "actors/npcs/aldric_vaelor.png",
+      "ysort": true,
+      "baseOffset": 0,
+      "dialogue": [
+        "Você acordou, Errante.",
+        "A Planície guarda mais do que lobos."
+      ]
+    },
+    {
+      "id": "mob_wolf_1",
+      "kind": "mob",
+      "x": 900,
+      "y": 520,
+      "name": "Lobo Jovem",
+      "asset": "actors/mobs/young_wolf.png",
+      "mobId": "young_wolf"
+    },
+    {
+      "id": "mob_wolf_2",
+      "kind": "mob",
+      "x": 1750,
+      "y": 520,
+      "name": "Lobo Jovem",
+      "asset": "actors/mobs/young_wolf.png",
+      "mobId": "young_wolf"
+    },
+    {
+      "id": "mob_wolf_3",
+      "kind": "mob",
+      "x": 1250,
+      "y": 1320,
+      "name": "Lobo Jovem",
+      "asset": "actors/mobs/young_wolf.png",
+      "mobId": "young_wolf"
+    },
+    {
+      "id": "boss_alpha",
+      "kind": "mob",
+      "x": 1480,
+      "y": 1110,
+      "name": "Lobo Alfa",
+      "asset": "actors/bosses/alpha_wolf.png",
+      "mobId": "alpha_wolf"
+    },
+    {
+      "id": "chest_plains_roadside_cache",
+      "kind": "chest",
+      "x": 1850,
+      "y": 1180,
+      "name": "",
+      "asset": null,
+      "loot": {
+        "gold": 30,
+        "items": [
+          "potion_minor"
+        ]
+      },
+      "title": "Cache da Estrada",
+      "ysort": true,
+      "baseOffset": 0
+    },
+    {
+      "id": "chest_plains_west_hollow",
+      "kind": "chest",
+      "x": 450,
+      "y": 1180,
+      "name": "",
+      "asset": null,
+      "loot": {
+        "gold": 20,
+        "materials": {
+          "Couro Áspero": 2
+        }
+      },
+      "title": "Toco Oco",
+      "ysort": true,
+      "baseOffset": 0
+    },
+    {
+      "id": "chest_plains_bandit_stash",
+      "kind": "chest",
+      "x": 2120,
+      "y": 640,
+      "name": "",
+      "asset": null,
+      "loot": {
+        "gold": 40,
+        "materials": {
+          "Pano Rasgado": 2
+        },
+        "items": [
+          "dagger_rusty"
+        ]
+      },
+      "title": "Esconderijo de Bandido",
+      "ysort": true,
+      "baseOffset": 0
+    }
+  ]
+}

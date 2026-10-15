@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "source": "godot-runtime",
+  "generated_from": "Main.gd",
+  "generator": "godot/tools/generate_map_manifest.py",
+  "coordinate_system": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down",
+    "unit": "px-world"
+  },
+  "interaction_radii": {
+    "portal_E": 150,
+    "portal_auto": 64,
+    "interact_E": 140
+  },
+  "region": {
+    "id": "khet_sar_sands",
+    "display_name": "Areais de Khet-Sar",
+    "client_side": true,
+    "size": [
+      2000,
+      1300
+    ],
+    "spawn": [
+      280,
+      650
+    ],
+    "ground": {
+      "base_color": "#d8b87a",
+      "path_color_rgba": [
+        0.8,
+        0.66,
+        0.42,
+        0.4
+      ],
+      "path_band": {
+        "axis": "horizontal",
+        "center_y": 650,
+        "height": 150
+      }
+    },
+    "access": {
+      "gate_flag": "salt_isle_cleared",
+      "from_region": "salt_split_isle",
+      "from_exit": "salt_isle_horizon"
+    },
+    "portals": [
+      {
+        "id": "khet_to_isle",
+        "label": "Barco → Ilha do Sal Partido",
+        "position": [
+          160,
+          720
+        ],
+        "target_region": "salt_split_isle",
+        "target_spawn": [
+          1300,
+          600
+        ],
+        "gate_flag": null,
+        "draw_door": true,
+        "notes": [
+          "retorno surge na Ilha LONGE do Horizonte (anti-loop)"
+        ]
+      }
+    ],
+    "future_exits": [
+      {
+        "id": "khet_deep_dunes",
+        "label": "Dunas Profundas",
+        "position": [
+          1820,
+          900
+        ],
+        "transports": false,
+        "runtime_only": true,
+        "notes": [
+          "com khet_sar_sentinel_defeated VIAJA p/ khet_caravan_camp (Acampamento); senão texto de bloqueio"
+        ]
+      }
+    ],
+    "npcs": [],
+    "services": [],
+    "mobs": [
+      {
+        "mob_id": "khet_skitter",
+        "name": "Escaravelho de Khet-Sar",
+        "visual": "dune_skitter",
+        "hp": 92,
+        "aggro": 410,
+        "respawn": 7,
+        "id": "khet_sar_sands_khet_skitter_1",
+        "position": [
+          640,
+          380
+        ]
+      },
+      {
+        "mob_id": "khet_skitter",
+        "name": "Escaravelho de Khet-Sar",
+        "visual": "dune_skitter",
+        "hp": 92,
+        "aggro": 410,
+        "respawn": 7,
+        "id": "khet_sar_sands_khet_skitter_2",
+        "position": [
+          1000,
+          760
+        ]
+      },
+      {
+        "mob_id": "khet_skitter",
+        "name": "Escaravelho de Khet-Sar",
+        "visual": "dune_skitter",
+        "hp": 92,
+        "aggro": 410,
+        "respawn": 7,
+        "id": "khet_sar_sands_khet_skitter_3",
+        "position": [
+          1300,
+          380
+        ]
+      },
+      {
+        "mob_id": "khet_skitter",
+        "name": "Escaravelho de Khet-Sar",
+        "visual": "dune_skitter",
+        "hp": 92,
+        "aggro": 410,
+        "respawn": 7,
+        "id": "khet_sar_sands_khet_skitter_4",
+        "position": [
+          820,
+          1040
+        ]
+      },
+      {
+        "mob_id": "khet_skitter",
+        "name": "Escaravelho de Khet-Sar",
+        "visual": "dune_skitter",
+        "hp": 92,
+        "aggro": 410,
+        "respawn": 7,
+        "id": "khet_sar_sands_khet_skitter_5",
+        "position": [
+          1500,
+          980
+        ]
+      },
+      {
+        "mob_id": "khet_dry_sentry",
+        "name": "Sentinela Ressecada",
+        "visual": "fallen_sentry",
+        "hp": 220,
+        "aggro": 500,
+        "respawn": 16,
+        "ranged": true,
+        "id": "khet_sar_sands_khet_dry_sentry_1",
+        "position": [
+          1120,
+          520
+        ]
+      },
+      {
+        "mob_id": "khet_dry_sentry",
+        "name": "Sentinela Ressecada",
+        "visual": "fallen_sentry",
+        "hp": 220,
+        "aggro": 500,
+        "respawn": 16,
+        "ranged": true,
+        "id": "khet_sar_sands_khet_dry_sentry_2",
+        "position": [
+          760,
+          820
+        ]
+      },
+      {
+        "mob_id": "khet_wind_shade",
+        "name": "Sombra de Vento",
+        "visual": "crawling_shade",
+        "hp": 120,
+        "aggro": 440,
+        "respawn": 10,
+        "id": "khet_sar_sands_khet_wind_shade_1",
+        "position": [
+          1180,
+          980
+        ]
+      },
+      {
+        "mob_id": "khet_wind_shade",
+        "name": "Sombra de Vento",
+        "visual": "crawling_shade",
+        "hp": 120,
+        "aggro": 440,
+        "respawn": 10,
+        "id": "khet_sar_sands_khet_wind_shade_2",
+        "position": [
+          560,
+          620
+        ]
+      },
+      {
+        "mob_id": "khet_sar_sentinel",
+        "name": "Sentinela de Khet-Sar",
+        "visual": "hollow_watcher",
+        "hp": 820,
+        "aggro": 540,
+        "respawn": 999999,
+        "elite": true,
+        "defeat_flag": "khet_sar_sentinel_defeated",
+        "non_respawn": true,
+        "reward": "1×: +70 XP, +95 ouro, Pedra Rúnica x2 (via _on_khet_sentinel_defeated)",
+        "runtime_only": true,
+        "notes": [
+          "ELITE LEVE (mob+flag, NÃO boss-system); não respawna"
+        ],
+        "id": "khet_sar_sands_khet_sar_sentinel_1",
+        "position": [
+          1600,
+          650
+        ]
+      }
+    ],
+    "chests": [
+      {
+        "id": "khet_buried_cache",
+        "position": [
+          1720,
+          280
+        ],
+        "loot": {
+          "gold": 100,
+          "materials": {
+            "Pedra Rúnica": 2,
+            "Fragmento de Cristal": 1,
+            "Sal Cristalizado": 2
+          },
+          "items": [
+            "potion_mana"
+          ]
+        }
+      }
+    ],
+    "props": [],
+    "scatter": {
+      "generator": "_scatter_desert_decor",
+      "solids_norm": [
+        [
+          0.22,
+          0.4
+        ],
+        [
+          0.58,
+          0.62
+        ],
+        [
+          0.78,
+          0.34
+        ],
+        [
+          0.35,
+          0.52
+        ],
+        [
+          0.1,
+          0.18
+        ],
+        [
+          0.28,
+          0.1
+        ],
+        [
+          0.5,
+          0.16
+        ],
+        [
+          0.72,
+          0.12
+        ],
+        [
+          0.9,
+          0.22
+        ],
+        [
+          0.14,
+          0.84
+        ],
+        [
+          0.4,
+          0.9
+        ],
+        [
+          0.64,
+          0.86
+        ],
+        [
+          0.86,
+          0.82
+        ],
+        [
+          0.95,
+          0.5
+        ]
+      ],
+      "softs_norm": [
+        [
+          0.2,
+          0.3
+        ],
+        [
+          0.66,
+          0.46
+        ],
+        [
+          0.46,
+          0.76
+        ],
+        [
+          0.82,
+          0.66
+        ],
+        [
+          0.3,
+          0.66
+        ]
+      ],
+      "notes": [
+        "scatter de deserto (else-branch)"
+      ]
+    },
+    "interactions": [
+      {
+        "id": "khet_sentinel",
+        "trigger": "kill:khet_sar_sentinel",
+        "runtime_only": true,
+        "effect": "set_flag:khet_sar_sentinel_defeated + reward(70xp,95ouro,Pedra Rúnica x2) + abre as Dunas Profundas → khet_caravan_camp"
+      }
+    ],
+    "runtime_only": [
+      "marco khet_sar_reached (popup 1× na 1ª chegada)",
+      "elite khet_sar_sentinel: flag khet_sar_sentinel_defeated + recompensa 1× + não-respawn",
+      "Dunas Profundas viram viagem real (p/ khet_caravan_camp) só com a flag do elite",
+      "scatter de deserto procedural"
+    ],
+    "notes": [
+      "região client-side; 1ª região DESÉRTICA (novo continente)",
+      "elite via mob+flag (não boss-system)"
+    ],
+    "blockers": [
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          440.0,
+          520.0
+        ],
+        "rect": [
+          433.45,
+          512.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1160.0,
+          806.0
+        ],
+        "rect": [
+          1136.0,
+          794.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1560.0,
+          442.0
+        ],
+        "rect": [
+          1550.95,
+          434.0,
+          18.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          700.0,
+          676.0
+        ],
+        "rect": [
+          676.0,
+          664.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          200.0,
+          234.0
+        ],
+        "rect": [
+          192.2,
+          226.0,
+          15.6,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          560.0,
+          130.0
+        ],
+        "rect": [
+          536.0,
+          118.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1000.0,
+          208.0
+        ],
+        "rect": [
+          993.45,
+          200.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1440.0,
+          156.0
+        ],
+        "rect": [
+          1416.0,
+          144.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1800.0,
+          286.0
+        ],
+        "rect": [
+          1790.95,
+          278.0,
+          18.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          280.0,
+          1092.0
+        ],
+        "rect": [
+          256.0,
+          1080.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          800.0,
+          1170.0
+        ],
+        "rect": [
+          792.2,
+          1162.0,
+          15.6,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1280.0,
+          1118.0
+        ],
+        "rect": [
+          1256.0,
+          1106.0,
+          48.0,
+          24.0
+        ]
+      },
+      {
+        "from": "scatter:cactus",
+        "pos": [
+          1720.0,
+          1066.0
+        ],
+        "rect": [
+          1713.45,
+          1058.0,
+          13.1,
+          16.0
+        ]
+      },
+      {
+        "from": "scatter:dry_rock",
+        "pos": [
+          1900.0,
+          650.0
+        ],
+        "rect": [
+          1876.0,
+          638.0,
+          48.0,
+          24.0
+        ]
+      }
+    ]
+  }
+}
